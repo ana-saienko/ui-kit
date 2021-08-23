@@ -32,7 +32,7 @@ body {
 
 body {
   line-height: 1;
-  font-family: "Lato", sans-serif;
+  font-family: "Inter", sans-serif;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -41,7 +41,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: inherit;
 }
 
@@ -99,6 +99,12 @@ html {
           box-sizing: inherit;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+  color: #2c2c2c;
+  font-size: 14px;
+}
+
 body._lock {
   overflow: hidden;
 }
@@ -149,6 +155,14 @@ body._lock {
 /**
  * Basic typography style for copy text
  */
+.title {
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+}
+
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -192,6 +206,10 @@ body._lock {
   z-index: 5;
   width: 40px;
   height: 40px;
+}
+
+.main-sec {
+  padding: 90px 0;
 }
 
 @media (min-width: 767.98px) {

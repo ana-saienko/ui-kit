@@ -14,6 +14,10 @@ html {
 // main styles for the layout
 
 body {
+	font-family: $fontFamily;
+	color: $mine-shaft;
+	font-size: 14px;
+	
 	&._lock {
 		overflow: hidden;
 	}
