@@ -1,27 +1,118 @@
 .form-error {
-	border: 1px solid $red-orange !important;
- }
- 
- .form-accent {
-	border: 1px solid #18A0FB !important;
- }
- 
- .shadow {
-	border: 1px solid rgba(224, 224, 224, 0.15);
-	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
- }
+  border: 1px solid $red-orange !important;
+}
 
- .shadow-2 {
-	border: 1px solid rgba(224, 224, 224, 0.15);
-	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+.form-accent {
+  border: 1px solid #18a0fb !important;
+}
+
+.shadow {
+  border: 1px solid rgba(224, 224, 224, 0.15);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-2 {
+  border: 1px solid rgba(224, 224, 224, 0.15);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
 }
 
 .shadow-3 {
-	border: 1px solid rgba(224, 224, 224, 0.15);
-	box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(224, 224, 224, 0.15);
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
 }
 
 .shadow-4 {
-	border: 1px solid rgba(224, 224, 224, 0.15);
-	box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(224, 224, 224, 0.15);
+  box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.12);
+}
+
+// ==================================================
+
+.forms {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__first {
+    flex: 1 1 260px;
+  }
+
+  &__input-box {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 260px;
+  }
+
+  &__label {
+    margin-bottom: 7px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: $mine-shaft;
+  }
+
+  &__label-disabled {
+    opacity: 0.4;
+  }
+
+  &__input {
+    height: 37px;
+    max-width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+	 outline: none;
+
+	 padding: 10px 12px;
+	 font-weight: 400;
+	 font-size: 13px;
+	 line-height: 16px;
+	 color: $mine-shaft;
+	 opacity: 0.5;
+
+    &::placeholder {
+		//  padding: 10px 12px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      color: $mine-shaft;
+      opacity: 0.5;
+    }
+
+	 &:focus {
+		border: 1px solid $dodger-blue;
+	}
+
+	&:disabled {
+		background: rgba(224, 224, 224, 0.3);
+	}
+  }
+
+  &__input-error {
+	border: 1px solid $red-orange;
+	background-color: rgba(255, 62, 29, 0.06);
+
+	&[value] {
+		padding: 10px 12px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      color: $red-orange;
+	}
+  }
+
+  &__input-focused {
+	border: 1px solid $dodger-blue;
+
+	  &[value] {
+		padding: 10px 12px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+		color: $mine-shaft;
+      opacity: 0.5;
+	}
+  }
 }
