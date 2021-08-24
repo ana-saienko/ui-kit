@@ -1,0 +1,50 @@
+.colours {
+	&__content {
+		display: flex;
+		justify-content: space-around;
+
+	}
+
+	&__title {
+		margin-bottom: 36px;
+	}
+
+	&__round {
+		margin-bottom: 20px;
+		width: 41px;
+		height: 41px;
+		border-radius: 50%;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__mine {
+		background-color: $mine-shaft;
+	}
+
+	&__gray {
+		background-color: $gray;
+	}
+
+	&__dodger {
+		background-color: $dodger-blue;
+	}
+
+	&__orange {
+		background-color: $red-orange;
+	}
+
+	&__green {
+		background-color: $green;
+	}
+
+	&__candlelight {
+		background-color: $candlelight;
+	}
+
+	&__form {
+		border: 1px solid #E0E0E0;
+	}
+}

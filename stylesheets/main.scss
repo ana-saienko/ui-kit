@@ -20,12 +20,14 @@
 @import
   'layout/header',
   'layout/hero',
+  'layout/colours',
   'layout/section',
   'layout/footer';
 
 // 5. Components
 @import
   'components/button',
+  'components/forms',
   'components/header-burger';
 
 // 6. Page-specific styles
