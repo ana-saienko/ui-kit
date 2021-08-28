@@ -63,17 +63,17 @@
     max-width: 100%;
     border: 1px solid #e0e0e0;
     border-radius: 4px;
-	 outline: none;
+    outline: none;
 
-	 padding: 10px 12px;
-	 font-weight: 400;
-	 font-size: 13px;
-	 line-height: 16px;
-	 color: $mine-shaft;
-	 opacity: 0.5;
+    padding: 10px 12px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: $mine-shaft;
+    opacity: 0.5;
 
     &::placeholder {
-		//  padding: 10px 12px;
+      //  padding: 10px 12px;
       font-weight: 400;
       font-size: 13px;
       line-height: 16px;
@@ -81,38 +81,42 @@
       opacity: 0.5;
     }
 
-	 &:focus {
-		border: 1px solid $dodger-blue;
-	}
+    &:focus {
+      border: 1px solid $dodger-blue;
+    }
 
-	&:disabled {
-		background: rgba(224, 224, 224, 0.3);
-	}
+    &:disabled {
+      background: rgba(224, 224, 224, 0.3);
+    }
   }
 
   &__input-error {
-	border: 1px solid $red-orange;
-	background-color: rgba(255, 62, 29, 0.06);
+    border: 1px solid $red-orange;
+    background-color: rgba(255, 62, 29, 0.06);
 
-	&[value] {
-		padding: 10px 12px;
+    &[value] {
+      padding: 10px 12px;
       font-weight: 400;
       font-size: 13px;
       line-height: 16px;
       color: $red-orange;
-	}
+    }
   }
 
   &__input-focused {
-	border: 1px solid $dodger-blue;
+    border: 1px solid $dodger-blue;
 
-	  &[value] {
-		padding: 10px 12px;
+    &[value] {
+      padding: 10px 12px;
       font-weight: 400;
       font-size: 13px;
       line-height: 16px;
-		color: $mine-shaft;
+      color: $mine-shaft;
       opacity: 0.5;
-	}
+    }
   }
 }
+
+// ======================================================
+// forms RADIO
+
