@@ -5,9 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="format-detection" content="telephone=no" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="stylesheets/main.css" />
 
@@ -17,9 +20,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-      
-      </header>
+      <header class="header"></header>
       <main class="page">
         <section class="colours main-sec">
           <div class="container">
@@ -38,7 +39,12 @@
               <div class="colours__item">
                 <h4 class="colours__title subtitle">Forms</h4>
                 <div class="colours__round colours__form"></div>
-                <div class="colours__round colours__form colours__form-error form-error"></div>
+                <div
+                  class="
+                    colours__round colours__form colours__form-error
+                    form-error
+                  "
+                ></div>
                 <div class="colours__round colours__form form-accent"></div>
               </div>
 
@@ -49,7 +55,6 @@
                 <div class="colours__round shadow-3"></div>
                 <div class="colours__round shadow-4"></div>
               </div>
-
             </div>
           </div>
         </section>
@@ -59,90 +64,254 @@
             <h2 class="title">Forms</h2>
             <div class="forms__content">
               <form action="#" class="forms__first">
-
                 <div class="forms__input-box">
                   <label class="forms__label" for="basic">Input Basic</label>
-                  <input class="forms__input forms__input-basic" type="text" id="basic" placeholder="Placeholder">
+                  <input
+                    class="forms__input forms__input-basic"
+                    type="text"
+                    id="basic"
+                    placeholder="Placeholder"
+                  />
                 </div>
 
                 <div class="forms__input-box">
                   <label class="forms__label" for="error">Input Error</label>
-                  <input class="forms__input forms__input-error" type="text" id="error" value="Value">
+                  <input
+                    class="forms__input forms__input-error"
+                    type="text"
+                    id="error"
+                    value="Value"
+                  />
                 </div>
 
                 <div class="forms__input-box">
-                  <label class="forms__label" for="focused">Input Focused</label>
-                  <input class="forms__input forms__input-focused" type="text" id="focused" value="Value">
+                  <label class="forms__label" for="focused"
+                    >Input Focused</label
+                  >
+                  <input
+                    class="forms__input forms__input-focused"
+                    type="text"
+                    id="focused"
+                    value="Value"
+                  />
                 </div>
 
                 <div class="forms__input-box">
-                  <label class="forms__label forms__label-disabled" for="disabled">Input Disabled</label>
-                  <input class="forms__input forms__input-disabled" type="text" id="disabled" disabled value="Value">
+                  <label
+                    class="forms__label forms__label-disabled"
+                    for="disabled"
+                    >Input Disabled</label
+                  >
+                  <input
+                    class="forms__input forms__input-disabled"
+                    type="text"
+                    id="disabled"
+                    disabled
+                    value="Value"
+                  />
                 </div>
 
                 <!-- CHECKBOX -->
 
                 <div class="checkbox checkbox__box">
-
-                  <label for="checkbox-btn" class="checkbox-label checkbox__box-label">
+                  <label class="checkbox__box-label forms__label">
+                    <input class="checkbox__input" type="checkbox" checked />
+                    <span class="checkbox__btn"></span>
                     Option
-                    <input class="checkbox-input" type="checkbox" id="checkbox-btn" checked>
-                    <span class="checkbox-btn"></span>
                   </label>
 
-                  <label for="checkbox-first" class="checkbox-label checkbox__box-item">
-                    
-                    <input class="checkbox-input" type="checkbox" id="checkbox-first" checked>
-                    <span class="checkbox-btn"></span>
+                  <label class="checkbox-label checkbox__box-item">
+                    <input class="checkbox__input" type="checkbox" checked />
+                    <span class="checkbox__btn"></span>
                   </label>
 
-                  <label for="checkbox-sec" class="checkbox-label checkbox__box-item">
-                    
-                    <input class="checkbox-input" type="checkbox" id="checkbox-sec" >
-                    <span class="checkbox-btn"></span>
+                  <label class="checkbox-label checkbox__box-item">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__btn"></span>
                   </label>
 
-                  <label for="checkbox-third" class="radio-label checkbox__box-item">
-                    
-                    <input class="checkbox-input" type="checkbox" id="checkbox-third" disabled>
-                    <span class="checkbox-btn"></span>
+                  <label class="checkbox-label checkbox__box-item">
+                    <input class="checkbox__input" type="checkbox" disabled />
+                    <span class="checkbox__btn"></span>
                   </label>
-
                 </div>
 
                 <!-- RADIO -->
 
                 <div class="radio radio__box">
-
                   <label for="radio-btn" class="radio-label radio__box-label">
                     Option
-                    <input class="radio-input" type="radio" id="radio-btn" checked>
+                    <input
+                      class="radio-input"
+                      type="radio"
+                      id="radio-btn"
+                      checked
+                    />
                     <span class="radio-btn"></span>
                   </label>
 
                   <label for="radio-first" class="radio-label radio__box-item">
-                    
-                    <input class="radio-input" type="radio" id="radio-first" checked>
+                    <input
+                      class="radio-input"
+                      type="radio"
+                      id="radio-first"
+                      checked
+                    />
                     <span class="radio-btn"></span>
                   </label>
 
                   <label for="radio-sec" class="radio-label radio__box-item">
-                    
-                    <input class="radio-input" type="radio" id="radio-sec" >
+                    <input class="radio-input" type="radio" id="radio-sec" />
                     <span class="radio-btn"></span>
                   </label>
 
                   <label for="radio-third" class="radio-label radio__box-item">
-                    
-                    <input class="radio-input" type="radio" id="radio-third" disabled>
+                    <input
+                      class="radio-input"
+                      type="radio"
+                      id="radio-third"
+                      disabled
+                    />
                     <span class="radio-btn"></span>
                   </label>
+                </div>
+              </form>
 
+              <form action="#" class="forms__sec">
+                <div class="forms__input-box">
+                  <label class="forms__label" for="basic"></label>
+                  <input
+                    class="forms__input forms__input-basic"
+                    type="text"
+                    id="basic"
+                    placeholder="Placeholder"
+                  />
                 </div>
 
+                <!-- SEARCH WITH ICON -->
 
+                <div class="forms__input-box">
+                  <label class="forms__label" for="basic"></label>
+                  <span class="forms__before">
+                    <input
+                      class="forms__input forms__input-basic forms__search"
+                      type="text"
+                      id="basic"
+                      placeholder="Placeholder"
+                    />
+                  </span>
+                </div>
 
-                
+                <div class="forms__input-box">
+                  <label class="forms__label" for="basic"></label>
+                  <span class="forms__before-reverse">
+                    <input
+                      class="
+                        forms__input forms__input-basic forms__search-reverse
+                      "
+                      type="text"
+                      id="basic"
+                      placeholder="Placeholder"
+                    />
+                  </span>
+                </div>
+
+                <div class="forms__input-box">
+                  <label class="forms__label" for="basic"></label>
+                  <span class="forms__address">
+                    <input
+                      class="
+                        forms__input forms__input-basic forms__search-reverse
+                      "
+                      type="text"
+                      id="basic"
+                      placeholder="Placeholder"
+                    />
+                  </span>
+                </div>
+
+                <div class="forms__input-box">
+                  <label
+                    class="forms__label forms__label-disabled"
+                    for="disabled"
+                  ></label>
+                  <input
+                    class="forms__input forms__input-disabled"
+                    type="text"
+                    id="disabled"
+                    disabled
+                    placeholder="Placeholder"
+                  />
+                </div>
+
+                <div class="forms__input-box">
+                  <label class="forms__label" for="error"></label>
+                  <input
+                    class="forms__input forms__input-error"
+                    type="text"
+                    id="error"
+                    value="Value"
+                  />
+                </div>
+
+                <div class="forms__input-box">
+                  <label class="forms__label" for="focused"></label>
+                  <input
+                    class="forms__input forms__input-focused"
+                    type="text"
+                    id="focused"
+                    value="Value"
+                  />
+                </div>
+
+                <!-- SWITCH -->
+
+                <div class="switch__top">
+                  <!-- Rounded switch -->
+                  <div class="switch">
+                    <input type="checkbox" id="option"/>
+                    <span class="slider round"></span>
+                  </div>
+                  <label class="switch__label" for="option">Option</label>
+                </div>
+
+                <div class="switch__box">
+                  <!-- Rounded switch -->
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+
+                  <!-- Rounded switch -->
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider slider-white round"></span>
+                  </label>
+
+                  <!-- Rounded switch -->
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+
+                <div class="switch__box-small">
+                  <!-- Rounded switch -->
+                  <label class="switch switch-small">
+                    <input type="checkbox" />
+                    <span class="slider slider-small round"></span>
+                  </label>
+                  <!-- Rounded switch -->
+                  <label class="switch switch-small">
+                    <input type="checkbox" />
+                    <span class="slider slider-small round"></span>
+                  </label>
+                  <!-- Rounded switch -->
+                  <label class="switch switch-small">
+                    <input type="checkbox" />
+                    <span class="slider slider-small round"></span>
+                  </label>
+                </div>
               </form>
             </div>
           </div>
@@ -177,7 +346,6 @@
             <h2 class="title">Components</h2>
           </div>
         </section>
-
       </main>
 
       <footer class="footer"></footer>
