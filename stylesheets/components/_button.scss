@@ -1,3 +1,113 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.buttons {
+  &__title {
+    display: block;
+    margin-bottom: 26px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: $mine-shaft;
+  }
+
+  &__content {
+    margin-bottom: 24px;
+  }
+
+  &__box {
+    display: flex;
+  }
+
+  &__big {
+    margin-right: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0 36px;
+    height: 46px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    &:disabled {
+      background: rgba(224, 224, 224, 0.3);
+      color: #878787;
+    }
+  }
+
+  &__big-download {
+    margin-right: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0 54px 0 20px;
+    height: 46px;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:disabled {
+      background-color: rgba(224, 224, 224, 0.3);
+      color: #878787;
+    }
+  }
+
+  &__big-download--svg {
+    background-image: url(../../images/download.svg);
+    background-repeat: no-repeat;
+    background-position: 102px center;
+
+  }
+
+  &__big-download--svg-dis {
+	background-image: url(../../images/download-dis.svg);
+	background-repeat: no-repeat;
+	background-position: 102px center;
+ }
+
+ &__big-download--svg-sec {
+	background-image: url(../../images/download-sec.svg);
+	background-repeat: no-repeat;
+	background-position: 102px center;
+ }
+
+ &__big-download--svg-foc {
+	background-image: url(../../images/download-sec-focus.svg);
+	background-repeat: no-repeat;
+	background-position: 102px center;
+ }
+
+  &__primary {
+    background-color: $dodger-blue;
+    color: #fff;
+  }
+
+  &__secondary {
+    border: 1px solid #e0e0e0;
+    color: $mine-shaft;
+
+    &:focus {
+      border: 1px solid $dodger-blue;
+      color: $dodger-blue;
+    }
+  }
+
+  &__secondary--focused {
+    border: 1px solid $dodger-blue;
+    color: $dodger-blue;
+  }
+}
