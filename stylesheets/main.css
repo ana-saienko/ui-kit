@@ -658,6 +658,47 @@ select::-ms-expand {
   background-position: center;
 }
 
+.forms__input-box {
+  position: relative;
+}
+
+.forms__label-place {
+  margin-bottom: 0 !important;
+}
+
+.forms__placehold {
+  position: relative;
+}
+
+.forms__placehold:before {
+  content: "www.";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 37px;
+  background-color: rgba(224, 224, 224, 0.3);
+  text-align: center;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 16px;
+  border-right: 1px solid #E0E0E0;
+}
+
+.forms__input-place {
+  padding-left: 70px;
+  position: relative;
+}
+
 .radio__box {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -123,7 +123,6 @@
   &__search {
     padding-left: 37px;
   }
-
 }
 
 .forms__before {
@@ -170,4 +169,39 @@
 }
 
 // ======================================================
-// forms RADIO
+// forms WITH PLACEHOLDER
+
+.forms {
+  &__input-box {
+    position: relative;
+  }
+
+  &__label-place {
+    margin-bottom: 0 !important;
+  }
+  &__placehold {
+    position: relative;
+    &:before {
+      content: "www.";
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 60px;
+      height: 37px;
+      background-color: rgba(224, 224, 224, 0.3);
+      text-align: center;
+      border-radius: 4px;
+      font-size: 13px;
+      line-height: 16px;
+      border-right: 1px solid #E0E0E0;
+    }
+  }
+
+  &__input-place {
+    padding-left: 70px;
+    position: relative;
+  }
+}
