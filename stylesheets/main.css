@@ -291,6 +291,7 @@ body._lock {
 
 .buttons__small-box {
   margin-top: 70px;
+  margin-bottom: 50px;
 }
 
 .buttons__big {
@@ -1230,6 +1231,60 @@ select::-ms-expand {
 .e-range:hover::-ms-thumb,
 .e-range:focus::-ms-thumb {
   background-color: #55c2ff;
+}
+
+.tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tags__box {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 14px;
+}
+
+.tags__primary {
+  cursor: pointer;
+  padding: 6px 14px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: #18A0FB;
+  border-radius: 5px;
+}
+
+.tags__secondary {
+  cursor: pointer;
+  margin-right: 12px;
+  padding: 6px 14px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #2c2c2c;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.svg__tag {
+  padding: 6px 31px 6px 10px;
+  background-repeat: no-repeat;
+  background-position: 43px center;
+}
+
+.svg__tag--black {
+  background-image: url(../../images/black.svg);
+}
+
+.svg__tag--white {
+  background-image: url(../../images/white.svg);
 }
 
 @media (min-width: 767.98px) {

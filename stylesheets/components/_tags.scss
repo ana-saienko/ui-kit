@@ -1,0 +1,49 @@
+.tags {
+  display: flex;
+  flex-direction: column;
+
+  &__box {
+    display: inline-flex;
+    margin-bottom: 14px;
+  }
+  &__primary {
+    cursor: pointer;
+    padding: 6px 14px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #ffffff;
+
+    background-color: $dodger-blue;
+    border-radius: 5px;
+  }
+
+  &__secondary {
+    cursor: pointer;
+    margin-right: 12px;
+    padding: 6px 14px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: $mine-shaft;
+
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+  }
+}
+
+.svg {
+  &__tag {
+    padding: 6px 31px 6px 10px;
+    background-repeat: no-repeat;
+    background-position: 43px center;
+  }
+
+  &__tag--black {
+    background-image: url(../../images/black.svg);
+  }
+
+  &__tag--white {
+    background-image: url(../../images/white.svg);
+  }
+}
