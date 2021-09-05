@@ -289,6 +289,10 @@ body._lock {
   display: flex;
 }
 
+.buttons__small-box {
+  margin-top: 70px;
+}
+
 .buttons__big {
   margin-right: 20px;
   display: -webkit-inline-box;
@@ -329,7 +333,6 @@ body._lock {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 5px;
-  padding: 0 54px 0 20px;
   height: 46px;
   font-weight: 500;
   font-size: 15px;
@@ -343,30 +346,6 @@ body._lock {
 .buttons__big-download:disabled {
   background-color: rgba(224, 224, 224, 0.3);
   color: #878787;
-}
-
-.buttons__big-download--svg {
-  background-image: url(../../images/download.svg);
-  background-repeat: no-repeat;
-  background-position: 102px center;
-}
-
-.buttons__big-download--svg-dis {
-  background-image: url(../../images/download-dis.svg);
-  background-repeat: no-repeat;
-  background-position: 102px center;
-}
-
-.buttons__big-download--svg-sec {
-  background-image: url(../../images/download-sec.svg);
-  background-repeat: no-repeat;
-  background-position: 102px center;
-}
-
-.buttons__big-download--svg-foc {
-  background-image: url(../../images/download-sec-focus.svg);
-  background-repeat: no-repeat;
-  background-position: 102px center;
 }
 
 .buttons__primary {
@@ -387,6 +366,90 @@ body._lock {
 .buttons__secondary--focused {
   border: 1px solid #18A0FB;
   color: #18A0FB;
+}
+
+.buttons__small {
+  margin-right: 54px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  padding: 0 25px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.buttons__small:last-child {
+  margin-right: 0;
+}
+
+.buttons__small:disabled {
+  background-color: rgba(224, 224, 224, 0.3);
+  color: #878787;
+}
+
+.svg__download--right {
+  padding: 0 52px 0 20px;
+  background-repeat: no-repeat;
+  background-position: 102px center;
+}
+
+.svg__download--left {
+  padding: 0 20px 0 52px;
+  background-repeat: no-repeat;
+  background-position: 18px center;
+}
+
+.svg__small--right {
+  padding: 0 39px 0 12px;
+  background-repeat: no-repeat;
+  background-position: 84px center;
+}
+
+.svg__small--left {
+  padding: 0 12px 0 39px;
+  background-repeat: no-repeat;
+  background-position: 12px center;
+}
+
+.svg__big {
+  background-image: url(../../images/download.svg);
+}
+
+.svg__disabled {
+  background-image: url(../../images/download-dis.svg);
+}
+
+.svg__sec {
+  background-image: url(../../images/download-sec.svg);
+}
+
+.svg__focus {
+  background-image: url(../../images/download-sec-focus.svg);
+}
+
+.svg__small-down {
+  background-image: url(../../images/small-down.svg);
+}
+
+.svg__small-dis {
+  background-image: url(../../images/small-dis.svg);
+}
+
+.svg__small-black {
+  background-image: url(../../images/small-black.svg);
+}
+
+.svg__small-focus {
+  background-image: url(../../images/small-focus.svg);
 }
 
 .switch__box {
