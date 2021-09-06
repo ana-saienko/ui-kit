@@ -54,7 +54,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    
+
     height: 46px;
 
     font-weight: 500;
@@ -116,7 +116,6 @@
 }
 
 .svg {
-
   &__download--right {
     padding: 0 52px 0 20px;
     background-repeat: no-repeat;
@@ -171,5 +170,98 @@
 
   &__small-focus {
     background-image: url(../../images/small-focus.svg);
+  }
+}
+
+// Buttons Tabs
+
+.buttons {
+  &__top-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__tabs {
+    margin-bottom: 24px;
+  }
+}
+
+.tabs {
+  &:first-child {
+    margin-top: 56px;
+  }
+  
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__list {
+    display: flex;
+  }
+  &__list-item {
+    cursor: pointer;
+    width: 56px;
+    height: 48px;
+    border: 1px solid #e0e0e0;
+
+    &:first-child {
+      border-radius: 5px 0px 0px 5px;
+    }
+
+    &:nth-child(2) {
+      border-left: none;
+    }
+
+    &:last-child {
+      border-radius: 0px 5px 5px 0px;
+      border-left: none;
+    }
+
+    &.tabs__active {
+      border: none;
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+    padding: 14px 48px;
+    border: 1px solid #e0e0e0;
+
+    &:first-child {
+      border-radius: 5px 0px 0px 5px;
+    }
+
+    &:nth-child(2) {
+      border-left: none;
+    }
+
+    &:last-child {
+      border-radius: 0px 5px 5px 0px;
+      border-left: none;
+    }
+
+    &.tabs__active {
+      border: none;
+    }
+  }
+  &__svg {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__search {
+    background-image: url(../../images/tabs-search.svg);
+  }
+
+  &__download {
+    background-image: url(../../images/tabs-download.svg);
+  }
+
+  &__box {
+    background-image: url(../../images/tabs-box.svg);
+  }
+
+  &__active {
+    background-color: $dodger-blue;
+    color: #fff;
   }
 }
