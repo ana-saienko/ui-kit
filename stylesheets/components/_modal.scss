@@ -21,7 +21,7 @@
   }
 
   &__top {
-	  margin-bottom: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,19 +35,57 @@
   }
 
   &__top-close {
-	cursor: pointer;
-	display: inline-block;
-	width: 22px;
-	height: 22px;
-	  background-image: url(../../images/modal-close.svg);
-	  background-repeat: no-repeat;
-	  background-position: center;
+    cursor: pointer;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url(../../images/modal-close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &__text {
-	font-weight: 400;
-	font-size: 13px;
-	line-height: 16px;
-	color: $mine-shaft;
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: $mine-shaft;
+  }
+
+  &__bottom {
+    text-align: right;
+  }
+
+  &__cancel {
+    margin-right: 4px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: $mine-shaft;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0 14px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    height: 36px;
+  }
+
+  &__submit {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0 14px;
+    background-color: $dodger-blue;
+    height: 36px;
   }
 }
