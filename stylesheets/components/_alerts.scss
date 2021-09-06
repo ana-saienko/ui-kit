@@ -2,6 +2,8 @@
   &__box {
     display: flex;
     justify-content: space-between;
+
+    margin-bottom: 50px;
   }
 
   &__left {
@@ -95,6 +97,16 @@
     color: #959595;
   }
 
+  &__toast--sub {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #959595;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
   &__toast-sub--colored {
     margin-top: 12px;
     font-weight: 400;
@@ -179,11 +191,20 @@
     border-bottom: 1px solid #ff7861;
   }
 
+  &__toast--divider {
+    border-bottom: 1px solid #efefef;
+  }
+
   &__toast--title {
+    cursor: pointer;
+    padding-top: 10px;
     font-weight: 700;
     font-size: 13px;
     line-height: 16px;
     text-align: center;
-	color: $mine-shaft;
+    color: $mine-shaft;
+  }
+  &__toast--right {
+    border-left: 1px solid #efefef;
   }
 }
