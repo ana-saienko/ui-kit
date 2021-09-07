@@ -745,6 +745,42 @@ input:checked + .slider-small.slider:before {
           transform: translateX(28px);
 }
 
+.crumbs__content {
+  margin-bottom: 19px;
+}
+
+.crumbs__tabs {
+  margin-top: 40px;
+}
+
+.crumbs__first {
+  cursor: pointer;
+  margin-right: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2c2c2c;
+}
+
+.crumbs__first:last-child {
+  color: #959595;
+  margin-right: 0;
+}
+
+.crumbs__divide {
+  margin-right: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 11px;
+  height: 14px;
+  display: inline-block;
+  background-image: url(../../images/crumbs-svg.svg);
+}
+
+.crumbs__active {
+  color: #18A0FB;
+}
+
 .forms__textarea {
   margin-bottom: 20px;
 }
