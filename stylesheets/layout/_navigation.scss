@@ -1,0 +1,56 @@
+.nav {
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+     flex: 1 1 45%;
+     margin-right: 50px;
+  }
+  &__right {
+    flex: 1 1 45%;
+  }
+
+  &__content {
+    display: flex;
+    margin-bottom: 36px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__content--line {
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  &__title {
+    margin-bottom: 45px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: $mine-shaft;
+  }
+
+  &__tab {
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $mine-shaft;
+  }
+
+  &__tab--current {
+    color: $dodger-blue;
+  }
+
+  &__tab--dist {
+    margin-left: 46px;
+  }
+
+  &__tab--active {
+    border-bottom: 2px solid $dodger-blue;
+  }
+}

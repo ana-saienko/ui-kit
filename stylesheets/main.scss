@@ -22,12 +22,14 @@
   'layout/hero',
   'layout/colours',
   'layout/section',
+  'layout/navigation',
   'layout/footer';
 
 // 5. Components
 @import
   'components/button',
   'components/switch',
+  'components/crumbs',
   'components/textarea',
   'components/select',
   'components/forms',
@@ -36,6 +38,7 @@
   'components/range',
   'components/tags',
   'components/alerts',
+  'components/tabs-icons',
   'components/modal',
   'components/header-burger';
 

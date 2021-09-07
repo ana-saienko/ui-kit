@@ -1,0 +1,27 @@
+.nav {
+	&__svg {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__tab-svg {
+		margin-right: 6px;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+	 }
+  
+	 &__tab-search {
+		background-image: url(../../images/nav-search.svg);
+	 }
+  
+	 &__tab-archive {
+		background-image: url(../../images/nav-box.svg);
+	 }
+  
+	 &__tab-download {
+		background-image: url(../../images/nav-download.svg);
+	 }
+}

@@ -404,12 +404,11 @@
 
         <!-- ALERTS -->
 
-        <section class="alerts main-sec">
+        <section class="alerts main-sec none">
           <div class="container">
             <h2 class="title">Alerts</h2>
             <div class="alerts__box">
               <div class="alerts__left">
-
                 <div class="alerts__toast alerts__toast--colored">
                   <div class="alerts__toast-top">
                     This is an alert
@@ -422,7 +421,9 @@
                     This is an alert
                     <span class="alerts__toast-close--colored"></span>
                   </div>
-                  <p class="alerts__toast-sub--colored">Alert details go here.</p>
+                  <p class="alerts__toast-sub--colored">
+                    Alert details go here.
+                  </p>
                 </div>
 
                 <div class="alerts__toast alerts__toast--error">
@@ -431,7 +432,11 @@
                       <span class="alerts__toast-svg">!</span>
                       This is an alert
                     </div>
-                    <p class="alerts__toast-sub--colored alerts__toast-sub-error">Alert details go here.</p>
+                    <p
+                      class="alerts__toast-sub--colored alerts__toast-sub-error"
+                    >
+                      Alert details go here.
+                    </p>
                   </div>
                   <div class="alerts__toast-right">
                     <span class="alerts__toast-bottom--title">Open</span>
@@ -439,7 +444,6 @@
                     <span class="alerts__toast-bottom">Dismiss</span>
                   </div>
                 </div>
-
               </div>
               <div class="alerts__right">
                 <div class="alerts__toast">
@@ -456,7 +460,6 @@
                   </div>
 
                   <p class="alerts__toast-sub">Alert details go here.</p>
-                  
                 </div>
 
                 <div class="alerts__toast alerts__toast--error-white">
@@ -465,15 +468,18 @@
                       <span class="alerts__toast-svg--white">!</span>
                       This is an alert
                     </div>
-                    <p class="alerts__toast-sub alerts__toast-sub-error">Alert details go here.</p>
+                    <p class="alerts__toast-sub alerts__toast-sub-error">
+                      Alert details go here.
+                    </p>
                   </div>
                   <div class="alerts__toast-right alerts__toast--right">
                     <span class="alerts__toast--title">Open</span>
-                    <span class="alerts__toast-divider alerts__toast--divider"></span>
+                    <span
+                      class="alerts__toast-divider alerts__toast--divider"
+                    ></span>
                     <span class="alerts__toast--sub">Dismiss</span>
                   </div>
                 </div>
-                
               </div>
             </div>
 
@@ -495,11 +501,10 @@
                 </div>
               </div>
             </div>
-
           </div>
         </section>
 
-        <section class="buttons main-sec">
+        <section class="buttons main-sec none">
           <div class="container">
             <h2 class="title">Buttons</h2>
             <div class="buttons__top-container">
@@ -630,20 +635,22 @@
                 <div class="buttons__tabs tabs">
                   <ul class="tabs__list">
                     <li
-                      class="tabs__list-item tabs__svg tabs__search tabs__active"
+                      class="
+                        tabs__list-item tabs__svg tabs__search tabs__active
+                      "
                     ></li>
                     <li class="tabs__list-item tabs__svg tabs__download"></li>
                     <li class="tabs__list-item tabs__svg tabs__box"></li>
                   </ul>
                 </div>
-  
+
                 <div class="buttons__tabs tabs">
                   <ul class="tabs__list">
                     <li class="tabs__item tabs__active">Tab 1</li>
                     <li class="tabs__item">Tab 2</li>
                   </ul>
                 </div>
-  
+
                 <div class="buttons__tabs tabs">
                   <ul class="tabs__list">
                     <li class="tabs__item tabs__active">S</li>
@@ -652,8 +659,6 @@
                   </ul>
                 </div>
               </div>
-
-
             </div>
 
             <div class="buttons__small-box">
@@ -785,9 +790,103 @@
           </div>
         </section>
 
-        <section class="navigation main-sec">
+        <!-- NAVIGATION -->
+
+        <section class="navigation nav main-sec">
           <div class="container">
             <h2 class="title">Navigation</h2>
+
+            <div class="nav__box">
+              <div class="nav__left">
+                <!-- TABS -->
+                <h3 class="nav__title">Tabs</h3>
+
+                <!-- FIRST TWO TABS -->
+                <div class="nav__content">
+                  <div class="nav__tab nav__tab--current nav__tab--active">
+                    Current Tab
+                  </div>
+                  <div class="nav__tab nav__tab--dist">Current Tab</div>
+                </div>
+
+                <!-- SECOND THREE TABS -->
+
+                <div class="nav__content nav__content--line">
+                  <div class="nav__tab nav__tab--current nav__tab--active">
+                    Current Tab
+                  </div>
+                  <div class="nav__tab nav__tab--dist">Second Tab</div>
+                </div>
+
+                <!-- THIRD THREE TABS -->
+
+                <div class="nav__content nav__content--line">
+                  <div class="nav__tab nav__tab--current nav__tab--active">
+                    Current Tab
+                  </div>
+                  <div class="nav__tab nav__tab--dist">Second Tab</div>
+                  <div class="nav__tab nav__tab--dist">Third Tab</div>
+                </div>
+
+                <!-- Breadcrumbs -->
+                <h3 class="nav__title crumbs">Breadcrumbs</h3>
+
+
+
+              </div>
+
+              <div class="nav__right">
+                <h3 class="nav__title">Tabs & Icons</h3>
+
+                <!-- FIRST TWO TABS -->
+                <div class="nav__content">
+                  <div
+                    class="nav__tab nav__svg nav__tab--current nav__tab--active"
+                  >
+                    <span class="nav__tab-search nav__tab-svg"></span>
+                    Current Tab
+                  </div>
+                  <div class="nav__tab nav__svg nav__tab--dist">
+                    <span class="nav__tab-archive nav__tab-svg"></span>
+                    Current Tab
+                  </div>
+                </div>
+
+                <!-- SECOND THREE TABS -->
+
+                <div class="nav__content nav__content--line">
+                  <div
+                    class="nav__tab nav__svg nav__tab--current nav__tab--active"
+                  >
+                    <span class="nav__tab-search nav__tab-svg"></span>
+                    Current Tab
+                  </div>
+                  <div class="nav__tab nav__svg nav__tab--dist">
+                    <span class="nav__tab-archive nav__tab-svg"></span>
+                    Second Tab
+                  </div>
+                </div>
+
+                <!-- THIRD THREE TABS -->
+
+                <div class="nav__content nav__content--line">
+                  <div
+                    class="nav__tab nav__svg nav__tab--current nav__tab--active"
+                  >
+                    <span class="nav__tab-search nav__tab-svg"></span>
+                    Current Tab
+                  </div>
+                  <div class="nav__tab nav__svg nav__tab--dist">
+                    <span class="nav__tab-archive nav__tab-svg"></span>
+                    Second Tab
+                  </div>
+                  <div class="nav__tab nav__svg nav__tab--dist">
+                    <span class="nav__tab-download nav__tab-svg"></span>
+                    Third Tab
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
