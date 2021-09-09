@@ -1,0 +1,94 @@
+// first table
+
+.tables {
+  &__title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: $mine-shaft;
+	 margin-bottom: 49px;
+  }
+  &__content {
+    margin-bottom: 77px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__head {
+    background: #f7f7f7;
+    box-shadow: inset 0px -1px 0px #e0e0e0;
+    border: 1px solid #e0e0e0;
+  }
+  &__main {
+    border-radius: 4px;
+    width: 804px;
+    //  table-layout: fixed;
+    border-collapse: collapse;
+  }
+
+  &__head-item {
+    padding: 17px 12px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 100%;
+    color: $mine-shaft;
+    text-align: left;
+  }
+
+  &__body {
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+    &:hover {
+      background-color: rgba(255, 212, 34, 0.1);
+      box-shadow: inset 0px -1px 0px #e0e0e0;
+    }
+  }
+
+  &__body-item {
+    padding: 17px 12px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    color: $mine-shaft;
+  }
+
+  &__body-time {
+    color: #959595;
+  }
+
+  &__body-detail {
+    text-align: right;
+    color: #e0e0e0;
+  }
+
+  &__body-first {
+    width: 400px;
+
+  }
+
+  &__body-sec {
+    width: 335px;
+  }
+}
+
+// SECOND table
+
+.tables-name {
+	&__first {
+		width: 240px;
+		display: flex;
+		align-items: center;
+	}
+}
+
+.tables {
+	&__head-first {
+		display: flex;
+		align-items: center;
+	}
+	&__body-location {
+		width: 359px;
+	}
+}

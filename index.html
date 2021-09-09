@@ -22,7 +22,7 @@
     <div class="wrapper">
       <header class="header"></header>
       <main class="page">
-        <section class="colours main-sec none">
+        <section class="colours main-sec">
           <div class="container">
             <h2 class="title">Colors</h2>
             <div class="colours__content">
@@ -59,7 +59,7 @@
           </div>
         </section>
 
-        <section class="forms main-sec none">
+        <section class="forms main-sec">
           <div class="container">
             <h2 class="title">Forms</h2>
             <div class="forms__content">
@@ -404,7 +404,7 @@
 
         <!-- ALERTS -->
 
-        <section class="alerts main-sec none">
+        <section class="alerts main-sec">
           <div class="container">
             <h2 class="title">Alerts</h2>
             <div class="alerts__box">
@@ -504,7 +504,7 @@
           </div>
         </section>
 
-        <section class="buttons main-sec none">
+        <section class="buttons main-sec">
           <div class="container">
             <h2 class="title">Buttons</h2>
             <div class="buttons__top-container">
@@ -838,7 +838,9 @@
                 </div>
 
                 <div class="crumbs__content">
-                  <span class="crumbs__first crumbs__active">First Section</span>
+                  <span class="crumbs__first crumbs__active"
+                    >First Section</span
+                  >
                   <span class="crumbs__divide"></span>
                   <span class="crumbs__first">Second Section</span>
                 </div>
@@ -848,17 +850,20 @@
                   <span class="crumbs__divide"></span>
                   <span class="crumbs__first">Second Section</span>
                   <span class="crumbs__divide"></span>
-                  <span class="crumbs__first">Third  Section</span>
+                  <span class="crumbs__first">Third Section</span>
                 </div>
 
                 <div class="crumbs__content">
-                  <span class="crumbs__first crumbs__active">First Section</span>
+                  <span class="crumbs__first crumbs__active"
+                    >First Section</span
+                  >
                   <span class="crumbs__divide"></span>
-                  <span class="crumbs__first crumbs__active">Second Section</span>
+                  <span class="crumbs__first crumbs__active"
+                    >Second Section</span
+                  >
                   <span class="crumbs__divide"></span>
-                  <span class="crumbs__first">Third  Section</span>
+                  <span class="crumbs__first">Third Section</span>
                 </div>
-
               </div>
 
               <div class="nav__right">
@@ -917,35 +922,79 @@
                 <div class="page__content">
                   <div class="page__btns">
                     <span class="page__arrows page__btns-back"></span>
-                    <span class="page__arrows page__arrows--active page__btns-forward"></span>
+                    <span
+                      class="
+                        page__arrows page__arrows--active page__btns-forward
+                      "
+                    ></span>
                   </div>
                   <div class="page__digit-btns">
                     <span class="page__digit-arrows page__btns-back"></span>
                     <span class="page__digit">1</span>
-                    <span class="page__digit-arrows page__arrows--active page__btns-forward"></span>
+                    <span
+                      class="
+                        page__digit-arrows
+                        page__arrows--active
+                        page__btns-forward
+                      "
+                    ></span>
                   </div>
                 </div>
 
                 <!-- all the pages at once -->
                 <div class="page__box page__chevron">
                   <span class="page__chevron-back page__chevron-arrows"></span>
-                  <span class="page__chevron-digits page__chevron-digits--active">1</span>
+                  <span
+                    class="page__chevron-digits page__chevron-digits--active"
+                    >1</span
+                  >
                   <span class="page__chevron-digits">2</span>
                   <span class="page__chevron-digits">3</span>
                   <span class="page__chevron-digits">4</span>
                   <span class="page__chevron-digits">5</span>
-                  <span class="page__chevron-forward page__chevron-arrows"></span>
+                  <span
+                    class="page__chevron-forward page__chevron-arrows"
+                  ></span>
                 </div>
 
                 <!-- PAGINATION extended -->
 
                 <div class="page__extend">
-                  <span class="page__extend-dist page__extend-box page__extend-text page__extend-arrows page__extend-back">Prev</span>
-                  <span class="page__extend-dist page__extend-box page__extend-choose page__extend-text page__extend-svg">1</span>
-                  <span class="page__extend-dist page__extend-quantity">of 10</span>
-                  <span class="page__extend-dist page__extend-box page__extend-text page__extend-text--active page__extend-arrows page__extend-forward">Next</span>
+                  <span
+                    class="
+                      page__extend-dist
+                      page__extend-box
+                      page__extend-text
+                      page__extend-arrows
+                      page__extend-back
+                    "
+                    >Prev</span
+                  >
+                  <span
+                    class="
+                      page__extend-dist
+                      page__extend-box
+                      page__extend-choose
+                      page__extend-text
+                      page__extend-svg
+                    "
+                    >1</span
+                  >
+                  <span class="page__extend-dist page__extend-quantity"
+                    >of 10</span
+                  >
+                  <span
+                    class="
+                      page__extend-dist
+                      page__extend-box
+                      page__extend-text
+                      page__extend-text--active
+                      page__extend-arrows
+                      page__extend-forward
+                    "
+                    >Next</span
+                  >
                 </div>
-
               </div>
             </div>
           </div>
@@ -954,6 +1003,163 @@
         <section class="tables main-sec">
           <div class="container">
             <h2 class="title">Tables</h2>
+
+            <!-- FIRST table -->
+            <h3 class="tables__title">Tables</h3>
+            <div class="tables__content">
+              <table class="tables__main">
+                <thead class="tables__head">
+                  <tr>
+                    <th class="tables__head-item">Name</th>
+                    <th class="tables__head-item">Last Updated</th>
+                    <th class="tables__head-item"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="tables__body">
+                    <td class="tables__body-item tables__body-first">
+                      Eduardo Pena
+                    </td>
+                    <td
+                      class="
+                        tables__body-item tables__body-time tables__body-sec
+                      "
+                    >
+                      3 mins ago
+                    </td>
+                    <td class="tables__body-item tables__body-detail">...</td>
+                  </tr>
+                  <tr class="tables__body">
+                    <td class="tables__body-item tables__body-first">
+                      Evan Robertson
+                    </td>
+                    <td
+                      class="
+                        tables__body-item tables__body-time tables__body-sec
+                      "
+                    >
+                      Yesterday
+                    </td>
+                    <td class="tables__body-item tables__body-detail">...</td>
+                  </tr>
+                  <tr class="tables__body">
+                    <td class="tables__body-item tables__body-first">
+                      Kathryn Lane
+                    </td>
+                    <td
+                      class="
+                        tables__body-item tables__body-time tables__body-sec
+                      "
+                    >
+                      Dec 31, 2019
+                    </td>
+                    <td class="tables__body-item tables__body-detail">...</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- SECOND table -->
+            <h3 class="tables__title">Table Name</h3>
+            <div class="tables__content">
+              <table class="tables__main">
+                <thead class="tables__head">
+                  <tr>
+                    <th class="tables__head-item tables__head-first">
+                      <label class="checkbox-label checkbox__box-item">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__btn"></span>
+                      </label>
+                      Name
+                    </th>
+                    <th class="tables__head-item">Location</th>
+                    <th class="tables__head-item">Last Updated</th>
+                    <th class="tables__head-item"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="tables__body">
+                    <td class="tables__body-item tables-name__first">
+                      <label class="checkbox-label checkbox__box-item">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__btn"></span> </label
+                      >Eduardo Pena
+                    </td>
+                    <td class="tables__body-item tables__body-location">
+                      Tucson, United States
+                    </td>
+                    <td class="tables__body-item tables__body-time">
+                      3 mins ago
+                    </td>
+                    <td class="tables__body-item tables__body-detail">...</td>
+                  </tr>
+                  <tr class="tables__body">
+                    <td class="tables__body-item tables-name__first">
+                      <label class="checkbox-label checkbox__box-item">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__btn"></span>
+                      </label>
+                      Evan Robertson
+                    </td>
+                    <td class="tables__body-item tables__body-location">
+                      Orange, United States
+                    </td>
+                    <td class="tables__body-item tables__body-time">
+                      Yesterday
+                    </td>
+                    <td class="tables__body-item tables__body-detail">...</td>
+                  </tr>
+                  <tr class="tables__body">
+                    <td class="tables__body-item tables-name__first">
+                      <label class="checkbox-label checkbox__box-item">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__btn"></span>
+                      </label>
+                      Kathryn Lane
+                    </td>
+                    <td class="tables__body-item tables__body-location">
+                      Westminster, United States
+                    </td>
+                    <td class="tables__body-item tables__body-time">
+                      Dec 31, 2019
+                    </td>
+                    <td class="tables__body-item tables__body-detail">...</td>
+                  </tr>
+                  <tr class="tables__body">
+                    <td class="tables__body-item tables-name__first">
+                      <label class="checkbox-label checkbox__box-item">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__btn"></span>
+                      </label>
+                      Bernard Flores
+                    </td>
+                    <td class="tables__body-item tables__body-location">
+                      Stamford United States
+                    </td>
+                    <td class="tables__body-item tables__body-time">
+                      Dec 17, 2019
+                    </td>
+                    <td class="tables__body-item tables__body-detail">...</td>
+                  </tr>
+                  <tr class="tables__body">
+                    <td class="tables__body-item tables-name__first">
+                      <label class="checkbox-label checkbox__box-item">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__btn"></span>
+                      </label>
+                      Theresa Alexander
+                    </td>
+                    <td class="tables__body-item tables__body-location">
+                      Santa Ana United States
+                    </td>
+                    <td class="tables__body-item tables__body-time">
+                      Nov 20, 2019
+                    </td>
+                    <td class="tables__body-item tables__body-detail">...</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </section>
 
