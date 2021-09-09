@@ -880,6 +880,28 @@ input:checked + .slider-small.slider:before {
   width: 359px;
 }
 
+.tables__box {
+  margin-bottom: 24px;
+  max-width: 804px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tables__box-title {
+  margin-bottom: 0;
+}
+
+.tables__search {
+  margin-bottom: 0 !important;
+}
+
 .forms__textarea {
   margin-bottom: 20px;
 }

@@ -91,4 +91,20 @@
 	&__body-location {
 		width: 359px;
 	}
+
+	&__box {
+		margin-bottom: 24px;
+		max-width: 804px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__box-title {
+		margin-bottom: 0;
+	}
+
+	&__search {
+		margin-bottom: 0 !important;
+	}
 }
