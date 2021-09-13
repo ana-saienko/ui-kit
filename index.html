@@ -23,7 +23,7 @@
     <div class="wrapper">
       <header class="header"></header>
       <main class="page">
-        <section class="colours main-sec">
+        <section class="colours main-sec none">
           <div class="container">
             <h2 class="title">Colors</h2>
             <div class="colours__content">
@@ -60,7 +60,7 @@
           </div>
         </section>
 
-        <section class="forms main-sec">
+        <section class="forms main-sec none">
           <div class="container">
             <h2 class="title">Forms</h2>
             <div class="forms__content">
@@ -388,7 +388,7 @@
 
         <!-- ALERTS -->
 
-        <section class="alerts main-sec">
+        <section class="alerts main-sec none">
           <div class="container">
             <h2 class="title">Alerts</h2>
             <div class="alerts__box">
@@ -488,7 +488,7 @@
           </div>
         </section>
 
-        <section class="buttons main-sec">
+        <section class="buttons main-sec none">
           <div class="container">
             <h2 class="title">Buttons</h2>
             <div class="buttons__top-container">
@@ -776,7 +776,7 @@
 
         <!-- NAVIGATION -->
 
-        <section class="navigation nav main-sec">
+        <section class="navigation nav main-sec none">
           <div class="container">
             <h2 class="title">Navigation</h2>
 
@@ -984,7 +984,7 @@
           </div>
         </section>
 
-        <section class="tables main-sec">
+        <section class="tables main-sec none">
           <div class="container">
             <h2 class="title">Tables</h2>
 
@@ -1181,7 +1181,52 @@
                     placeholder="Upload File"
                   />
                 </div>
+
+                <!-- progress upload -->
+                <div class="upload-progress">
+                  <div class="upload-progress__box">
+                    <span class="upload__label"> 69% uploaded </span>
+                    <div class="progress">
+                      <div class="progress-done" data-done="69"></div>
+                    </div>
+                    <span class="upload-progress__wait wait"
+                      >Please wait...</span
+                    >
+                    <button class="upload-progress__cancel">Cancel</button>
+                  </div>
+                </div>
+
+                <!-- PROGRESS UPLOADING FILES -->
+
+                <div class="upload-list">
+                  <div class="upload-list__top">
+                    <span class="upload-list__title">Recent Uploads</span>
+                    <button class="upload-list__upload-btn">
+                      Upload
+                      <span class="upload-list__svg"></span>
+                    </button>
+                  </div>
+                  <div class="upload-list__items">
+                    <div class="upload-list__item upload-list__progressing">
+
+                    </div>
+                    <div class="upload-list__item upload-list__done">
+                      <div class="upload-list__top">
+                        <div class="upload-list__file">
+                          <span class="upload-list__file-svg"></span>
+                          <div class="upload-list__text">
+                            <span class="upload-list__name">File Name.jpg</span>
+                            <span class="upload-list__time">23 mins ago</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="upload-list__item upload-lise__failed"></div>
+                    <div class="upload-list__item upload-list__cancel"></div>
+                  </div>
+                </div>
               </div>
+
               <div class="components__right">
                 <!-- UPLOAD ERROR -->
                 <div class="upload upload__error">
@@ -1198,6 +1243,35 @@
                     class="upload-box"
                     placeholder="Upload File"
                   />
+                </div>
+
+                <!-- PROGRESS upload -->
+                <div class="upload-progress upload-progress__circle">
+                  <div class="upload-progress__box">
+                    <svg class="progress-ring" width="120" height="120">
+                      <circle
+                        class="progress-ring__circle"
+                        stroke="#18A0FB"
+                        stroke-width="4"
+                        cx="60"
+                        cy="60"
+                        r="52"
+                        fill="transparent"
+                      />
+                    </svg>
+                    <span class="upload__circle"> 69%</span>
+                    <span class="upload-progress__action">Uploading ...</span>
+                    <button class="upload-progress__cancel">Cancel</button>
+                  </div>
+                </div>
+
+                <!-- upload complete -->
+                <div class="upload upload__complete">
+                  <div class="upload-progress__box">
+                    <span class="upload__svg-done"></span>
+                    <span class="upload__text">Upload Complete!</span>
+                    <button class="upload-progress__cancel">Upload New</button>
+                  </div>
                 </div>
               </div>
             </div>

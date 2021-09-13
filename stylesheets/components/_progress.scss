@@ -1,0 +1,209 @@
+.progress {
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  position: relative;
+  margin: 16px 0 19px;
+  height: 6px;
+  width: 183px;
+}
+
+.progress-done {
+  background-color: $dodger-blue;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+// ------------------------------
+
+.upload-progress {
+  max-width: 273px;
+  border: 1px dashed #e0e0e0;
+  border-radius: 5px;
+  padding: 89px 46px 38px 46px;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__wait {
+    display: block;
+    margin-bottom: 34px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ababab;
+  }
+
+  &__cancel {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: $mine-shaft;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0 24px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    height: 36px;
+  }
+}
+
+// -------------------------------------------------
+
+.upload {
+  // min-height: 281px;
+  &__circle {
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 40px;
+    text-align: center;
+    color: $mine-shaft;
+  }
+}
+
+.upload-progress {
+  margin-bottom: 34px;
+  &__box {
+    position: relative;
+  }
+
+  &__action {
+    margin: 30px 0 24px;
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ababab;
+  }
+
+  &__circle {
+    // min-height: 281px;
+    padding-top: 34px;
+    margin-bottom: 40px;
+  }
+}
+
+.progress-ring__circle {
+  // stroke-dasharray: 50 10;
+  transform-origin: center;
+  transform: rotate(-90deg);
+  transition: stroke-dashoffset 0.3s;
+}
+
+// -----------------------------------------
+// COMPLETE
+
+.upload {
+  &__complete {
+    padding: 42px 20px 38px !important;
+  }
+  &__svg-done {
+    display: block;
+    width: 97px;
+    height: 97px;
+    background-image: url(../../images/upload-done.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 26px;
+  }
+  &__text {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: $mine-shaft;
+  }
+}
+
+// ----------------------------------------------------
+// UPLOAD LIST
+
+.upload-list {
+  padding: 12px 20px 15px;
+  background-color: #FFFFFF;
+box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+border-radius: 5px;
+  &__top {
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $mine-shaft;
+  }
+
+  &__upload-btn {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: $mine-shaft;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0 12px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    height: 36px;
+  }
+
+  &__svg {
+    display: block;
+    margin-left: 9px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../images/upload-btn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+
+  }
+
+  &__file {
+    display: flex;
+  }
+
+  &__time {
+    display: block;
+  }
+
+  &__name {
+    font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+color: $mine-shaft;
+  }
+}
