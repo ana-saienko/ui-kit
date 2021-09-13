@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="stylesheets/nouislider.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="stylesheets/main.css" />
 
@@ -372,30 +373,13 @@
 
                 <!-- INPUT RANGE -->
 
-                <div class="forms__range-box">
-                  <!-- INPUT RANGE VOLUME -->
+                <div class="input-range__box">
+                  <div id="slider"></div>
+                  <div class="slider-two" id="slider-two"></div>
 
-                  <div class="forms__range">
-                    <div class="range-slider">
-                      <input class="e-range" type="range" min="0" max="100" />
-                    </div>
-                  </div>
-
-                  <!-- INPUT RANGE BIG -->
-
-                  <div class="forms__range"></div>
-
-                  <!-- INPUT RANGE DIGITS VOLUME -->
-
-                  <div class="forms__range"></div>
-
-                  <!-- INPUT RANGE DIGITS -->
-
-                  <div class="forms__range"></div>
-
-                  <!-- INPUT RANGE DIGITS BIG -->
-
-                  <div class="forms__range"></div>
+                  <div class="slider-ssmall" id="slider-small"></div>
+                  <div class="slider-ssmall-two" id="slider-small-two"></div>
+                  <div class="slider-three" id="slider-three"></div>
                 </div>
               </form>
             </div>
@@ -1180,6 +1164,43 @@
         <section class="components main-sec">
           <div class="container">
             <h2 class="title">Components</h2>
+            <div class="components__content">
+              <div class="components__left">
+                <!-- UPLOAD FILE -->
+
+                <div class="upload">
+                  <span class="upload__svg"></span>
+                  <span class="upload__label"> Add Files </span>
+                  <span class="upload__sub">Drag & Drop to upload or</span>
+
+                  <input
+                    type="file"
+                    name="upload"
+                    id="upload"
+                    class="upload-box"
+                    placeholder="Upload File"
+                  />
+                </div>
+              </div>
+              <div class="components__right">
+                <!-- UPLOAD ERROR -->
+                <div class="upload upload__error">
+                  <span class="upload__svg upload__svg-error"></span>
+                  <span class="upload__label upload__label-error">
+                    Something went wrong.
+                  </span>
+                  <span class="upload__sub">Please try again</span>
+
+                  <input
+                    type="file"
+                    name="upload"
+                    id="upload"
+                    class="upload-box"
+                    placeholder="Upload File"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
@@ -1187,6 +1208,7 @@
       <footer class="footer"></footer>
     </div>
 
+    <script src="js/nouislider.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

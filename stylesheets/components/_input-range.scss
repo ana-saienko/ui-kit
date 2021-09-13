@@ -1,0 +1,100 @@
+.noUi-horizontal .noUi-handle {
+  cursor: pointer;
+  top: -12px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.04);
+}
+
+.noUi-handle:before,
+.noUi-handle:after {
+  display: none;
+}
+
+.noUi-connect {
+  background-color: #18a0fb;
+  border-radius: 10px;
+}
+
+.noUi-horizontal {
+  height: 2px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+.noUi-target {
+  margin-bottom: 53px;
+  border: none;
+  max-width: 260px;
+}
+
+// -----------------------------------------------------------------------
+
+.input-range__box {
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+}
+
+// -------------------------------------------------------------------------
+.noUi-tooltip {
+	padding: 0;
+  position: relative;
+  border: none;
+  border-radius: 0px;
+  background: transparent;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+	color: #fafbfd;
+
+  &:before {
+    position: absolute;
+    top: -8px;
+    left: -4px;
+    z-index: -1;
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 36px;
+    background-image: url(../../images/tooltip.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.noUi-horizontal .noUi-tooltip {
+	top: -58px;
+}
+
+.slider-two,
+.slider-ssmall-two,
+.slider-ssmall {
+	margin-bottom: 73px;
+}
+
+// --------------------------------------------------------------------------
+// slider small
+
+.slider-ssmall ~ .noUi-horizontal .noUi-handle {
+	background-color: #18A0FB;
+	width: 10px;
+	height: 10px;
+	top: -5px;
+	right: 0px;
+}
+
+.slider-ssmall ~ .noUi-horizontal .noUi-tooltip {
+	top: -50px;
+	left: 0%;
+
+	&:before {
+		left: -7px;
+	}
+}
+
