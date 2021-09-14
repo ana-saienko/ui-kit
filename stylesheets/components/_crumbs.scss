@@ -18,6 +18,11 @@
       color: #959595;
       margin-right: 0;
     }
+
+    @media (max-width:$md4+px){
+       font-size: 12px;
+       margin-right: 8px; 
+    }
   }
 
   &__divide {
@@ -28,6 +33,10 @@
     height: 14px;
     display: inline-block;
     background-image: url(../../images/crumbs-svg.svg);
+
+    @media (max-width:$md4+px){
+       margin-right: 8px; 
+    }
   }
 
   &__active {

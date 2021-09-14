@@ -18,6 +18,10 @@
     border-radius: 4px;
     flex-basis: 313px;
     min-height: 134px;
+
+    @media (max-width:$md4+px){
+       flex-basis: 280px; 
+    }
   }
 
   &__top {

@@ -105,3 +105,51 @@ function setProgress(percent) {
 }
 
 setProgress(69);
+
+// -------------------------------------------
+
+// Get the container element
+var btnContainer = document.getElementById("switch1");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("tabs-switch--1");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+// Get the container element
+var btnContainer = document.getElementById("switch2");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("tabs-switch--2");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active--2");
+    current[0].className = current[0].className.replace(" active--2", "");
+    this.className += " active--2";
+  });
+}
+
+// SWITCH3
+// Get the container element
+var btnContainer = document.getElementById("switch3");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("tabs-switch--3");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active--3");
+    current[0].className = current[0].className.replace(" active--3", "");
+    this.className += " active--3";
+  });
+}

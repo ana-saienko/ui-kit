@@ -6,7 +6,7 @@
     font-size: 25px;
     line-height: 30px;
     color: $mine-shaft;
-	 margin-bottom: 49px;
+    margin-bottom: 49px;
   }
   &__content {
     margin-bottom: 77px;
@@ -24,6 +24,10 @@
     width: 804px;
     //  table-layout: fixed;
     border-collapse: collapse;
+
+    @media (max-width: $md2+px) {
+      max-width: 100%;
+    }
   }
 
   &__head-item {
@@ -33,6 +37,11 @@
     line-height: 100%;
     color: $mine-shaft;
     text-align: left;
+
+    @media (max-width:$md3+px){
+      padding: 15px 10px;
+      font-size: 11px; 
+   }
   }
 
   &__body {
@@ -52,6 +61,11 @@
     font-size: 13px;
     line-height: 100%;
     color: $mine-shaft;
+
+    @media (max-width:$md3+px){
+       padding: 15px 10px;
+       font-size: 11px; 
+    }
   }
 
   &__body-time {
@@ -66,45 +80,64 @@
   &__body-first {
     width: 400px;
 
+    @media (max-width: $md2+px) {
+      max-width: 280px;
+    }
   }
 
   &__body-sec {
     width: 335px;
+
+    @media (max-width: $md2+px) {
+      max-width: 180px;
+    }
   }
 }
 
 // SECOND table
 
 .tables-name {
-	&__first {
-		width: 240px;
-		display: flex;
-		align-items: center;
-	}
+  &__first {
+    width: 240px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width:$md3+px){
+       max-width: 150px; 
+    }
+
+    @media (max-width:$md4+px){
+       max-width: 115px; 
+    }
+  }
 }
 
 .tables {
-	&__head-first {
-		display: flex;
-		align-items: center;
-	}
-	&__body-location {
-		width: 359px;
-	}
+  &__head-first {
+    display: flex;
+    align-items: center;
+  }
+  &__body-location {
+    width: 359px;
 
-	&__box {
-		margin-bottom: 24px;
-		max-width: 804px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+    @media (max-width:$md3+px){
+       max-width: 150px; 
+    }
+  }
 
-	&__box-title {
-		margin-bottom: 0;
-	}
+  &__box {
+    margin-bottom: 24px;
+    max-width: 804px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-	&__search {
-		margin-bottom: 0 !important;
-	}
+  &__box-title {
+    margin-bottom: 0;
+  }
+
+  &__search {
+    margin-bottom: 0 !important;
+  }
 }

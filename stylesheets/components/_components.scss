@@ -2,10 +2,16 @@
   &__content {
     display: flex;
 	 justify-content: center;
+   flex-wrap: wrap;
   }
 
   &__left {
 	  margin-right: 23px;
+
+    @media (max-width:$md3+px){
+       margin-right: 0;
+       margin-bottom: 25px; 
+    }
   }
 }
 

@@ -139,9 +139,9 @@
 
 .upload-list {
   padding: 12px 20px 15px;
-  background-color: #FFFFFF;
-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
-border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
   &__top {
     margin-bottom: 13px;
     display: flex;
@@ -189,21 +189,88 @@ border-radius: 5px;
   }
 
   &__item {
-
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__file {
     display: flex;
+    align-items: center;
+  }
+
+  &__file-svg {
+    margin-right: 10px;
+    width: 24px;
+    height: 32px;
+    background-image: url(../../images/file.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  &__cross {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 94px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../images/cross.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__seen {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 94px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../images/seen.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__failed {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 94px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../images/failed.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__cancelled {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 94px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../images/cancelled.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   &__time {
     display: block;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: #808080;
   }
 
   &__name {
     font-weight: 500;
-font-size: 13px;
-line-height: 16px;
-color: $mine-shaft;
+    font-size: 13px;
+    line-height: 16px;
+    color: $mine-shaft;
   }
 }

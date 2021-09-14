@@ -2,6 +2,10 @@
   &__box {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width:$md2+px){
+      flex-wrap: wrap;
+    }
   }
 
   &__left {
@@ -40,6 +44,11 @@
     font-size: 14px;
     line-height: 17px;
     color: $mine-shaft;
+
+    @media (max-width:$md4+px){
+       padding: 5px;
+       font-size: 12px; 
+    }
   }
 
   &__tab--current {
@@ -48,6 +57,10 @@
 
   &__tab--dist {
     margin-left: 46px;
+
+    @media (max-width:$md4+px){
+       margin-left: 10px; 
+    }
   }
 
   &__tab--active {

@@ -617,29 +617,29 @@
 
               <div class="tabs__container">
                 <div class="buttons__tabs tabs">
-                  <ul class="tabs__list">
+                  <ul class="tabs__list" id="switch1">
                     <li
                       class="
-                        tabs__list-item tabs__svg tabs__search tabs__active
+                        tabs__list-item tabs__svg tabs__search active tabs-switch--1
                       "
                     ></li>
-                    <li class="tabs__list-item tabs__svg tabs__download"></li>
-                    <li class="tabs__list-item tabs__svg tabs__box"></li>
+                    <li class="tabs__list-item tabs__svg tabs__download tabs-switch--1"></li>
+                    <li class="tabs__list-item tabs__svg tabs__box tabs-switch--1"></li>
                   </ul>
                 </div>
 
                 <div class="buttons__tabs tabs">
-                  <ul class="tabs__list">
-                    <li class="tabs__item tabs__active">Tab 1</li>
-                    <li class="tabs__item">Tab 2</li>
+                  <ul class="tabs__list" id="switch2">
+                    <li class="tabs__item tabs-switch--2 active--2">Tab 1</li>
+                    <li class="tabs__item tabs-switch--2">Tab 2</li>
                   </ul>
                 </div>
 
                 <div class="buttons__tabs tabs">
-                  <ul class="tabs__list">
-                    <li class="tabs__item tabs__active">S</li>
-                    <li class="tabs__item">M</li>
-                    <li class="tabs__item">L</li>
+                  <ul class="tabs__list" id="switch3">
+                    <li class="tabs__item tabs-switch--3 active--3">S</li>
+                    <li class="tabs__item tabs-switch--3">M</li>
+                    <li class="tabs__item tabs-switch--3">L</li>
                   </ul>
                 </div>
               </div>
@@ -1208,21 +1208,53 @@
                   </div>
                   <div class="upload-list__items">
                     <div class="upload-list__item upload-list__progressing">
-
+                      <div class="upload-list__file">
+                        <span class="upload-list__file-svg"></span>
+                        <div class="upload-list__text">
+                          <span class="upload-list__name">File Name.jpg</span>
+                          <span class="upload-list__time">23 mins ago</span>
+                        </div>
+                        <span class="upload-list__cross"></span>
+                      </div>
                     </div>
+
                     <div class="upload-list__item upload-list__done">
-                      <div class="upload-list__top">
+                      
                         <div class="upload-list__file">
                           <span class="upload-list__file-svg"></span>
                           <div class="upload-list__text">
                             <span class="upload-list__name">File Name.jpg</span>
                             <span class="upload-list__time">23 mins ago</span>
                           </div>
+                          <span class="upload-list__seen"></span>
                         </div>
-                      </div>
+                      
                     </div>
-                    <div class="upload-list__item upload-lise__failed"></div>
-                    <div class="upload-list__item upload-list__cancel"></div>
+
+                    <div class="upload-list__item upload-lise__failed">
+
+                      <div class="upload-list__file">
+                        <span class="upload-list__file-svg"></span>
+                        <div class="upload-list__text">
+                          <span class="upload-list__name">File Name.jpg</span>
+                          <span class="upload-list__time">23 mins ago</span>
+                        </div>
+                        <span class="upload-list__failed"></span>
+                      </div>
+
+                    </div>
+                    <div class="upload-list__item upload-list__cancel">
+
+                      <div class="upload-list__file">
+                        <span class="upload-list__file-svg"></span>
+                        <div class="upload-list__text">
+                          <span class="upload-list__name">File Name.jpg</span>
+                          <span class="upload-list__time">23 mins ago</span>
+                        </div>
+                        <span class="upload-list__cancelled"></span>
+                      </div>
+
+                    </div>
                   </div>
                 </div>
               </div>

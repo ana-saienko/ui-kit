@@ -14,10 +14,22 @@
 
   &__content {
     margin-bottom: 24px;
+
+    @media (max-width:$md3+px){
+       display: flex;
+       flex-direction: column; 
+       align-items: flex-start;
+    }
   }
 
   &__box {
     display: flex;
+
+    @media (max-width:$md3+px){
+       flex-direction: column; 
+
+
+    }
   }
 
   &__small-box {
@@ -46,6 +58,15 @@
       background: rgba(224, 224, 224, 0.3);
       color: #878787;
     }
+
+    @media (max-width:$md3+px){
+       margin-right: 0;
+       margin-bottom: 20px;
+       
+       &:last-child {
+         margin-bottom: 0;
+       }
+    }
   }
 
   &__big-download {
@@ -69,6 +90,15 @@
       background-color: rgba(224, 224, 224, 0.3);
       color: #878787;
     }
+
+    @media (max-width:$md3+px){
+      margin-right: 0;
+      margin-bottom: 20px;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+   }
   }
 
   &__primary {
@@ -111,6 +141,14 @@
     &:disabled {
       background-color: rgba(224, 224, 224, 0.3);
       color: #878787;
+    }
+
+    @media (max-width:$md3+px){
+       margin-bottom: 25px;
+       
+       &:last-child {
+         margin-bottom: 0;
+       }
     }
   }
 }
@@ -179,6 +217,10 @@
   &__top-container {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width:$md2+px){
+      flex-wrap: wrap;
+    }
   }
   &__tabs {
     margin-bottom: 24px;
@@ -193,6 +235,10 @@
   &__container {
     display: flex;
     flex-direction: column;
+
+    @media (max-width:$md3+px){
+       flex-basis: 100%;
+    }
   }
   &__list {
     display: flex;
@@ -242,6 +288,10 @@
     &.tabs__active {
       border: none;
     }
+
+    @media (max-width:$md3+px){
+       padding: 14px 42px; 
+    }
   }
   &__svg {
     background-repeat: no-repeat;
@@ -264,4 +314,10 @@
     background-color: $dodger-blue;
     color: #fff;
   }
+}
+.active,
+.active--2,
+.active--3 {
+  background-color: $dodger-blue;
+  color: #fff;
 }

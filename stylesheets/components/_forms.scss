@@ -32,18 +32,41 @@
   &__content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width:$md3+px){
+       align-items: center;
+       justify-content: center; 
+    }
   }
 
   &__first {
     flex: 1 1 260px;
+    padding-right: 30px;
+
+    @media (max-width:$md3+px){
+      flex-basis: 100%;
+       margin-bottom: 25px; 
+    }
   }
 
   &__sec {
     flex: 1 1 260px;
+    padding-right: 30px;
+
+    @media (max-width:$md3+px){
+      flex-basis: 100%;
+       margin-bottom: 25px; 
+    }
   }
 
   &__third {
     flex: 1 1 260px;
+    padding-right: 30px;
+
+    @media (max-width:$md3+px){
+      flex-basis: 100%;
+    }
   }
 
   &__input-box {
