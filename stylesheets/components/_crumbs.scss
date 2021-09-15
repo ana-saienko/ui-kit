@@ -7,7 +7,7 @@
     margin-top: 40px;
   }
   &__first {
-	  cursor: pointer;
+    cursor: pointer;
     margin-right: 12px;
     font-weight: 500;
     font-size: 14px;
@@ -19,9 +19,9 @@
       margin-right: 0;
     }
 
-    @media (max-width:$md4+px){
-       font-size: 12px;
-       margin-right: 8px; 
+    @media (max-width: $md4+px) {
+      font-size: 12px;
+      margin-right: 8px;
     }
   }
 
@@ -32,10 +32,10 @@
     width: 11px;
     height: 14px;
     display: inline-block;
-    background-image: url(../../images/crumbs-svg.svg);
+    background-image: url(../images/crumbs-svg.svg);
 
-    @media (max-width:$md4+px){
-       margin-right: 8px; 
+    @media (max-width: $md4+px) {
+      margin-right: 8px;
     }
   }
 

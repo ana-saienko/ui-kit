@@ -41,7 +41,7 @@
 
 // -------------------------------------------------------------------------
 .noUi-tooltip {
-	padding: 0;
+  padding: 0;
   position: relative;
   border: none;
   border-radius: 0px;
@@ -51,7 +51,7 @@
   font-size: 13px;
   line-height: 16px;
   text-align: center;
-	color: #fafbfd;
+  color: #fafbfd;
 
   &:before {
     position: absolute;
@@ -62,39 +62,38 @@
     content: "";
     width: 30px;
     height: 36px;
-    background-image: url(../../images/tooltip.svg);
+    background-image: url(../images/tooltip.svg);
     background-repeat: no-repeat;
     background-position: center center;
   }
 }
 
 .noUi-horizontal .noUi-tooltip {
-	top: -58px;
+  top: -58px;
 }
 
 .slider-two,
 .slider-ssmall-two,
 .slider-ssmall {
-	margin-bottom: 73px;
+  margin-bottom: 73px;
 }
 
 // --------------------------------------------------------------------------
 // slider small
 
 .slider-ssmall ~ .noUi-horizontal .noUi-handle {
-	background-color: #18A0FB;
-	width: 10px;
-	height: 10px;
-	top: -5px;
-	right: 0px;
+  background-color: #18a0fb;
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  right: 0px;
 }
 
 .slider-ssmall ~ .noUi-horizontal .noUi-tooltip {
-	top: -50px;
-	left: 0%;
+  top: -50px;
+  left: 0%;
 
-	&:before {
-		left: -7px;
-	}
+  &:before {
+    left: -7px;
+  }
 }
-

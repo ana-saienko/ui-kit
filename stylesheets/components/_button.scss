@@ -15,20 +15,18 @@
   &__content {
     margin-bottom: 24px;
 
-    @media (max-width:$md3+px){
-       display: flex;
-       flex-direction: column; 
-       align-items: flex-start;
+    @media (max-width: $md3+px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
 
   &__box {
     display: flex;
 
-    @media (max-width:$md3+px){
-       flex-direction: column; 
-
-
+    @media (max-width: $md3+px) {
+      flex-direction: column;
     }
   }
 
@@ -59,13 +57,13 @@
       color: #878787;
     }
 
-    @media (max-width:$md3+px){
-       margin-right: 0;
-       margin-bottom: 20px;
-       
-       &:last-child {
-         margin-bottom: 0;
-       }
+    @media (max-width: $md3+px) {
+      margin-right: 0;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -91,14 +89,14 @@
       color: #878787;
     }
 
-    @media (max-width:$md3+px){
+    @media (max-width: $md3+px) {
       margin-right: 0;
       margin-bottom: 20px;
-      
+
       &:last-child {
         margin-bottom: 0;
       }
-   }
+    }
   }
 
   &__primary {
@@ -143,12 +141,12 @@
       color: #878787;
     }
 
-    @media (max-width:$md3+px){
-       margin-bottom: 25px;
-       
-       &:last-child {
-         margin-bottom: 0;
-       }
+    @media (max-width: $md3+px) {
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -179,35 +177,35 @@
   }
 
   &__big {
-    background-image: url(../../images/download.svg);
+    background-image: url(../images/download.svg);
   }
 
   &__disabled {
-    background-image: url(../../images/download-dis.svg);
+    background-image: url(../images/download-dis.svg);
   }
 
   &__sec {
-    background-image: url(../../images/download-sec.svg);
+    background-image: url(../images/download-sec.svg);
   }
 
   &__focus {
-    background-image: url(../../images/download-sec-focus.svg);
+    background-image: url(../images/download-sec-focus.svg);
   }
 
   &__small-down {
-    background-image: url(../../images/small-down.svg);
+    background-image: url(../images/small-down.svg);
   }
 
   &__small-dis {
-    background-image: url(../../images/small-dis.svg);
+    background-image: url(../images/small-dis.svg);
   }
 
   &__small-black {
-    background-image: url(../../images/small-black.svg);
+    background-image: url(../images/small-black.svg);
   }
 
   &__small-focus {
-    background-image: url(../../images/small-focus.svg);
+    background-image: url(../images/small-focus.svg);
   }
 }
 
@@ -218,7 +216,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media (max-width:$md2+px){
+    @media (max-width: $md2+px) {
       flex-wrap: wrap;
     }
   }
@@ -231,13 +229,13 @@
   &:first-child {
     margin-top: 56px;
   }
-  
+
   &__container {
     display: flex;
     flex-direction: column;
 
-    @media (max-width:$md3+px){
-       flex-basis: 100%;
+    @media (max-width: $md3+px) {
+      flex-basis: 100%;
     }
   }
   &__list {
@@ -289,8 +287,8 @@
       border: none;
     }
 
-    @media (max-width:$md3+px){
-       padding: 14px 42px; 
+    @media (max-width: $md3+px) {
+      padding: 14px 42px;
     }
   }
   &__svg {
@@ -299,15 +297,15 @@
   }
 
   &__search {
-    background-image: url(../../images/tabs-search.svg);
+    background-image: url(../images/tabs-search.svg);
   }
 
   &__download {
-    background-image: url(../../images/tabs-download.svg);
+    background-image: url(../images/tabs-download.svg);
   }
 
   &__box {
-    background-image: url(../../images/tabs-box.svg);
+    background-image: url(../images/tabs-box.svg);
   }
 
   &__active {

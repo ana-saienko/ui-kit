@@ -1,33 +1,32 @@
 .checkbox {
-	margin-bottom: 23px;
+  margin-bottom: 23px;
   &__box {
     display: flex;
   }
   &__input {
     display: none;
 
-	 &:disabled {
-		~.checkbox__btn {
-		  background: #E0E0E0;
-		}
-		
-	}
+    &:disabled {
+      ~ .checkbox__btn {
+        background: #e0e0e0;
+      }
+    }
   }
   &-label {
-	  margin-right: 16px;
-	  &:last-child {
-		  margin-right: 0;
-	  }
+    margin-right: 16px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__box-label {
     display: inline-flex;
     align-items: center;
-	 margin-right: 16px;
-	 cursor: pointer;
-	 &:first-child {
-		 margin-right: 48px;
-	 }
+    margin-right: 16px;
+    cursor: pointer;
+    &:first-child {
+      margin-right: 48px;
+    }
   }
   &__btn {
     margin-right: 8px;
@@ -38,7 +37,7 @@
     background: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 4px;
-	 cursor: pointer;
+    cursor: pointer;
 
     &::before {
       content: "";
@@ -47,7 +46,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       display: block;
-      background-image: url("../../images/checkbox.svg");
+      background-image: url("../images/checkbox.svg");
       background-repeat: no-repeat;
       background-position: center center;
       overflow: hidden;
@@ -56,8 +55,6 @@
       opacity: 0;
       translate: 0.3s;
     }
-
-
   }
 }
 

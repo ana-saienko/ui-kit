@@ -30,14 +30,14 @@
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../../images/page-back.svg);
+    background-image: url(../images/page-back.svg);
   }
 
   &__btns-forward {
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../../images/page-forward.svg);
+    background-image: url(../images/page-forward.svg);
   }
 
   &__digit {
@@ -62,7 +62,7 @@
   &__chevron {
     display: flex;
     align-items: center;
-	 margin-bottom: 40px;
+    margin-bottom: 40px;
   }
   &__chevron-arrows {
     cursor: pointer;
@@ -79,11 +79,11 @@
     }
   }
   &__chevron-back {
-    background-image: url(../../images/page-chevron-back.svg);
+    background-image: url(../images/page-chevron-back.svg);
   }
 
   &__chevron-forward {
-    background-image: url(../../images/page-chevron-forward.svg);
+    background-image: url(../images/page-chevron-forward.svg);
   }
 
   &__chevron-digits {
@@ -109,10 +109,10 @@
   }
 
   &__extend-dist {
-	  margin-right: 16px;
-	  &:last-child {
-		  margin-right: 0;
-	  }
+    margin-right: 16px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__extend-box {
@@ -130,13 +130,13 @@
 
   &__extend-back {
     padding: 11px 14px 11px 46px;
-    background-image: url(../../images/page-chevron-back.svg);
+    background-image: url(../images/page-chevron-back.svg);
     background-position: 23px center;
   }
 
   &__extend-forward {
     padding: 11px 46px 11px 14px;
-    background-image: url(../../images/page-chevron-forward.svg);
+    background-image: url(../images/page-chevron-forward.svg);
     background-position: 58px center;
   }
 
@@ -159,7 +159,7 @@
     cursor: pointer;
     display: inline-block;
     background-repeat: no-repeat;
-    background-image: url(../../images/triangle.svg);
+    background-image: url(../images/triangle.svg);
     background-position: 35px center;
   }
   &__extend-quantity {

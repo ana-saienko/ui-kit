@@ -117,7 +117,7 @@
     display: block;
     width: 97px;
     height: 97px;
-    background-image: url(../../images/upload-done.svg);
+    background-image: url(../images/upload-done.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -177,7 +177,7 @@
     margin-left: 9px;
     width: 20px;
     height: 20px;
-    background-image: url(../../images/upload-btn.svg);
+    background-image: url(../images/upload-btn.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -204,11 +204,10 @@
     margin-right: 10px;
     width: 24px;
     height: 32px;
-    background-image: url(../../images/file.svg);
+    background-image: url(../images/file.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
   }
 
   &__cross {
@@ -217,7 +216,7 @@
     margin-left: 94px;
     width: 20px;
     height: 20px;
-    background-image: url(../../images/cross.svg);
+    background-image: url(../images/cross.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -229,7 +228,7 @@
     margin-left: 94px;
     width: 20px;
     height: 20px;
-    background-image: url(../../images/seen.svg);
+    background-image: url(../images/seen.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -241,7 +240,7 @@
     margin-left: 94px;
     width: 20px;
     height: 20px;
-    background-image: url(../../images/failed.svg);
+    background-image: url(../images/failed.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -253,7 +252,7 @@
     margin-left: 94px;
     width: 20px;
     height: 20px;
-    background-image: url(../../images/cancelled.svg);
+    background-image: url(../images/cancelled.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
