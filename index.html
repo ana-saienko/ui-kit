@@ -60,7 +60,7 @@
           </div>
         </section>
 
-        <section class="forms main-sec ">
+        <section class="forms main-sec">
           <div class="container">
             <h2 class="title">Forms</h2>
             <div class="forms__content">
@@ -367,8 +367,10 @@
                   <h5 class="forms__textarea-title">Textarea</h5>
                   <textarea
                     class="forms__textarea-field forms__textarea-field--error"
-                    placeholder="Value"
-                  ></textarea>
+                    value="Value"
+                  >
+Value</textarea
+                  >
                 </div>
 
                 <!-- INPUT RANGE -->
@@ -491,284 +493,172 @@
         <section class="buttons main-sec">
           <div class="container">
             <h2 class="title">Buttons</h2>
-            <div class="buttons__top-container">
-              <div class="buttons__box-big">
-                <div class="buttons__content">
-                  <h5 class="buttons__title">Buttons Big</h5>
-                  <div class="buttons__box">
-                    <button type="submit" class="buttons__big buttons__primary">
-                      Download
-                    </button>
-                    <button
-                      type="submit"
-                      class="buttons__big buttons__disabled"
-                      disabled
-                    >
-                      Download
-                    </button>
-                    <button
-                      type="submit"
-                      class="buttons__big buttons__secondary"
-                    >
-                      Download
-                    </button>
-                    <button
-                      type="submit"
-                      class="buttons__big buttons__secondary--focused"
-                      focused
-                    >
-                      Download
-                    </button>
+
+            <div class="layout-2-column">
+              <div class="buttons layout-2-column__buttons">
+                <h5 class="buttons__title">Buttons Big</h5>
+                <div class="buttons__row">
+                  <button type="submit" class="btn-big btn-big--primary">
+                    Download
+                  </button>
+                  <button
+                    type="submit"
+                    class="btn-big btn-big--primary"
+                    disabled
+                  >
+                    Download
+                  </button>
+                  <button type="submit" class="btn-big btn-big--secondary">
+                    Download
+                  </button>
+                  <button type="submit" class="btn-big btn-big--focused">
+                    Download
+                  </button>
+                </div>
+
+                <div class="buttons__row">
+                  <button type="submit" class="btn-big btn-big--primary">
+                    Download
+                  </button>
+                  <button
+                    type="submit"
+                    class="btn-big btn-big--primary"
+                    disabled
+                  >
+                    Download
+                  </button>
+                  <button type="submit" class="btn-big btn-big--secondary">
+                    Download
+                  </button>
+                  <button type="submit" class="btn-big btn-big--focused">
+                    Download
+                  </button>
+                </div>
+
+                <div class="buttons__row">
+                  <button type="submit" class="btn-big btn-big--primary">
+                    Download
+                  </button>
+                  <button
+                    type="submit"
+                    class="btn-big btn-big--primary"
+                    disabled
+                  >
+                    Download
+                  </button>
+                  <button type="submit" class="btn-big btn-big--secondary">
+                    Download
+                  </button>
+                  <button type="submit" class="btn-big btn-big--focused">
+                    Download
+                  </button>
+                </div>
+
+                <h5 class="buttons__title">Buttons Small</h5>
+
+                <div class="buttons__row">
+                  <button type="submit" class="btn-small btn-small--primary">
+                    Download
+                  </button>
+                  <button
+                    type="submit"
+                    class="btn-small btn-small--primary"
+                    disabled
+                  >
+                    Download
+                  </button>
+                  <button type="submit" class="btn-small btn-small--secondary">
+                    Download
+                  </button>
+                  <button type="submit" class="btn-small btn-small--focused">
+                    Download
+                  </button>
+                </div>
+
+                <div class="buttons__row">
+                  <button type="submit" class="btn-small btn-small--primary">
+                    Download
+                  </button>
+                  <button
+                    type="submit"
+                    class="btn-small btn-small--primary"
+                    disabled
+                  >
+                    Download
+                  </button>
+                  <button type="submit" class="btn-small btn-small--secondary">
+                    Download
+                  </button>
+                  <button type="submit" class="btn-small btn-small--focused">
+                    Download
+                  </button>
+                </div>
+
+                <div class="buttons__row">
+                  <button type="submit" class="btn-small btn-small--primary">
+                    Download
+                  </button>
+                  <button
+                    type="submit"
+                    class="btn-small btn-small--primary"
+                    disabled
+                  >
+                    Download
+                  </button>
+                  <button type="submit" class="btn-small btn-small--secondary">
+                    Download
+                  </button>
+                  <button type="submit" class="btn-small btn-small--focused">
+                    Download
+                  </button>
+                </div>
+
+                <!-- TAGS -->
+                <div class="tags">
+                  <div class="tags-row">
+                    <div class="tag tag--primary">Tag</div>
+                    <div class="tag tag--secondary">Tag</div>
+                  </div>
+
+                  <div class="tags-row">
+                    <div class="tag tag--primary">Tag</div>
+                    <div class="tag tag--secondary">Tag</div>
                   </div>
                 </div>
-
-                <div class="buttons__content">
-                  <div class="buttons__box">
-                    <button
-                      type="submit"
-                      class="
-                        buttons__big-download
-                        svg__download--right
-                        buttons__primary
-                        svg__big
-                      "
-                    >
-                      Download
-                    </button>
-                    <button
-                      type="submit"
-                      class="
-                        buttons__big-download
-                        svg__download--right
-                        buttons__disabled
-                        svg__disabled
-                      "
-                      disabled
-                    >
-                      Download
-                    </button>
-                    <button
-                      type="submit"
-                      class="
-                        buttons__big-download buttons__secondary
-                        svg__sec svg__download--right
-                      "
-                    >
-                      Download
-                    </button>
-                    <button
-                      type="submit"
-                      class="
-                        buttons__big-download buttons__secondary--focused
-                        svg__focus svg__download--right
-                      "
-                      focused
-                    >
-                      Download
-                    </button>
+                <!-- / TAGS -->
+              </div>
+              <div class="tabs layout-2-column__tabs">
+                <h5 class="buttons__title">Tabs</h5>
+                <!-- TABS ICON BLOCK -->
+                <div class="tabs-row">
+                  <div class="tabs-icon">
+                    <ul class="tabs-icon__body">
+                      <li class="tabs-icon__item tabs-icon__item--active"></li>
+                      <li class="tabs-icon__item"></li>
+                      <li class="tabs-icon__item"></li>
+                    </ul>
                   </div>
                 </div>
+                <!-- / TABS ICON BLOCK -->
 
-                <div class="buttons__content">
-                  <div class="buttons__box">
-                    <button
-                      type="submit"
-                      class="
-                        buttons__big-download buttons__primary
-                        svg__download--left svg__big
-                      "
-                    >
-                      Download
-                    </button>
-                    <button
-                      type="submit"
-                      class="
-                        buttons__big-download buttons__disabled
-                        svg__disabled svg__download--left
-                      "
-                      disabled
-                    >
-                      Download
-                    </button>
-                    <button
-                      type="submit"
-                      class="
-                        buttons__big-download buttons__secondary
-                        svg__sec svg__download--left
-                      "
-                    >
-                      Download
-                    </button>
-                    <button
-                      type="submit"
-                      class="
-                        buttons__big-download buttons__secondary--focused
-                        svg__focus svg__download--left
-                      "
-                      focused
-                    >
-                      Download
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- TABS BUTTONS -->
-
-              <div class="tabs__container">
-                <div class="buttons__tabs tabs">
-                  <ul class="tabs__list" id="switch1">
-                    <li
-                      class="
-                        tabs__list-item tabs__svg tabs__search active tabs-switch--1
-                      "
-                    ></li>
-                    <li class="tabs__list-item tabs__svg tabs__download tabs-switch--1"></li>
-                    <li class="tabs__list-item tabs__svg tabs__box tabs-switch--1"></li>
+                <!-- TABS WITH WORDS -->
+                <div class="tabs-row">
+                  <ul class="tabs__body">
+                    <li class="tabs__item tabs__item--active">Tab 1</li>
+                    <li class="tabs__item">Tab 2</li>
                   </ul>
                 </div>
+                <!-- / TABS WITH WORDS -->
 
-                <div class="buttons__tabs tabs">
-                  <ul class="tabs__list" id="switch2">
-                    <li class="tabs__item tabs-switch--2 active--2">Tab 1</li>
-                    <li class="tabs__item tabs-switch--2">Tab 2</li>
+                <!-- TABS WITH WORDS -->
+                <div class="tabs-row">
+                  <ul class="tabs__body">
+                    <li class="tabs__item tabs__item--active">S</li>
+                    <li class="tabs__item">M</li>
+                    <li class="tabs__item">L</li>
                   </ul>
                 </div>
-
-                <div class="buttons__tabs tabs">
-                  <ul class="tabs__list" id="switch3">
-                    <li class="tabs__item tabs-switch--3 active--3">S</li>
-                    <li class="tabs__item tabs-switch--3">M</li>
-                    <li class="tabs__item tabs-switch--3">L</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="buttons__small-box">
-              <h5 class="buttons__title">Buttons Small</h5>
-
-              <div class="buttons__content">
-                <button type="submit" class="buttons__small buttons__primary">
-                  Download
-                </button>
-                <button
-                  type="submit"
-                  class="buttons__small buttons__disabled"
-                  disabled
-                >
-                  Download
-                </button>
-                <button type="submit" class="buttons__small buttons__secondary">
-                  Download
-                </button>
-                <button
-                  type="submit"
-                  class="buttons__small buttons__secondary--focused"
-                  focused
-                >
-                  Download
-                </button>
-              </div>
-
-              <!-- ICONS RIGHT -->
-
-              <div class="buttons__content">
-                <button
-                  type="submit"
-                  class="
-                    buttons__small buttons__primary
-                    svg__small--right svg__small-down
-                  "
-                >
-                  Download
-                </button>
-                <button
-                  type="submit"
-                  class="
-                    buttons__small buttons__disabled
-                    svg__small--right svg__small-dis
-                  "
-                  disabled
-                >
-                  Download
-                </button>
-                <button
-                  type="submit"
-                  class="
-                    buttons__small buttons__secondary
-                    svg__small--right svg__small-black
-                  "
-                >
-                  Download
-                </button>
-                <button
-                  type="submit"
-                  class="
-                    buttons__small buttons__secondary--focused
-                    svg__small--right svg__small-focus
-                  "
-                  focused
-                >
-                  Download
-                </button>
-              </div>
-
-              <!-- ICONS LEFT -->
-
-              <div class="buttons__content">
-                <button
-                  type="submit"
-                  class="
-                    buttons__small buttons__primary
-                    svg__small--left svg__small-down
-                  "
-                >
-                  Download
-                </button>
-                <button
-                  type="submit"
-                  class="
-                    buttons__small buttons__disabled
-                    svg__small--left svg__small-dis
-                  "
-                  disabled
-                >
-                  Download
-                </button>
-                <button
-                  type="submit"
-                  class="
-                    buttons__small buttons__secondary
-                    svg__small--left svg__small-black
-                  "
-                >
-                  Download
-                </button>
-                <button
-                  type="submit"
-                  class="
-                    buttons__small buttons__secondary--focused
-                    svg__small--left svg__small-focus
-                  "
-                  focused
-                >
-                  Download
-                </button>
-              </div>
-            </div>
-
-            <!-- TAGS -->
-
-            <div class="tags">
-              <div class="tags__box">
-                <div class="tags__secondary svg__tag svg__tag--black">Tag</div>
-                <div class="tags__primary svg__tag svg__tag--white">Tag</div>
-              </div>
-
-              <div class="tags__box">
-                <div class="tags__secondary">Tag</div>
-                <div class="tags__primary">Tag</div>
+                <!-- / TABS WITH WORDS -->
               </div>
             </div>
           </div>
@@ -786,30 +676,48 @@
                 <h3 class="nav__title">Tabs</h3>
 
                 <!-- FIRST TWO TABS -->
-                <div class="nav__content">
-                  <div class="nav__tab nav__tab--current nav__tab--active">
+                <div class="nav__content" id="nav-1">
+                  <div
+                    class="
+                      nav__tab nav__tab--current nav__tab--active nav-tab-1
+                    "
+                  >
                     Current Tab
                   </div>
-                  <div class="nav__tab nav__tab--dist">Current Tab</div>
+                  <div class="nav__tab nav__tab--dist nav-tab-1">
+                    Current Tab
+                  </div>
                 </div>
 
                 <!-- SECOND THREE TABS -->
 
-                <div class="nav__content nav__content--line">
-                  <div class="nav__tab nav__tab--current nav__tab--active">
+                <div class="nav__content nav__content--line" id="nav-2">
+                  <div
+                    class="
+                      nav__tab nav__tab--current nav__tab--active-2 nav-tab-2
+                    "
+                  >
                     Current Tab
                   </div>
-                  <div class="nav__tab nav__tab--dist">Second Tab</div>
+                  <div class="nav__tab nav__tab--dist nav-tab-2">
+                    Second Tab
+                  </div>
                 </div>
 
                 <!-- THIRD THREE TABS -->
 
-                <div class="nav__content nav__content--line">
-                  <div class="nav__tab nav__tab--current nav__tab--active">
+                <div class="nav__content nav__content--line" id="nav-3">
+                  <div
+                    class="
+                      nav__tab nav__tab--current nav__tab--active-3 nav-tab-2
+                    "
+                  >
                     Current Tab
                   </div>
-                  <div class="nav__tab nav__tab--dist">Second Tab</div>
-                  <div class="nav__tab nav__tab--dist">Third Tab</div>
+                  <div class="nav__tab nav__tab--dist nav-tab-2">
+                    Second Tab
+                  </div>
+                  <div class="nav__tab nav__tab--dist nav-tab-2">Third Tab</div>
                 </div>
 
                 <!-- Breadcrumbs -->
@@ -1219,20 +1127,17 @@
                     </div>
 
                     <div class="upload-list__item upload-list__done">
-                      
-                        <div class="upload-list__file">
-                          <span class="upload-list__file-svg"></span>
-                          <div class="upload-list__text">
-                            <span class="upload-list__name">File Name.jpg</span>
-                            <span class="upload-list__time">23 mins ago</span>
-                          </div>
-                          <span class="upload-list__seen"></span>
+                      <div class="upload-list__file">
+                        <span class="upload-list__file-svg"></span>
+                        <div class="upload-list__text">
+                          <span class="upload-list__name">File Name.jpg</span>
+                          <span class="upload-list__time">23 mins ago</span>
                         </div>
-                      
+                        <span class="upload-list__seen"></span>
+                      </div>
                     </div>
 
                     <div class="upload-list__item upload-lise__failed">
-
                       <div class="upload-list__file">
                         <span class="upload-list__file-svg"></span>
                         <div class="upload-list__text">
@@ -1241,10 +1146,8 @@
                         </div>
                         <span class="upload-list__failed"></span>
                       </div>
-
                     </div>
                     <div class="upload-list__item upload-list__cancel">
-
                       <div class="upload-list__file">
                         <span class="upload-list__file-svg"></span>
                         <div class="upload-list__text">
@@ -1253,7 +1156,6 @@
                         </div>
                         <span class="upload-list__cancelled"></span>
                       </div>
-
                     </div>
                   </div>
                 </div>

@@ -2,4 +2,30 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
+@mixin btns-standard-big {
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	height: 46px;
+	background-color: #fff;
+	border: 1px solid transparent;
+	transition: all .3s ease-in-out;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+ }
 
+ @mixin btns-standard-small {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	height: 36px;
+	border: 1px solid transparent;
+	transition: all .3s ease-in-out;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 16px;
+ }

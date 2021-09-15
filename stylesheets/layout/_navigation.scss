@@ -51,10 +51,6 @@
     }
   }
 
-  &__tab--current {
-    color: $dodger-blue;
-  }
-
   &__tab--dist {
     margin-left: 46px;
 
@@ -65,5 +61,13 @@
 
   &__tab--active {
     border-bottom: 2px solid $dodger-blue;
+    color: $dodger-blue;
   }
+}
+
+
+.nav__tab--active-2,
+.nav__tab--active-3 {
+  border-bottom: 2px solid $dodger-blue;
+  color: $dodger-blue;
 }

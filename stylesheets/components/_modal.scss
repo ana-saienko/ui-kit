@@ -75,6 +75,12 @@
     border: 1px solid #e0e0e0;
     background-color: #fff;
     height: 36px;
+    transition: all .3s ease-in-out;
+    &:hover {
+      color: #ffffff;
+      background-color: $dodger-blue;
+      border: 1px solid $dodger-blue;
+    }
   }
 
   &__submit {
@@ -83,6 +89,7 @@
     line-height: 16px;
     text-align: center;
     color: #ffffff;
+    border: 1px solid transparent;
 
     display: inline-flex;
     align-items: center;
@@ -91,5 +98,13 @@
     padding: 0 14px;
     background-color: $dodger-blue;
     height: 36px;
+
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color: $dodger-blue;
+      background-color: #fff;
+      border: 1px solid $dodger-blue;
+    }
   }
 }

@@ -1,0 +1,31 @@
+.layout-2-column {
+	display: flex;
+	justify-content: space-between;
+}
+
+.layout-2-column__buttons {
+	flex-basis: 68%;
+}
+
+.layout-2-column__tabs {
+	flex-basis: 28%;;
+}
+
+// TAGS 
+.tags {
+	margin-top: 50px;
+}
+.tags-row {
+	display: flex;
+	margin-bottom: 14px;
+	> * {
+		margin-right: 14px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

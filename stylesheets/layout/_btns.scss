@@ -1,0 +1,18 @@
+.buttons__row {
+	max-width: 640px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 24px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.tabs-row {
+	margin-bottom: 24px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
