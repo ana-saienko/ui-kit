@@ -477,6 +477,14 @@ body._lock {
   background-color: #fff;
 }
 
+.btn-big--primary:hover .btn-svg__download-path {
+  stroke: #18A0FB;
+}
+
+.btn-big--svg {
+  padding: 0 20px;
+}
+
 .btn-big--secondary {
   border: 1px solid #e0e0e0;
   color: #2c2c2c;
@@ -1098,6 +1106,16 @@ input:checked + .slider-small.slider:before {
 
 .tables__search {
   margin-bottom: 0 !important;
+}
+
+.btn-svg__download,
+.btn-svg__download-path {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.btn-svg__download {
+  margin-left: 14px;
 }
 
 .progress {

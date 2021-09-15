@@ -29,7 +29,15 @@
       border: 1px solid $dodger-blue;
       color: $dodger-blue;
       background-color: #fff;
+
+      .btn-svg__download-path {
+        stroke: $dodger-blue;
+      }
     }
+  }
+
+  &--svg {
+    padding: 0 20px;
   }
 
   &--secondary {
