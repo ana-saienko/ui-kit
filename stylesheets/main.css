@@ -777,6 +777,15 @@ body._lock {
   width: 56px;
   height: 48px;
   border: 1px solid #e0e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .tabs-icon__item:first-child {
@@ -795,6 +804,14 @@ body._lock {
 .tabs-icon__item--active {
   background-color: #18A0FB;
   border: 1px solid #18A0FB;
+}
+
+.tabs-icon__item--active .btn-svg__tab-path {
+  fill: #fff;
+}
+
+.tabs-icon__item--active .btn-svg__tab-down {
+  stroke: #fff;
 }
 
 .tabs__body {
@@ -826,6 +843,16 @@ body._lock {
   background-color: #18A0FB;
   border: 1px solid #18A0FB;
   color: #fff;
+}
+
+.tabs--active {
+  background-color: #18A0FB;
+  border: 1px solid #18A0FB;
+  color: #fff;
+}
+
+.btn--error {
+  background-color: #FF3E1D;
 }
 
 .switch__box {
@@ -948,6 +975,64 @@ input:checked + .slider-small.slider:before {
           transform: translateX(28px);
 }
 
+.steps__box {
+  margin-top: 40px;
+}
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.steps__item {
+  cursor: pointer;
+  padding: 6px 0;
+  -ms-flex-preferred-size: 93px;
+      flex-basis: 93px;
+  text-align: center;
+  color: #18A0FB;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.steps__first {
+  position: relative;
+}
+
+.steps__first:after {
+  position: absolute;
+  content: "";
+  background-image: url(../../images/step-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 28px;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+}
+
+.steps__last {
+  position: relative;
+}
+
+.steps__last:after {
+  position: absolute;
+  content: "";
+  background-image: url(../../images/step-last.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 28px;
+  top: 0;
+  left: 0;
+}
+
 .crumbs__content {
   margin-bottom: 19px;
 }
@@ -963,6 +1048,12 @@ input:checked + .slider-small.slider:before {
   font-size: 14px;
   line-height: 17px;
   color: #2c2c2c;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.crumbs__first:hover {
+  color: #18A0FB;
 }
 
 .crumbs__first:last-child {
@@ -1185,6 +1276,18 @@ input:checked + .slider-small.slider:before {
 .btn-svg__close {
   width: 7px;
   height: 7px;
+}
+
+.btn-svg__tab-path {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  fill: #2c2c2c;
+}
+
+.btn-svg__tab-down {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  stroke: #2c2c2c;
 }
 
 .progress {
@@ -1421,6 +1524,7 @@ input:checked + .slider-small.slider:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 12px;
 }
 
 .upload-list__file-svg {
@@ -1494,6 +1598,55 @@ input:checked + .slider-small.slider:before {
   font-size: 13px;
   line-height: 16px;
   color: #2c2c2c;
+}
+
+#error-upload {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+  width: 56%;
+  height: 36px;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.progressing-bar {
+  height: 2px;
+  background-color: #e0e0e0;
+  width: 100%;
+  position: relative;
+}
+
+.progressing-bar__process {
+  position: absolute;
+  height: 100%;
+  background-color: #18A0FB;
+  width: 40%;
+}
+
+.progressing-bar__completed {
+  position: absolute;
+  height: 100%;
+  background-color: #00D200;
+  width: 100%;
+}
+
+.progressing-bar__fail {
+  position: absolute;
+  height: 100%;
+  background-color: #FF3E1D;
+  width: 100%;
+}
+
+.progressing-bar__cancel {
+  position: absolute;
+  height: 100%;
+  background-color: #FFD422;
+  width: 20%;
 }
 
 .forms__textarea {
@@ -1890,6 +2043,10 @@ select::-ms-expand {
   font-size: 13px;
   line-height: 100%;
   color: #8b8b8b;
+}
+
+.page__extend-text:hover {
+  color: #18A0FB;
 }
 
 .page__extend-text--active {

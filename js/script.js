@@ -107,53 +107,6 @@ function setProgress(percent) {
 setProgress(69);
 
 // -------------------------------------------
-
-// Get the container element
-var btnContainer = document.getElementById("switch1");
-
-// Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("tabs-switch--1");
-
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
-// Get the container element
-var btnContainer = document.getElementById("switch2");
-
-// Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("tabs-switch--2");
-
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active--2");
-    current[0].className = current[0].className.replace(" active--2", "");
-    this.className += " active--2";
-  });
-}
-
-// SWITCH3
-// Get the container element
-var btnContainer = document.getElementById("switch3");
-
-// Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("tabs-switch--3");
-
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active--3");
-    current[0].className = current[0].className.replace(" active--3", "");
-    this.className += " active--3";
-  });
-}
-
 // ------------------------------
 
 // nav 1
@@ -161,85 +114,45 @@ for (var i = 0; i < btns.length; i++) {
 var btnContainer = document.getElementById("nav-1");
 
 // Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("nav-tab-1");
+var btns = btnContainer.getElementsByClassName("tabs-icon__item");
 
 // Loop through the buttons and add the active class to the current/clicked button
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("nav__tab--active");
-    current[0].className = current[0].className.replace(" nav__tab--active", "");
-    this.className += " nav__tab--active";
+    var current = document.getElementsByClassName("tabs-icon__item--active");
+    current[0].className = current[0].className.replace(" tabs-icon__item--active", "");
+    this.className += " tabs-icon__item--active";
   });
 }
-
-// ------------------------------
 
 // nav 2
 // Get the container element
 var btnContainer = document.getElementById("nav-2");
 
 // Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("nav-tab-2");
+var btns = btnContainer.getElementsByClassName("tabs__item");
 
 // Loop through the buttons and add the active class to the current/clicked button
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("nav__tab--active-2");
-    current[0].className = current[0].className.replace(" nav__tab--active-2", "");
-    this.className += " nav__tab--active-2";
+    var current = document.getElementsByClassName("tabs__item--active");
+    current[0].className = current[0].className.replace(" tabs__item--active", "");
+    this.className += " tabs__item--active";
   });
 }
 
-// ------------------------------
-
-// nav 3
+// nav 2
 // Get the container element
 var btnContainer = document.getElementById("nav-3");
 
 // Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("nav-tab-2");
+var btns = btnContainer.getElementsByClassName("tabs__item");
 
 // Loop through the buttons and add the active class to the current/clicked button
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("nav__tab--active-3");
-    current[0].className = current[0].className.replace(" nav__tab--active-3", "");
-    this.className += " nav__tab--active-3";
-  });
-}
-
-// ------------------------------
-
-// nav 1
-// Get the container element
-var btnContainer = document.getElementById("nav-1");
-
-// Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("nav-tab-1");
-
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("nav__tab--active");
-    current[0].className = current[0].className.replace(" nav__tab--active", "");
-    this.className += " nav__tab--active";
-  });
-}
-
-// ------------------------------
-
-// nav 1
-// Get the container element
-var btnContainer = document.getElementById("nav-1");
-
-// Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("nav-tab-1");
-
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("nav__tab--active");
-    current[0].className = current[0].className.replace(" nav__tab--active", "");
-    this.className += " nav__tab--active";
+    var current = document.getElementsByClassName("tabs--active");
+    current[0].className = current[0].className.replace(" tabs--active", "");
+    this.className += " tabs--active";
   });
 }

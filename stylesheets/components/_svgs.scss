@@ -15,3 +15,14 @@
 	width: 7px;
 	height: 7px;
 }
+
+.btn-svg__tab-path {
+  transition: all 0.3s ease-in-out;
+  fill: $mine-shaft;
+  // stroke: $mine-shaft;
+}
+
+.btn-svg__tab-down {
+  transition: all 0.3s ease-in-out;
+  stroke: $mine-shaft;
+}

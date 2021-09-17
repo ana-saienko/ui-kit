@@ -667,7 +667,7 @@ Value</textarea
                 </div>
 
                 <div class="buttons__row">
-                  <button type="submit" class="btn-small btn-small--primary btn-small--svg-left">
+                  <button type="submit" class="btn-small btn-small--primary btn-small--svg-left btn--error">
                     <svg class="btn-svg__download btn-svg__left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path class="btn-svg__download-path" d="M4 12V19H20V12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                       <path class="btn-svg__download-path" d="M12 3.50073L12 13.5007" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -738,10 +738,26 @@ Value</textarea
                 <!-- TABS ICON BLOCK -->
                 <div class="tabs-row">
                   <div class="tabs-icon">
-                    <ul class="tabs-icon__body">
-                      <li class="tabs-icon__item tabs-icon__item--active"></li>
-                      <li class="tabs-icon__item"></li>
-                      <li class="tabs-icon__item"></li>
+                    <ul class="tabs-icon__body" id="nav-1">
+                      <li class="tabs-icon__item ">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="btn-svg__tab-path" fill-rule="evenodd" clip-rule="evenodd" d="M11 7C8.79086 7 7 8.79086 7 11C7 13.2091 8.79086 15 11 15C13.2091 15 15 13.2091 15 11C15 8.79086 13.2091 7 11 7ZM5 11C5 7.68629 7.68629 5 11 5C14.3137 5 17 7.68629 17 11C17 12.2958 16.5892 13.4957 15.8907 14.4765L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L14.4765 15.8907C13.4957 16.5892 12.2958 17 11 17C7.68629 17 5 14.3137 5 11Z" fill="white"/>
+                          </svg>
+                      </li>
+                      <li class="tabs-icon__item  tabs-icon__item--active">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="btn-svg__tab-down" d="M4 12V19H20V12" stroke="#2C2C2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path class="btn-svg__tab-down" d="M12 3.50073L12 13.5007" stroke="#2C2C2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path class="btn-svg__tab-down" d="M12 13.5007L15.375 10.1257" stroke="#2C2C2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path class="btn-svg__tab-down" d="M12 13.5007L8.625 10.1257" stroke="#2C2C2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                      </li>
+                      <li class="tabs-icon__item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="btn-svg__tab-path btn-svg__tab-down" d="M15 12.51H15.5V12.01V10.51H16.5V13.01C16.5 13.2869 16.2769 13.51 16 13.51H8C7.72314 13.51 7.5 13.2869 7.5 13.01V10.51H8.5V12.01V12.51H9H15Z" fill="#2C2C2C" stroke="#2C2C2C"/>
+                          <path class="btn-svg__tab-path btn-svg__tab-down" d="M2.92205 6.30863L2.90861 6.29902L5.3096 3.10657L5.3101 3.1059C5.58912 2.73363 6.0385 2.50903 6.508 2.50903H17.508C17.9791 2.50903 18.4295 2.73545 18.7101 3.11188L18.7105 3.11237L21.1053 6.31638L21.0935 6.32544L21.3866 6.72011C21.4672 6.82871 21.5 6.92251 21.5 7.01003V18.01C21.5 18.8369 20.8269 19.51 20 19.51H4C3.17314 19.51 2.5 18.8369 2.5 18.01V7.01003C2.5 6.92206 2.53338 6.82686 2.615 6.71803L2.92205 6.30863ZM6.508 3.51003H6.2584L6.10838 3.70952L4.60438 5.70952L4.0024 6.51003H5.004H19.003H20.001L19.4035 5.71067L17.9085 3.71067L17.7585 3.51003H17.508H6.508ZM3.5 18.01V18.51H4H20.002H20.5021L20.502 18.0099L20.5 8.00993L20.4999 7.51003H20H4H3.5V8.01003V18.01Z" fill="#2C2C2C" stroke="#2C2C2C"/>
+                          </svg>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -749,7 +765,7 @@ Value</textarea
 
                 <!-- TABS WITH WORDS -->
                 <div class="tabs-row">
-                  <ul class="tabs__body">
+                  <ul class="tabs__body" id="nav-2">
                     <li class="tabs__item tabs__item--active">Tab 1</li>
                     <li class="tabs__item">Tab 2</li>
                   </ul>
@@ -758,8 +774,8 @@ Value</textarea
 
                 <!-- TABS WITH WORDS -->
                 <div class="tabs-row">
-                  <ul class="tabs__body">
-                    <li class="tabs__item tabs__item--active">S</li>
+                  <ul class="tabs__body" id="nav-3">
+                    <li class="tabs__item tabs--active">S</li>
                     <li class="tabs__item">M</li>
                     <li class="tabs__item">L</li>
                   </ul>
@@ -998,7 +1014,16 @@ Value</textarea
                     >Next</span
                   >
                 </div>
-              </div>
+
+                <!-- STEPS -->
+
+                <div class="steps steps__box">
+                  <div class="steps__item steps__first">Step 1</div>
+                  <div class="steps__item steps__next">Step 2</div>
+                  <div class="steps__item steps__last">Step 3</div>
+                </div>
+
+              </div> <!-- / nav__right -->
             </div>
           </div>
         </section>
@@ -1235,6 +1260,9 @@ Value</textarea
                         </div>
                         <span class="upload-list__cross"></span>
                       </div>
+                      <div class="progressing-bar">
+                        <div class="progressing-bar__process"></div>
+                      </div>
                     </div>
 
                     <div class="upload-list__item upload-list__done">
@@ -1245,6 +1273,9 @@ Value</textarea
                           <span class="upload-list__time">23 mins ago</span>
                         </div>
                         <span class="upload-list__seen"></span>
+                      </div>
+                      <div class="progressing-bar">
+                        <div class="progressing-bar__completed"></div>
                       </div>
                     </div>
 
@@ -1257,6 +1288,9 @@ Value</textarea
                         </div>
                         <span class="upload-list__failed"></span>
                       </div>
+                      <div class="progressing-bar">
+                        <div class="progressing-bar__fail"></div>
+                      </div>
                     </div>
                     <div class="upload-list__item upload-list__cancel">
                       <div class="upload-list__file">
@@ -1266,6 +1300,9 @@ Value</textarea
                           <span class="upload-list__time">23 mins ago</span>
                         </div>
                         <span class="upload-list__cancelled"></span>
+                      </div>
+                      <div class="progressing-bar">
+                        <div class="progressing-bar__cancel"></div>
                       </div>
                     </div>
                   </div>
@@ -1315,7 +1352,8 @@ Value</textarea
                   <div class="upload-progress__box">
                     <span class="upload__svg-done"></span>
                     <span class="upload__text">Upload Complete!</span>
-                    <!-- <input type="file" class="upload-progress__cancel" id="error-upload" value="Upload New" /> -->
+                    <span class="upload-progress__cancel">Upload New</span>
+                    <input type="file" class="upload-progress__cancel" id="error-upload" value="Upload New" />
                   </div>
                 </div>
               </div>

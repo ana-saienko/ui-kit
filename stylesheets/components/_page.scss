@@ -150,6 +150,10 @@
     font-size: 13px;
     line-height: 100%;
     color: #8b8b8b;
+
+    &:hover {
+      color: $dodger-blue;
+    }
   }
 
   &__extend-text--active {

@@ -194,6 +194,7 @@
   &__file {
     display: flex;
     align-items: center;
+    margin-bottom: 12px;
   }
 
   &__file-svg {
@@ -268,4 +269,54 @@
     line-height: 16px;
     color: $mine-shaft;
   }
+}
+
+#error-upload {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+  width: 56%;
+    height: 36px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+// ---------------------
+
+.progressing-bar {
+  height: 2px;
+  background-color: #e0e0e0;
+  width: 100%;
+  position: relative;
+}
+
+.progressing-bar__process {
+  position: absolute;
+  height: 100%;
+  background-color: $dodger-blue;
+  width: 40%;
+}
+
+.progressing-bar__completed {
+  position: absolute;
+  height: 100%;
+  background-color: $green;
+  width: 100%;
+}
+
+.progressing-bar__fail {
+  position: absolute;
+  height: 100%;
+  background-color: $red-orange;
+  width: 100%;
+}
+
+.progressing-bar__cancel {
+  position: absolute;
+  height: 100%;
+  background-color: $candlelight;
+  width: 20%;
 }

@@ -13,6 +13,11 @@
     font-size: 14px;
     line-height: 17px;
     color: $mine-shaft;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color: $dodger-blue;
+    }
 
     &:last-child {
       color: #959595;

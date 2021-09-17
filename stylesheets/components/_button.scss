@@ -308,6 +308,8 @@
   width: 56px;
   height: 48px;
   border: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;justify-content: center;
 
   &:first-child {
     border-radius: 5px 0px 0px 5px;
@@ -325,6 +327,13 @@
   &--active {
     background-color: $dodger-blue;
     border: 1px solid $dodger-blue;
+
+    .btn-svg__tab-path {
+      fill: #fff;
+    }
+    .btn-svg__tab-down {
+      stroke: #fff;
+    }
   }
 }
 
@@ -357,5 +366,20 @@
     background-color: $dodger-blue;
     border: 1px solid $dodger-blue;
     color: #fff;
+  }
+}
+
+.tabs--active {
+  background-color: $dodger-blue;
+  border: 1px solid $dodger-blue;
+  color: #fff;
+}
+
+// --------------------------------------------
+// btn error
+
+.btn {
+  &--error {
+    background-color: $red-orange;
   }
 }
