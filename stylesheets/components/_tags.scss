@@ -9,11 +9,31 @@
   &--primary {
     color: #ffffff;
     background-color: $dodger-blue;
+    
+    .btn-svg__close {
+      margin-left: 10px;
+      transform: translateY(-1px);
+    }
+
+    .btn-svg__close-path {
+      margin-left: 11px;
+      fill: #bae3fe;
+    }
   }
   &--secondary {
     color: $mine-shaft;
     border: 1px solid #e0e0e0;
     background-color: rgba(224, 224, 224, 0.3);
+
+    .btn-svg__close {
+      transform: translateY(-1px);
+      margin-left: 10px;
+    }
+
+    .btn-svg__close-path {
+      
+      fill: $mine-shaft;
+    }
   }
 }
 

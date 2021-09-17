@@ -1,10 +1,17 @@
-
-
 .btn-svg__download,
 .btn-svg__download-path {
-	transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.btn-svg__download {
-	margin-left: 14px;
+.btn-svg__right {
+  margin-left: 14px;
+}
+
+.btn-svg__left {
+  margin-right: 14px;
+}
+
+.btn-svg__close {
+	width: 7px;
+	height: 7px;
 }

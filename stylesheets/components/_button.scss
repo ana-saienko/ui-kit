@@ -13,7 +13,6 @@
   }
 }
 
-
 // --------------------------------------------------------------
 // BTN BIG
 
@@ -24,22 +23,16 @@
   &--primary {
     background-color: $dodger-blue;
     color: #fff;
-
-    &:hover {
-      border: 1px solid $dodger-blue;
-      color: $dodger-blue;
-      background-color: #fff;
-
-      .btn-svg__download-path {
-        stroke: $dodger-blue;
-      }
-    }
   }
-
-  &--svg {
+  // позиционирование иконки
+  &--svg-right {
     padding: 0 20px;
   }
-
+  // позиционирование иконки
+  &--svg-left {
+    padding: 0 20px;
+  }
+  // прозрачная кнопка
   &--secondary {
     border: 1px solid #e0e0e0;
     color: $mine-shaft;
@@ -47,6 +40,11 @@
     &:focus {
       border: 1px solid $dodger-blue;
       color: $dodger-blue;
+
+      // если прозрачная кнопка в фокусе, иконка становится синей
+      .btn-svg__download-path {
+        stroke: $dodger-blue;
+      }
     }
 
     &:hover {
@@ -54,11 +52,29 @@
       color: $dodger-blue;
       background-color: #fff;
     }
+
+    .btn-svg__download-path {
+      stroke: $mine-shaft;
+    }
   }
 
   &--focused {
     border: 1px solid $dodger-blue;
     color: $dodger-blue;
+
+    .btn-svg__download-path {
+      stroke: $dodger-blue;
+    }
+  }
+
+  &:hover {
+    border: 1px solid $dodger-blue;
+    color: $dodger-blue;
+    background-color: #fff;
+
+    .btn-svg__download-path {
+      stroke: $dodger-blue;
+    }
   }
 }
 
@@ -80,6 +96,14 @@
   @include btns-standard-small;
   padding: 0 24px;
 
+  &--svg-right {
+    padding: 0 12px;
+  }
+
+  &--svg-left {
+    padding: 0 12px;
+  }
+
   &--primary {
     background-color: $dodger-blue;
     color: #fff;
@@ -88,6 +112,10 @@
       border: 1px solid $dodger-blue;
       color: $dodger-blue;
       background-color: #fff;
+
+      .btn-svg__download-path {
+        stroke: $dodger-blue;
+      }
     }
   }
 
@@ -98,18 +126,47 @@
     &:focus {
       border: 1px solid $dodger-blue;
       color: $dodger-blue;
+
+      // если прозрачная кнопка в фокусе, иконка становится синей
+      .btn-svg__download-path {
+        stroke: $dodger-blue;
+      }
     }
 
     &:hover {
       border: 1px solid $dodger-blue;
       color: $dodger-blue;
       background-color: #fff;
+
+      .btn-svg__download-path {
+        stroke: $dodger-blue;
+      }
+    }
+
+    .btn-svg__download-path {
+      stroke: $mine-shaft;
     }
   }
 
   &--focused {
     border: 1px solid $dodger-blue;
     color: $dodger-blue;
+
+    .btn-svg__download-path {
+      stroke: $dodger-blue;
+    }
+  }
+
+  .btn-svg__right {
+    margin-left: 9px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .btn-svg__left {
+    margin-right: 9px;
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -120,6 +177,10 @@
 
     &:hover {
       border: 1px solid transparent;
+    }
+
+    .btn-svg__download-path {
+      stroke: #878787;
     }
   }
 }
@@ -244,27 +305,27 @@
 
 .tabs-icon__item {
   cursor: pointer;
-    width: 56px;
-    height: 48px;
-    border: 1px solid #e0e0e0;
+  width: 56px;
+  height: 48px;
+  border: 1px solid #e0e0e0;
 
-    &:first-child {
-      border-radius: 5px 0px 0px 5px;
-    }
+  &:first-child {
+    border-radius: 5px 0px 0px 5px;
+  }
 
-    &:nth-child(2) {
-      border-left: none;
-    }
+  &:nth-child(2) {
+    border-left: none;
+  }
 
-    &:last-child {
-      border-radius: 0px 5px 5px 0px;
-      border-left: none;
-    }
+  &:last-child {
+    border-radius: 0px 5px 5px 0px;
+    border-left: none;
+  }
 
-    &--active {
-      background-color: $dodger-blue;
-      border: 1px solid $dodger-blue;
-    }
+  &--active {
+    background-color: $dodger-blue;
+    border: 1px solid $dodger-blue;
+  }
 }
 
 // --------------------------------------------------------------------
@@ -298,4 +359,3 @@
     color: #fff;
   }
 }
-
