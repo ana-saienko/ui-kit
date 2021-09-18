@@ -44,6 +44,11 @@
     font-size: 14px;
     line-height: 17px;
     color: $mine-shaft;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid transparent;
+    transition: all .3s ease-in-out;
 
     @media (max-width:$md4+px){
        padding: 5px;
@@ -65,8 +70,26 @@
   }
 }
 
+.nav__tab--active1 {
+  border-bottom: 2px solid $dodger-blue;
+  color: $dodger-blue;
+}
 
-.nav__tab--active-2,
+.nav__tab--active2 {
+  border-bottom: 2px solid $dodger-blue;
+  color: $dodger-blue;
+}
+
+.nav__tab--active3 {
+  border-bottom: 2px solid $dodger-blue;
+  color: $dodger-blue;
+}
+
+.nav--active2 {
+  border-bottom: 2px solid $dodger-blue;
+  color: $dodger-blue;
+}
+
 .nav__tab--active-3 {
   border-bottom: 2px solid $dodger-blue;
   color: $dodger-blue;

@@ -1,0 +1,121 @@
+/*
+<!-- SVG References -->
+<svg class="icon icon-stroke">
+  <use href="#archive"></use>
+</svg>
+
+<svg class="icon icon-fill">
+  <use href="#chevron"></use>
+</svg>
+
+<svg class="icon icon-both">
+  <use href="#download"></use>
+</svg>
+
+<svg class="icon icon-fill">
+  <use href="#search"></use>
+</svg>
+
+.icon { 
+  width: 50px; 
+  height: 50px;
+  margin: .5em;
+}
+
+.icon-stroke {
+  stroke: red;
+}
+
+.icon-both {
+  fill: none;
+  stroke: grey;
+}
+
+*/
+
+.icon {
+  margin-right: 7px;
+  transition: all .3s ease-in-out;
+}
+
+// sizes ---------------------------------
+
+.icon-search {
+  width: 13px;
+  height: 13px;
+}
+
+.icon-archive {
+  height: 15px;
+  width: 17px;
+}
+
+.icon-download {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-chevron--forward {
+  height: 11px;
+  width: 6px;
+  transform: rotate(180deg);
+}
+
+// colors -------------------------------------------------------
+
+.icon-fill {
+  fill: $mine-shaft;
+  transition: all .3s ease-in-out;
+}
+
+.icon-stroke {
+  stroke: $mine-shaft;
+  transition: all .3s ease-in-out;
+}
+
+.icon-both {
+  fill: none;
+  stroke: $mine-shaft;
+  transition: all .3s ease-in-out;
+}
+
+//  -------------------------------
+// ACTIVE
+
+.nav__tab--active1 .icon-stroke {
+  stroke: $dodger-blue;
+}
+
+.nav__tab--active1 .icon-fill {
+  fill: $dodger-blue;
+}
+
+.nav__tab--active1 .icon-both {
+  stroke: $dodger-blue;
+}
+
+.nav__tab--active2 .icon-stroke {
+  stroke: $dodger-blue;
+}
+
+.nav__tab--active2 .icon-fill {
+  fill: $dodger-blue;
+}
+
+.nav__tab--active2 .icon-both {
+  stroke: $dodger-blue;
+}
+
+.nav__tab--active3 .icon-stroke {
+  stroke: $dodger-blue;
+}
+
+.nav__tab--active3 .icon-fill {
+  fill: $dodger-blue;
+}
+
+.nav__tab--active3 .icon-both {
+  stroke: $dodger-blue;
+}
+
+// PAGINATION -------------------------------------

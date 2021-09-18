@@ -1,0 +1,91 @@
+.wizard__title {
+  margin-top: 86px;
+  margin-bottom: 46px;
+}
+
+// WIZARD DIGITS
+// -----------------------------------------------------
+.wizard-digits {
+	max-width: 256px;
+	display: flex;
+	position: relative;
+}
+
+.wizard-digits__subtitle {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #959595;
+  cursor: pointer;
+}
+.wizard-digits__bar {
+	height: 2px;
+    background-color: #e0e0e0;
+    width: 100%;
+    position: relative;
+}
+
+.wizard-digits__bar--progressing {
+	position: absolute;
+	height: 100%;
+	background-color: #18A0FB;
+	width: 60%;
+}
+
+
+.wizard-digits__subtitle {
+	position: absolute;
+	top: 10px;
+
+	&:not(:first-child) {
+		right: 50%;
+		transform: translateX(50%);
+	}
+
+	&:last-child {
+		right: 0;
+	}
+}
+
+.wizard-digits__point {
+	position: relative;
+	&:after {
+		cursor: pointer;
+		position: absolute;
+		content: "";
+		width: 12px;
+		height: 12px;
+		background-color: #E0E0E0;
+		top: -6px;
+		left: 0;
+		border-radius: 50%;
+	}
+}
+// итак, чтобы поменять кружочек на синий, нужно убрать класс .wizard-digits__point и поставить только .wizard-digits__point--done
+
+.wizard-digits__title--done {
+	color: $mine-shaft;
+}
+
+.wizard-digits__point--done {
+	
+
+	position: relative;
+	&:after {
+		cursor: pointer;
+		z-index: 1;
+		position: absolute;
+		content: "";
+		width: 12px;
+		height: 12px;
+		background-color: $dodger-blue;
+		top: -6px;
+		left: 0;
+		border-radius: 50%;
+	}
+}
+// WIZARD POINTS
+// -----------------------------------------------------
+
+// WIZARD VERTICAL
+// -----------------------------------------------------

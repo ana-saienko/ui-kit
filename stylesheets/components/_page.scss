@@ -4,25 +4,16 @@
     margin-bottom: 40px;
   }
 
-  &__btns {
-    margin-right: 45px;
-  }
   &__arrows,
   &__digit-arrows {
     cursor: pointer;
     margin-right: 11px;
-    width: 36px;
-    height: 36px;
     background-color: rgba(224, 224, 224, 0.3);
     border-radius: 5px;
     transition: all .3s ease-in-out;
 
     &:last-child {
       margin-right: 0;
-    }
-
-    &:hover {
-      background-color: $dodger-blue;
     }
   }
   &__digit-arrows {
@@ -31,23 +22,10 @@
   &__arrows--active {
     background-color: $dodger-blue;
   }
-  &__btns-back {
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../images/page-back.svg);
-  }
-
-  &__btns-forward {
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../images/page-forward.svg);
-  }
 
   &__digit {
     display: inline-block;
-    margin-right: 11px;
+    // margin-right: 11px;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -68,6 +46,14 @@
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+
+    > * {
+      margin-right: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
   &__chevron-arrows {
     cursor: pointer;
@@ -93,11 +79,15 @@
 
   &__chevron-digits {
     cursor: pointer;
-    margin-right: 16px;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     color: #959595;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color: $dodger-blue;
+    }
   }
 
   &__chevron-digits--active {
@@ -125,24 +115,18 @@
     border-radius: 5px;
     //  width: 89px;
     height: 36px;
-    display: inline-block;
-  }
-  &__extend-arrows {
+    display: flex;
+    align-items: center;
+    padding: 12px 14px 12px 23px;
     cursor: pointer;
-    display: inline-block;
-    background-repeat: no-repeat;
-  }
+    transition: all .3s ease-in-out;
 
-  &__extend-back {
-    padding: 11px 14px 11px 46px;
-    background-image: url(../images/page-chevron-back.svg);
-    background-position: 23px center;
-  }
-
-  &__extend-forward {
-    padding: 11px 46px 11px 14px;
-    background-image: url(../images/page-chevron-forward.svg);
-    background-position: 58px center;
+    &:hover {
+      background-color: rgba(24, 160, 251, 0.1);
+      .icon-fill {
+        fill: $dodger-blue;
+      }
+    }
   }
 
   &__extend-text {
@@ -181,4 +165,125 @@
 
 .page__extend-select {
   appearance: none;
+}
+
+// норм иконки через use 
+// ----------------------------------------
+
+.extend-icon--back {
+  transform: translateY(1px);
+  margin-right: 17px;
+  .icon-fill {
+    fill: #949494;
+  }
+}
+
+.extend-icon--forward {
+  transform: translateY(1px);
+  margin-left: 17px;
+  .icon-fill {
+    fill: #949494;
+  }
+}
+
+// normal arrows -------------------------
+
+// наследование, если иконки в определенных блоках, они серые 
+.page__btns {
+  .icon-fill {
+    fill: #919191;
+  }
+}
+
+.page__digit-btns {
+  .icon-fill {
+    fill: #919191;
+  }
+}
+
+// ----------------------------------
+// общие стили для стрелок
+
+.page__icon-back {
+  width: 8px;
+  height: 14px;
+  cursor: pointer;
+}
+
+.page__icon-forward {
+  cursor: pointer;
+  width: 8px;
+  height: 14px;
+  transform: rotate(180deg);
+}
+
+// ----------------------------------------------
+// задний фон, который серый
+
+.page__btns {
+  margin-right: 45px;
+  display: inline-flex;
+
+
+  // у прямых потомков отступ
+  > * {
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.page__forward,
+.page__back {
+  cursor: pointer;
+  padding: 8px 12px;
+  background-color: rgba(224, 224, 224, 0.3);
+  border-radius: 5px;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    background-color: $dodger-blue;
+
+    .icon-fill {
+      fill: #fff;
+    }
+  }
+}
+
+// -----------------------------------------------
+.page--rounded {
+  border-radius: 50%;
+}
+
+.page__digit-btns {
+  > * {
+    margin-right: 11px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// стили для стрелок с цифрами
+
+.page__chevron {
+  .page__icon-back {
+    fill: #ababab;
+
+    &:hover {
+      fill: $dodger-blue;
+    }
+  }
+}
+.page__chevron {
+  .page__icon-forward {
+    fill: #ababab;
+    
+    &:hover {
+      fill: $dodger-blue;
+    }
+  }
+
 }

@@ -798,48 +798,48 @@ Value</textarea
                 <h3 class="nav__title">Tabs</h3>
 
                 <!-- FIRST TWO TABS -->
-                <div class="nav__content" id="nav-1">
+                <div class="nav__content" id="tab-1">
                   <div
                     class="
-                      nav__tab nav__tab--current nav__tab--active nav-tab-1
+                      nav__tab nav__tab--active nav-1
                     "
                   >
                     Current Tab
                   </div>
-                  <div class="nav__tab nav__tab--dist nav-tab-1">
+                  <div class="nav__tab nav__tab--dist nav-1">
                     Current Tab
                   </div>
                 </div>
 
                 <!-- SECOND THREE TABS -->
 
-                <div class="nav__content nav__content--line" id="nav-2">
+                <div class="nav__content nav__content--line" id="tab-2">
                   <div
                     class="
-                      nav__tab nav__tab--current nav__tab--active-2 nav-tab-2
+                      nav__tab nav--active2 nav-2
                     "
                   >
                     Current Tab
                   </div>
-                  <div class="nav__tab nav__tab--dist nav-tab-2">
+                  <div class="nav__tab nav__tab--dist nav-2">
                     Second Tab
                   </div>
                 </div>
 
                 <!-- THIRD THREE TABS -->
 
-                <div class="nav__content nav__content--line" id="nav-3">
+                <div class="nav__content nav__content--line" id="tab-3">
                   <div
                     class="
-                      nav__tab nav__tab--current nav__tab--active-3 nav-tab-2
+                      nav__tab nav__tab--active-3 nav-3
                     "
                   >
                     Current Tab
                   </div>
-                  <div class="nav__tab nav__tab--dist nav-tab-2">
+                  <div class="nav__tab nav__tab--dist nav-3">
                     Second Tab
                   </div>
-                  <div class="nav__tab nav__tab--dist nav-tab-2">Third Tab</div>
+                  <div class="nav__tab nav__tab--dist nav-3">Third Tab</div>
                 </div>
 
                 <!-- Breadcrumbs -->
@@ -847,7 +847,9 @@ Value</textarea
 
                 <div class="crumbs__content">
                   <span class="crumbs__first">First Section</span>
-                  <span class="crumbs__divide"></span>
+                  <svg class="icon icon-fill icon-chevron--forward crumbs__icon">
+                    <use href="sprite.svg#chevron"></use>
+                  </svg>
                   <span class="crumbs__first">Second Section</span>
                 </div>
 
@@ -855,15 +857,21 @@ Value</textarea
                   <span class="crumbs__first crumbs__active"
                     >First Section</span
                   >
-                  <span class="crumbs__divide"></span>
+                  <svg class="icon icon-fill icon-chevron--forward crumbs__icon">
+                    <use href="sprite.svg#chevron"></use>
+                  </svg>
                   <span class="crumbs__first">Second Section</span>
                 </div>
 
                 <div class="crumbs__content crumbs__tabs">
                   <span class="crumbs__first">First Section</span>
-                  <span class="crumbs__divide"></span>
+                  <svg class="icon icon-fill icon-chevron--forward crumbs__icon">
+                    <use href="sprite.svg#chevron"></use>
+                  </svg>
                   <span class="crumbs__first">Second Section</span>
-                  <span class="crumbs__divide"></span>
+                  <svg class="icon icon-fill icon-chevron--forward crumbs__icon">
+                    <use href="sprite.svg#chevron"></use>
+                  </svg>
                   <span class="crumbs__first">Third Section</span>
                 </div>
 
@@ -871,62 +879,103 @@ Value</textarea
                   <span class="crumbs__first crumbs__active"
                     >First Section</span
                   >
-                  <span class="crumbs__divide"></span>
+                  <svg class="icon icon-fill icon-chevron--forward crumbs__icon">
+                    <use href="sprite.svg#chevron"></use>
+                  </svg>
                   <span class="crumbs__first crumbs__active"
                     >Second Section</span
                   >
-                  <span class="crumbs__divide"></span>
+                  <svg class="icon icon-fill icon-chevron--forward crumbs__icon">
+                    <use href="sprite.svg#chevron"></use>
+                  </svg>
                   <span class="crumbs__first">Third Section</span>
                 </div>
-              </div>
+
+                <h3 class="nav__title wizard__title">Wizzard Navigations</h3>
+                <!-- WIZARD DIGITS -->
+                <div class="wizard-digits">
+                  
+                  <span class="wizard-digits__title--done wizard-digits__subtitle ">Step 1</span>
+                  <span class="wizard-digits__point--done"></span>
+                  <div class="wizard-digits__bar">
+                    <div class="wizard-digits__bar--progressing"></div>
+                  </div>
+                  <span class="wizard-digits__point"></span>
+                  <span class="wizard-digits__subtitle">Step 2</span>
+                  <div class="wizard-digits__bar"></div>
+                  <span class="wizard-digits__point"></span>
+                  <span class="wizard-digits__subtitle">Step 3</span>
+                </div>
+
+                <!-- WIZARD POINTS -->
+                <div class="wizard-points"></div>
+
+                <!-- WIZARD VERTICAL -->
+                <div class="wizard-vertical"></div>
+
+              </div> <!-- / nav__left -->
 
               <div class="nav__right">
                 <h3 class="nav__title">Tabs & Icons</h3>
 
                 <!-- FIRST TWO TABS -->
-                <div class="nav__content">
+                <div class="nav__content" id="tabs-1">
                   <div
-                    class="nav__tab nav__svg nav__tab--current nav__tab--active"
+                    class="nav__tab nav__tab-1 nav__tab--active1"
                   >
-                    <span class="nav__tab-search nav__tab-svg"></span>
+                  <svg class="icon icon-search icon-fill">
+                    <use href="sprite.svg#search"></use>
+                  </svg>
                     Current Tab
                   </div>
-                  <div class="nav__tab nav__svg nav__tab--dist">
-                    <span class="nav__tab-archive nav__tab-svg"></span>
+                  <div class="nav__tab nav__tab-1">
+                    <svg class="icon icon-archive icon-stroke">
+                      <use href="sprite.svg#archive"></use>
+                    </svg>
                     Current Tab
                   </div>
                 </div>
 
                 <!-- SECOND THREE TABS -->
 
-                <div class="nav__content nav__content--line">
+                <div class="nav__content nav__content--line" id="tabs-2">
                   <div
-                    class="nav__tab nav__svg nav__tab--current nav__tab--active"
+                    class="nav__tab nav__tab-2 nav__tab--active2"
                   >
-                    <span class="nav__tab-search nav__tab-svg"></span>
+                  <svg class="icon icon-search icon-fill">
+                    <use href="sprite.svg#search"></use>
+                  </svg>
                     Current Tab
                   </div>
-                  <div class="nav__tab nav__svg nav__tab--dist">
-                    <span class="nav__tab-archive nav__tab-svg"></span>
+                  <div class="nav__tab nav__tab-2">
+                    <svg class="icon icon-archive icon-stroke">
+                      <use href="sprite.svg#archive"></use>
+                    </svg>
                     Second Tab
                   </div>
                 </div>
 
                 <!-- THIRD THREE TABS -->
 
-                <div class="nav__content nav__content--line">
+                <div class="nav__content nav__content--line" id="tabs-3">
                   <div
-                    class="nav__tab nav__svg nav__tab--current nav__tab--active"
+                    class="nav__tab nav__tab-3 nav__tab--active3"
                   >
-                    <span class="nav__tab-search nav__tab-svg"></span>
+                  <svg class="icon icon-search icon-fill">
+                    <use href="sprite.svg#search"></use>
+                  </svg>
                     Current Tab
                   </div>
-                  <div class="nav__tab nav__svg nav__tab--dist">
-                    <span class="nav__tab-archive nav__tab-svg"></span>
+                  <div class="nav__tab nav__tab-3">
+                    <svg class="icon icon-archive icon-stroke">
+                      <use href="sprite.svg#archive"></use>
+                    </svg>
                     Second Tab
                   </div>
-                  <div class="nav__tab nav__svg nav__tab--dist">
-                    <span class="nav__tab-download nav__tab-svg"></span>
+                  <div class="nav__tab nav__tab-3">
+                    <svg class="icon icon-both icon-download">
+                      <use href="sprite.svg#download"></use>
+                    </svg>
                     Third Tab
                   </div>
                 </div>
@@ -934,30 +983,48 @@ Value</textarea
                 <!-- PAGINATION -->
                 <h3 class="nav__title page">Pagination</h3>
                 <div class="page__content">
+
                   <div class="page__btns">
-                    <span class="page__arrows page__btns-back"></span>
-                    <span
-                      class="
-                        page__arrows page__arrows--active page__btns-forward
-                      "
-                    ></span>
+
+                    <div class="page__forward">
+                      <svg class="icon-fill page__icon-back">
+                        <use href="sprite.svg#chevron"></use>
+                      </svg>
+                    </div>
+                    
+
+                    <div class="page__back">
+                      <svg class="icon-fill page__icon-forward">
+                        <use href="sprite.svg#chevron"></use>
+                      </svg>
+                    </div>
+
+                    
                   </div>
+
                   <div class="page__digit-btns">
-                    <span class="page__digit-arrows page__btns-back"></span>
+                    <div class="page__forward page--rounded">
+                    <svg class="icon-fill page__icon-back ">
+                      <use href="sprite.svg#chevron"></use>
+                    </svg>
+                  </div>
                     <span class="page__digit">1</span>
-                    <span
-                      class="
-                        page__digit-arrows
-                        page__arrows--active
-                        page__btns-forward
-                      "
-                    ></span>
+
+                    <div class="page__back page--rounded">
+                    <svg class="icon-fill page__icon-forward ">
+                      <use href="sprite.svg#chevron"></use>
+                    </svg>
+                  </div>
                   </div>
                 </div>
 
                 <!-- all the pages at once -->
                 <div class="page__box page__chevron">
-                  <span class="page__chevron-back page__chevron-arrows"></span>
+                  <div>
+                    <svg class="icon-fill page__icon-back ">
+                      <use href="sprite.svg#chevron"></use>
+                    </svg>
+                    </div>
                   <span
                     class="page__chevron-digits page__chevron-digits--active"
                     >1</span
@@ -966,9 +1033,11 @@ Value</textarea
                   <span class="page__chevron-digits">3</span>
                   <span class="page__chevron-digits">4</span>
                   <span class="page__chevron-digits">5</span>
-                  <span
-                    class="page__chevron-forward page__chevron-arrows"
-                  ></span>
+                  <div>
+                    <svg class="icon-fill page__icon-forward ">
+                      <use href="sprite.svg#chevron"></use>
+                    </svg>
+                    </div>
                 </div>
 
                 <!-- PAGINATION extended -->
@@ -979,10 +1048,14 @@ Value</textarea
                       page__extend-dist
                       page__extend-box
                       page__extend-text
-                      page__extend-arrows
-                      page__extend-back
                     "
-                    >Prev</span
+                    >
+                    <div class="extend-icon--back">
+                      <svg class="icon-fill page__icon-back ">
+                        <use href="sprite.svg#chevron"></use>
+                      </svg>
+                      </div>
+                    Prev</span
                   >
                   <select
                     class="
@@ -1007,11 +1080,14 @@ Value</textarea
                       page__extend-dist
                       page__extend-box
                       page__extend-text
-                      page__extend-text--active
-                      page__extend-arrows
-                      page__extend-forward
                     "
-                    >Next</span
+                    >Next
+                    <div class="extend-icon--forward">
+                      <svg class="icon-fill page__icon-forward ">
+                        <use href="sprite.svg#chevron"></use>
+                      </svg>
+                      </div>
+                    </span
                   >
                 </div>
 

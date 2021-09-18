@@ -156,3 +156,105 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " tabs--active";
   });
 }
+
+// ----------------------------------------------------------------------------
+// TABS WITH ICONS 
+
+// tabs 1
+// Get the container element
+var btnContainer = document.getElementById("tabs-1");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("nav__tab-1");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("nav__tab--active1");
+    current[0].className = current[0].className.replace(" nav__tab--active1", "");
+    this.className += " nav__tab--active1";
+  });
+}
+
+// tabs 2
+// Get the container element
+var btnContainer = document.getElementById("tabs-2");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("nav__tab-2");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("nav__tab--active2");
+    current[0].className = current[0].className.replace(" nav__tab--active2", "");
+    this.className += " nav__tab--active2";
+  });
+}
+
+// tabs 3
+// Get the container element
+var btnContainer = document.getElementById("tabs-3");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("nav__tab-3");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("nav__tab--active3");
+    current[0].className = current[0].className.replace(" nav__tab--active3", "");
+    this.className += " nav__tab--active3";
+  });
+}
+
+// ----------------------------------------------------------------------------
+// TABS WITHOUT ICONS 
+
+// tabs 1
+// Get the container element
+var btnContainer = document.getElementById("tab-1");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("nav-1");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("nav__tab--active");
+    current[0].className = current[0].className.replace(" nav__tab--active", "");
+    this.className += " nav__tab--active";
+  });
+}
+
+// tabs 2
+// Get the container element
+var btnContainer = document.getElementById("tab-2");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("nav-2");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("nav--active2");
+    current[0].className = current[0].className.replace(" nav--active2", "");
+    this.className += " nav--active2";
+  });
+}
+
+// tabs 3
+// Get the container element
+var btnContainer = document.getElementById("tab-3");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("nav-3");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("nav__tab--active-3");
+    current[0].className = current[0].className.replace(" nav__tab--active-3", "");
+    this.className += " nav__tab--active-3";
+  });
+}
