@@ -156,6 +156,263 @@ body._lock {
   }
 }
 
+:root {
+  --salmon: #fb6542;
+  --blue: #375e97;
+  --lemon: #ffbb00;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.pika-single.is-hidden {
+  display: none;
+}
+
+.is-inrange .pika-button,
+.pika-button:hover {
+  border-color: #d1ecfe;
+  background-color: #d1ecfe;
+}
+
+.is-startrange .pika-button,
+.is-selected .pika-button {
+  border-color: #18a0fb;
+  background-color: #18a0fb;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.is-startrange .pika-button {
+  /* position: relative; */
+}
+
+.is-startrange .pika-button:before {
+  position: absolute;
+  content: "";
+  background-image: url(../../images/calendar/bgc.png);
+  top: 0;
+  right: -9px;
+  width: 22px;
+  height: 28px;
+  display: block;
+  z-index: 0;
+}
+
+.is-selected .pika-button:before {
+  position: absolute;
+  content: "";
+  background-image: url(../../images/calendar/bgc.png);
+  top: 0;
+  right: 17px;
+  width: 11px;
+  height: 28px;
+  display: block;
+  z-index: 0;
+}
+
+.pika-table {
+  width: 100%;
+}
+
+.pika-table th {
+  font-size: 11px;
+  padding-bottom: 8px;
+}
+
+.pika-table td {
+  padding-top: 14.5%;
+  position: relative;
+  width: 14.25%;
+}
+
+.pika-single button {
+  border: none;
+  display: inline-block;
+  padding: 0;
+}
+
+.pika-button {
+  cursor: pointer;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.pika-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 31px;
+  margin-bottom: 12px;
+  background-color: #e8f5ff;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 28px;
+  color: #2c2c2c;
+}
+
+.pika-title .pika-label {
+  padding-left: 8px;
+}
+
+.pika-title button {
+  padding: 8px;
+  position: absolute;
+  top: 10px;
+}
+
+.pika-title .pika-prev {
+  left: 13px;
+  font-size: 0;
+}
+
+.pika-title .pika-next {
+  right: 13px;
+  font-size: 0;
+}
+
+.pika-title {
+  /* position: relative; */
+}
+
+/* ставлю стрелки вместо надписей */
+.pika-prev,
+.pika-next {
+  position: relative;
+  cursor: pointer;
+}
+
+.pika-prev:after {
+  position: absolute;
+  content: "";
+  background-image: url(../../images/calendar/arr-prev.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  width: 6px;
+  height: 11px;
+  top: 0;
+  left: 0;
+}
+
+.pika-next:after {
+  position: absolute;
+  content: "";
+  background-image: url(../../images/calendar/arr-next.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  width: 6px;
+  height: 11px;
+  top: 0;
+  left: 0;
+}
+
+/* ставлю стрелки вместо надписей */
+.pika-select {
+  display: none;
+}
+
+.pika-lendar {
+  padding: 14px 16px;
+}
+
+.calendar__start-wrapper {
+  /* border: solid var(--lemon) 2px; */
+}
+
+.calendar__end-wrapper {
+  /* border: solid var(--salmon) 2px; */
+}
+
+.calendar {
+  margin-top: 28px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  /* padding: 16px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 227px;
+}
+
+.calendar__pikaday {
+  background-color: white;
+}
+
+.calendar__reset {
+  display: none;
+  cursor: pointer;
+  margin: 8px 0;
+  padding: 16px;
+  background-color: var(--lemon);
+  border: solid 1px var(--lemon);
+  color: #222;
+  font-size: 14px;
+  outline: none;
+}
+
+.calendar__reset:hover {
+  background-color: #ffcc00;
+}
+
+button.is-disabled,
+.is-disabled .pika-button {
+  color: #000;
+  cursor: pointer;
+  border: none;
+}
+
+.calendar__input {
+  padding: 16px 8px;
+  margin: 4px 0;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+}
+
+.calendar__input:first-child {
+  margin-right: 4px;
+}
+
+.calendar__inputs {
+  display: none;
+  width: 100%;
+}
+
+abbr {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #2c2c2c;
+}
+
 /*
 <!-- SVG References -->
 <svg class="icon icon-stroke">

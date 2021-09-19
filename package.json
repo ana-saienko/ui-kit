@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "nouislider": "^15.4.0"
+    "nouislider": "^15.4.0",
+    "pikaday": "^1.8.2"
   }
 }

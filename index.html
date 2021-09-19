@@ -23,7 +23,7 @@
     <div class="wrapper">
       <header class="header"></header>
       <main class="page">
-        <section class="colours main-sec">
+        <section class="colours main-sec none">
           <div class="container">
             <h2 class="title">Colors</h2>
             <div class="colours__content">
@@ -188,6 +188,20 @@
                     <span class="radio-btn"></span>
                   </label>
                 </div>
+
+                <!-- CALENDAR -->
+                <section class="calendar">
+                  <div class="calendar__inputs">
+                     <input class="calendar__input" readonly="readonly" type="text" id="calendar-start" placeholder="Start Date">
+               
+                     <input class="calendar__input" readonly="readonly" type="text" id="calendar-end" placeholder="End Date">
+                  </div>
+               
+                  <!-- Empty container for Pikaday Datepickers -->
+                  <div class="calendar__pikaday" id="calendar-container"></div>
+                  <button class="calendar__reset" id="calendar-clear">Reset</button>
+               </section>
+
               </form>
 
               <form action="#" class="forms__sec">
@@ -1442,6 +1456,9 @@ Value</textarea
     </div>
 
     <script src="js/nouislider.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/pikaday/pikaday.js'></script>
+    <script src="js/calendar.js"></script>
+
     <script src="js/script.js"></script>
   </body>
 </html>
