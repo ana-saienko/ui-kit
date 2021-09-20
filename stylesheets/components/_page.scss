@@ -108,6 +108,10 @@
     &:last-child {
       margin-right: 0;
     }
+
+    @media (max-width:$md4+px){
+       margin-right: 11px; 
+    }
   }
 
   &__extend-box {
@@ -127,6 +131,10 @@
         fill: $dodger-blue;
       }
     }
+
+    @media (max-width:$md4+px){
+      padding: 12px 10px 12px 15px; 
+    }
   }
 
   &__extend-text {
@@ -137,6 +145,9 @@
 
     &:hover {
       color: $dodger-blue;
+    }
+    @media (max-width:$md4+px){
+       font-size: 11px; 
     }
   }
 

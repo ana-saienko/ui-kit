@@ -1,65 +1,62 @@
-.steps__box {
-  margin-top: 40px;
+.wizard {
+	margin-top: 50px;
 }
 
-.steps {
-	display: flex;
-	align-items: center;
-}
+.wizard li {
+	background-color: #E8f5ff;
+	border-radius: 5px;
+	display: inline;
+	padding: 10px 30px 10px 40px;
+	margin-right: -7px;
+	width: auto;
 
-.steps__item {
-	cursor: pointer;
-	padding: 6px 0;
-	flex-basis: 93px;
-	text-align: center;
-  color: $dodger-blue;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 16px;
-}
+	@media (max-width:$md4+px){
+		padding: 10px 25px 10px 30px; 
+	}
+ }
+ 
+ .wizard li::before, .wizard li::after {
+	border: solid transparent;
+	 content: " ";
+	 height: 0;
+	 width: 0;
+	 position: absolute;
+	border-color: transparent;
+	 border-left-color: #fff;
+	border-radius: 10px;
+ }
+ 
+ .wizard li::before {
+	 border-width: 25px; 
+	 margin-top: -18px;
+    margin-left: 68px;
+	 @media (max-width:$md4+px){
+		margin-left: 65px;
+	 }
+ }
+ 
+ 
+ .wizard li::after {
+	 border-left-color: #E8f5ff;
+	border-width: 21px; 
+	margin-top: -14px;
+	margin-left: 23px;
 
-.steps__first {
-  position: relative;
-  &:after {
-    position: absolute;
-    content: "";
-    background-image: url(../../images/step-1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 28px;
-    top: 0;
-    left: 0;
-	 opacity: 0.1;
-  }
-}
-
-.steps__last {
-	position: relative;
-	&:after {
-	  position: absolute;
-	  content: "";
-	  background-image: url(../../images/step-last.png);
-	  background-repeat: no-repeat;
-	  background-position: center;
-	  width: 100%;
-	  height: 28px;
-	  top: 0;
-	  left: 0;
-}
-}
-
-.steps__next {
-	position: relative;
-	&:after {
-	  position: absolute;
-	  content: "";
-	  background-image: url(../../images/step-next.png);
-	  background-repeat: no-repeat;
-	  background-position: center;
-	  width: 100%;
-	  height: 28px;
-	  top: 0;
-	  left: 0;
-}
-}
+	@media (max-width:$md4+px){
+		margin-left: 20px; 
+	}
+ }
+ 
+ .wizard li.selected {
+	background-color: #18A0FB;
+	color: #fff;
+	
+ }
+ 
+ .wizard li.selected::after {
+	border-left-color: #18A0FB;
+ }
+ 
+ .wizard li:last-child::after {
+	border-left-color: transparent;
+ }

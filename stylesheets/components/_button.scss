@@ -367,6 +367,10 @@
     border: 1px solid $dodger-blue;
     color: #fff;
   }
+
+  @media (max-width:$md3+px){
+     padding: 14px 42px; 
+  }
 }
 
 .tabs--active {

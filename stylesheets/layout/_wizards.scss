@@ -1,0 +1,226 @@
+.wizard-points {
+	margin-top: 106px;
+}
+.steps__container {
+	max-width: 402px;
+	position: relative;
+ }
+ 
+ .steps__progress {
+	// margin: 20px !important;
+	height: 2px !important;
+	background-color: #e0e0e0 !important;
+ }
+ .steps__progress-bar {
+	width: 33%;
+	height: 15px;
+	color: #eeeeee;
+ }
+ 
+ .progreso1 {
+	transition-delay: 4s;
+	transition: all 0.45s ease-in-out;
+	width: 34.333333%;
+	animation: 0.5s;
+	background-color: #66ccff;
+ }
+ @media (max-width: 768px) {
+	.progreso1 {
+	  width: 34%;
+	}
+ }
+ .progreso2 {
+	width: 69.3333%;
+	animation: 0.5s;
+	background-color: #66ccff;
+	transition: all 0.45s ease;
+ }
+ @media (max-width: 768px) {
+	.progreso2 {
+	  width: 73%;
+	}
+ }
+ .progreso3 {
+	width: 100%;
+	animation: 0.5s;
+	background-color: #66ccff;
+	transition: all 0.45s ease;
+ }
+ .steps__block1 {
+	position: absolute;
+	// margin: 0 1%;
+	border-radius: 50%;
+	background-color: #66ccff;
+	height: 18px;
+	width: 18px;
+	top: -9px;
+
+	padding: 3px;
+	/* margin-top: 90px; */
+ }
+ .steps__block2 {
+	position: absolute;
+	margin: 0 10.33333333%;
+	border-radius: 50%;
+	background-color: #e0e0e0;
+	height: 18px;
+	width: 18px;
+	top: -9px;
+
+	padding: 3px;
+	/* margin-top: 90px; */
+ }
+ @media (max-width: 768px) {
+	.steps__block2 {
+	  margin: 0 31.5%;
+	  /* margin-top: 90px; */
+	}
+ }
+ .steps__block3 {
+	position: absolute;
+	margin: 0 65.333333%;
+	border-radius: 50%;
+	background-color: #e0e0e0;
+	height: 18px;
+	width: 18px;
+	top: -9px;
+
+	padding: 3px;
+	/* margin-top: 90px; */
+ }
+ @media (max-width: 768px) {
+	.steps__block3 {
+	  margin: 0 62.5%;
+	  /* margin-top: 90px; */
+	}
+ }
+ .steps__block4 {
+	position: absolute;
+	margin: 0 98.5%;
+	border-radius: 50%;
+	background-color: #e0e0e0;
+	height: 18px;
+	width: 18px;
+	top: -9px;
+
+	padding: 3px;
+	/* margin-top: 90px; */
+ }
+ @media (max-width: 570px) {
+	.steps__block4 {
+	  margin: 0 95.5% !important;
+	  /* margin-top: 90px !important; */
+	}
+ }
+ @media (max-width: 768px) {
+	.steps__block4 {
+	  margin: 0 96.5%;
+	  /* margin-top: 90px; */
+	}
+ }
+ .circulo {
+	border-radius: 50%;
+	height: 12px;
+	width: 12px;
+	background-color: #fff;
+	top: 0px;
+	/* margin: 6px; */
+ }
+ .fa-check {
+	top: 0px;
+	left: 0px;
+	position: absolute;
+ 
+	font-size: 13px;
+	color: #fff;
+	padding: 2.5px;
+	z-index: 1;
+ }
+
+ .fa-check:before {
+	content: "\f00c";
+}
+ .activeblock2 {
+	position: absolute;
+	margin: 0 33.33333333%;
+	border-radius: 50%;
+	background-color: #66ccff !important;
+	height: 18px;
+	width: 18px;
+	top: -9px;
+
+	padding: 3px;
+	/* margin-top: 90px; */
+ }
+ .activeblock3 {
+	position: absolute;
+	margin: 0 19.3333333%;
+	border-radius: 50%;
+	background-color: #66ccff;
+	height: 18px;
+	width: 18px;
+	top: 14px;
+	padding: 3px;
+	/* margin-top: 90px; */
+ }
+ .activeblock4 {
+	position: absolute;
+	margin: 0 95%;
+	border-radius: 50%;
+	background-color: #66ccff;
+	height: 18px;
+	width: 18px;
+	top: 14px;
+	padding: 3px;
+	/* margin-top: 90px; */
+ }
+ @media (max-width: 768px) {
+	.activeblock4 {
+	  margin: 0 90.7%;
+	  /* margin-top: 90px; */
+	}
+ }
+ @media (min-width: 510px) and (max-width: 600px) {
+	.activeblock4 {
+	  margin: 0 89.5%;
+	  /* margin-top: 90px; */
+	}
+ }
+ @media (min-width: 368px) and (max-width: 509px) {
+	.activeblock4 {
+	  margin: 0 86%;
+	  /* margin-top: 90px; */
+	}
+ }
+ @media (min-width: 200px) and (max-width: 367px) {
+	.activeblock4 {
+	  margin: 0 86%;
+	  /* margin-top: 90px; */
+	}
+ }
+
+ .steps__block1 .activecirculo {
+	 background-color: #66ccff;
+ }
+ .activecirculo {
+	border-radius: 50%;
+	height: 12px;
+	width: 12px;
+	background-color: #fff;
+	/* border: solid 3px #66ccff; */
+ }
+ 
+
+ 
+ /**
+ This is just to test, but you don't need it.
+ */
+ .next {
+	margin-top: 50px;
+ }
+ .next .next2 {
+	display: none;
+ }
+ .next .next3 {
+	display: none;
+ }
