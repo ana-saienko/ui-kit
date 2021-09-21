@@ -1,3 +1,7 @@
+var dropmic = new Dropmic(document.querySelector('[data-dropmic="42"]'));
+var dropmic = new Dropmic(document.querySelector('[data-dropmic="43"]'));
+
+
 // RANGE INPUT
 
 var slider = document.getElementById('slider');

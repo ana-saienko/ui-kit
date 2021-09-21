@@ -11,7 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <link rel="stylesheet" href="dist/dropmic.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
     <link href="stylesheets/nouislider.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="stylesheets/main.css" />
@@ -91,7 +96,7 @@
                     >Input Focused</label
                   >
                   <input
-                    class="forms__input forms__input-focused"
+                    class="forms__input forms__input--focused"
                     type="text"
                     id="focused"
                     value="Value"
@@ -113,16 +118,49 @@
                   />
                 </div>
 
-                <h5 class="select__title">Please choose:</h5>
-                <div class="select">
-                  <select name="format" id="format" class="select__input">
-                    <option selected disabled>Option</option>
-                    <option value="pdf">PDF</option>
-                    <option value="txt">txt</option>
-                    <option value="epub">ePub</option>
-                    <option value="fb2">fb2</option>
-                    <option value="mobi">mobi</option>
-                  </select>
+                <div class="forms__input-box">
+                  <h5 class="select__title">Please choose:</h5>
+                  <div
+                    class="dropmic"
+                    data-dropmic="42"
+                    data-dropmic-direction="bottom-right"
+                    role="navigation"
+                  >
+                    <button class="btn-option__main" data-dropmic-btn>
+                      Choose:
+                      <svg
+                        width="12"
+                        height="6"
+                        viewBox="0 0 12 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.29286 5.70686L0.853556 1.26757C0.538556 0.952568 0.761656 0.413969 1.20706 0.413969L10.7928 0.413969C11.2383 0.413969 11.4614 0.952568 11.1464 1.26757L6.70706 5.70686C6.31656 6.09739 5.68336 6.09739 5.29286 5.70686Z"
+                          fill="#2C2C2C"
+                        />
+                      </svg>
+                    </button>
+                    <div class="dropmic-menu" aria-hidden="true">
+                      <ul class="dropmic-menu__list" role="menu">
+                        <li class="dropmic-menu__listItem" role="menuitem">
+                          <div class="dropmic-menu__listContent">PDF</div>
+                        </li>
+                        <li class="dropmic-menu__listItem" role="menuitem">
+                          <div class="dropmic-menu__listContent">txt</div>
+                        </li>
+                        <li class="dropmic-menu__listItem" role="menuitem">
+                          <div class="dropmic-menu__listContent">ePub</div>
+                        </li>
+                        <li class="dropmic-menu__listItem" role="menuitem">
+                          <div class="dropmic-menu__listContent">fb2</div>
+                        </li>
+                        <li class="dropmic-menu__listItem" role="menuitem">
+                          <div class="dropmic-menu__listContent">mobi</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
 
                 <!-- CHECKBOX -->
@@ -193,16 +231,29 @@
                 <!-- CALENDAR -->
                 <section class="calendar">
                   <div class="calendar__inputs">
-                     <input class="calendar__input" readonly="readonly" type="text" id="calendar-start" placeholder="Start Date">
-               
-                     <input class="calendar__input" readonly="readonly" type="text" id="calendar-end" placeholder="End Date">
+                    <input
+                      class="calendar__input"
+                      readonly="readonly"
+                      type="text"
+                      id="calendar-start"
+                      placeholder="Start Date"
+                    />
+
+                    <input
+                      class="calendar__input"
+                      readonly="readonly"
+                      type="text"
+                      id="calendar-end"
+                      placeholder="End Date"
+                    />
                   </div>
-               
+
                   <!-- Empty container for Pikaday Datepickers -->
                   <div class="calendar__pikaday" id="calendar-container"></div>
-                  <button class="calendar__reset" id="calendar-clear">Reset</button>
-               </section>
-
+                  <button class="calendar__reset" id="calendar-clear">
+                    Reset
+                  </button>
+                </section>
               </form>
 
               <form action="#" class="forms__sec">
@@ -299,22 +350,55 @@
                 <div class="forms__input-box">
                   <label class="forms__label" for="focused"></label>
                   <input
-                    class="forms__input forms__input-focused"
+                    class="forms__input forms__input--focused"
                     type="text"
                     id="focused"
                     value="Value"
                   />
                 </div>
 
-                <div class="select">
-                  <select name="format" id="format" class="select__input">
-                    <option selected disabled>Choose</option>
-                    <option value="pdf">PDF</option>
-                    <option value="txt">txt</option>
-                    <option value="epub">ePub</option>
-                    <option value="fb2">fb2</option>
-                    <option value="mobi">mobi</option>
-                  </select>
+                <div class="forms__input-box">
+                  <div
+                    class="dropmic"
+                    data-dropmic="43"
+                    data-dropmic-direction="bottom-right"
+                    role="navigation"
+                  >
+                    <button class="btn-option__main" data-dropmic-btn>
+                      Choose:
+                      <svg
+                        width="12"
+                        height="6"
+                        viewBox="0 0 12 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.29286 5.70686L0.853556 1.26757C0.538556 0.952568 0.761656 0.413969 1.20706 0.413969L10.7928 0.413969C11.2383 0.413969 11.4614 0.952568 11.1464 1.26757L6.70706 5.70686C6.31656 6.09739 5.68336 6.09739 5.29286 5.70686Z"
+                          fill="#2C2C2C"
+                        />
+                      </svg>
+                    </button>
+                    <div class="dropmic-menu" aria-hidden="true">
+                      <ul class="dropmic-menu__list" role="menu">
+                        <li class="dropmic-menu__listItem" role="menuitem">
+                          <div class="dropmic-menu__listContent">PDF</div>
+                        </li>
+                        <li class="dropmic-menu__listItem" role="menuitem">
+                          <div class="dropmic-menu__listContent">txt</div>
+                        </li>
+                        <li class="dropmic-menu__listItem" role="menuitem">
+                          <div class="dropmic-menu__listContent">ePub</div>
+                        </li>
+                        <li class="dropmic-menu__listItem" role="menuitem">
+                          <div class="dropmic-menu__listContent">fb2</div>
+                        </li>
+                        <li class="dropmic-menu__listItem" role="menuitem">
+                          <div class="dropmic-menu__listContent">mobi</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
 
                 <!-- SWITCH -->
@@ -532,14 +616,52 @@ Value</textarea
                 </div>
 
                 <div class="buttons__row">
-                  <button type="submit" class="btn-big btn-big--primary btn-big--svg-right">
+                  <button
+                    type="submit"
+                    class="btn-big btn-big--primary btn-big--svg-right"
+                  >
                     Download
-                    <svg class="btn-svg__download btn-svg__right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="btn-svg__download-path" d="M4 12V19H20V12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 3.50073L12 13.5007" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L15.375 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L8.625 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                    <svg
+                      class="btn-svg__download btn-svg__right"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="btn-svg__download-path"
+                        d="M4 12V19H20V12"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 3.50073L12 13.5007"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L15.375 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L8.625 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                   </button>
                   <button
                     type="submit"
@@ -547,41 +669,186 @@ Value</textarea
                     disabled
                   >
                     Download
-                    <svg class="btn-svg__download btn-svg__right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M4 12V19H20V12" stroke="#878787" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M12 3.50073L12 13.5007" stroke="#878787" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M12 13.5007L15.375 10.1257" stroke="#878787" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M12 13.5007L8.625 10.1257" stroke="#878787" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                    <svg
+                      class="btn-svg__download btn-svg__right"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 12V19H20V12"
+                        stroke="#878787"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 3.50073L12 13.5007"
+                        stroke="#878787"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 13.5007L15.375 10.1257"
+                        stroke="#878787"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 13.5007L8.625 10.1257"
+                        stroke="#878787"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                   </button>
-                  <button type="submit" class="btn-big btn-big--secondary btn-big--svg-right">
+                  <button
+                    type="submit"
+                    class="btn-big btn-big--secondary btn-big--svg-right"
+                  >
                     Download
-                    <svg class="btn-svg__download btn-svg__right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="btn-svg__download-path" d="M4 12V19H20V12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 3.50073L12 13.5007" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L15.375 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L8.625 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                    <svg
+                      class="btn-svg__download btn-svg__right"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="btn-svg__download-path"
+                        d="M4 12V19H20V12"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 3.50073L12 13.5007"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L15.375 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L8.625 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                   </button>
-                  <button type="submit" class="btn-big btn-big--focused btn-big--svg-right">
+                  <button
+                    type="submit"
+                    class="btn-big btn-big--focused btn-big--svg-right"
+                  >
                     Download
-                    <svg class="btn-svg__download btn-svg__right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="btn-svg__download-path" d="M4 12V19H20V12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 3.50073L12 13.5007" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L15.375 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L8.625 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                    <svg
+                      class="btn-svg__download btn-svg__right"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="btn-svg__download-path"
+                        d="M4 12V19H20V12"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 3.50073L12 13.5007"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L15.375 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L8.625 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                   </button>
                 </div>
 
                 <div class="buttons__row">
-                  <button type="submit" class="btn-big btn-big--primary btn-big--svg-left">
-                    <svg class="btn-svg__download btn-svg__left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="btn-svg__download-path" d="M4 12V19H20V12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 3.50073L12 13.5007" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L15.375 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L8.625 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                  <button
+                    type="submit"
+                    class="btn-big btn-big--primary btn-big--svg-left"
+                  >
+                    <svg
+                      class="btn-svg__download btn-svg__left"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="btn-svg__download-path"
+                        d="M4 12V19H20V12"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 3.50073L12 13.5007"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L15.375 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L8.625 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                     Download
                   </button>
                   <button
@@ -589,30 +856,137 @@ Value</textarea
                     class="btn-big btn-big--primary btn-big--svg-left"
                     disabled
                   >
-                  <svg class="btn-svg__download btn-svg__left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 12V19H20V12" stroke="#878787" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12 3.50073L12 13.5007" stroke="#878787" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12 13.5007L15.375 10.1257" stroke="#878787" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12 13.5007L8.625 10.1257" stroke="#878787" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg
+                      class="btn-svg__download btn-svg__left"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 12V19H20V12"
+                        stroke="#878787"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 3.50073L12 13.5007"
+                        stroke="#878787"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 13.5007L15.375 10.1257"
+                        stroke="#878787"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 13.5007L8.625 10.1257"
+                        stroke="#878787"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                     Download
                   </button>
-                  <button type="submit" class="btn-big btn-big--secondary btn-big--svg-left">
-                    <svg class="btn-svg__download btn-svg__left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="btn-svg__download-path" d="M4 12V19H20V12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 3.50073L12 13.5007" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L15.375 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L8.625 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                  <button
+                    type="submit"
+                    class="btn-big btn-big--secondary btn-big--svg-left"
+                  >
+                    <svg
+                      class="btn-svg__download btn-svg__left"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="btn-svg__download-path"
+                        d="M4 12V19H20V12"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 3.50073L12 13.5007"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L15.375 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L8.625 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                     Download
                   </button>
-                  <button type="submit" class="btn-big btn-big--focused btn-big--svg-left">
-                    <svg class="btn-svg__download btn-svg__left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="btn-svg__download-path" d="M4 12V19H20V12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 3.50073L12 13.5007" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L15.375 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L8.625 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                  <button
+                    type="submit"
+                    class="btn-big btn-big--focused btn-big--svg-left"
+                  >
+                    <svg
+                      class="btn-svg__download btn-svg__left"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="btn-svg__download-path"
+                        d="M4 12V19H20V12"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 3.50073L12 13.5007"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L15.375 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L8.625 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                     Download
                   </button>
                 </div>
@@ -639,14 +1013,52 @@ Value</textarea
                 </div>
 
                 <div class="buttons__row">
-                  <button type="submit" class="btn-small btn-small--primary btn-small--svg-right">
+                  <button
+                    type="submit"
+                    class="btn-small btn-small--primary btn-small--svg-right"
+                  >
                     Download
-                    <svg class="btn-svg__download btn-svg__right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="btn-svg__download-path" d="M4 12V19H20V12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 3.50073L12 13.5007" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L15.375 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L8.625 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                    <svg
+                      class="btn-svg__download btn-svg__right"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="btn-svg__download-path"
+                        d="M4 12V19H20V12"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 3.50073L12 13.5007"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L15.375 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L8.625 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                   </button>
                   <button
                     type="submit"
@@ -654,41 +1066,193 @@ Value</textarea
                     disabled
                   >
                     Download
-                    <svg class="btn-svg__download btn-svg__right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="btn-svg__download-path" d="M4 12V19H20V12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 3.50073L12 13.5007" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L15.375 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L8.625 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                    <svg
+                      class="btn-svg__download btn-svg__right"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="btn-svg__download-path"
+                        d="M4 12V19H20V12"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 3.50073L12 13.5007"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L15.375 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L8.625 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                   </button>
-                  <button type="submit" class="btn-small btn-small--secondary btn-small--svg-right">
+                  <button
+                    type="submit"
+                    class="btn-small btn-small--secondary btn-small--svg-right"
+                  >
                     Download
-                    <svg class="btn-svg__download btn-svg__right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="btn-svg__download-path" d="M4 12V19H20V12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 3.50073L12 13.5007" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L15.375 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L8.625 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                    <svg
+                      class="btn-svg__download btn-svg__right"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="btn-svg__download-path"
+                        d="M4 12V19H20V12"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 3.50073L12 13.5007"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L15.375 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L8.625 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                   </button>
-                  <button type="submit" class="btn-small btn-small--focused btn-small--svg-right">
+                  <button
+                    type="submit"
+                    class="btn-small btn-small--focused btn-small--svg-right"
+                  >
                     Download
-                    <svg class="btn-svg__download btn-svg__right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="btn-svg__download-path" d="M4 12V19H20V12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 3.50073L12 13.5007" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L15.375 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L8.625 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                    <svg
+                      class="btn-svg__download btn-svg__right"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="btn-svg__download-path"
+                        d="M4 12V19H20V12"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 3.50073L12 13.5007"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L15.375 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L8.625 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                   </button>
                 </div>
 
                 <div class="buttons__row">
-                  <button type="submit" class="btn-small btn-small--primary btn-small--svg-left btn--error">
-                    <svg class="btn-svg__download btn-svg__left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="btn-svg__download-path" d="M4 12V19H20V12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 3.50073L12 13.5007" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L15.375 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L8.625 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                  <button
+                    type="submit"
+                    class="
+                      btn-small btn-small--primary btn-small--svg-left
+                      btn--error
+                    "
+                  >
+                    <svg
+                      class="btn-svg__download btn-svg__left"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="btn-svg__download-path"
+                        d="M4 12V19H20V12"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 3.50073L12 13.5007"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L15.375 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L8.625 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                     Download
                   </button>
                   <button
@@ -696,30 +1260,141 @@ Value</textarea
                     class="btn-small btn-small--primary btn-small--svg-left"
                     disabled
                   >
-                  <svg class="btn-svg__download btn-svg__left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="btn-svg__download-path" d="M4 12V19H20V12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path class="btn-svg__download-path" d="M12 3.50073L12 13.5007" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path class="btn-svg__download-path" d="M12 13.5007L15.375 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path class="btn-svg__download-path" d="M12 13.5007L8.625 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg
+                      class="btn-svg__download btn-svg__left"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="btn-svg__download-path"
+                        d="M4 12V19H20V12"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 3.50073L12 13.5007"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L15.375 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L8.625 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                     Download
                   </button>
-                  <button type="submit" class="btn-small btn-small--secondary btn-small--svg-left">
-                    <svg class="btn-svg__download btn-svg__left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="btn-svg__download-path" d="M4 12V19H20V12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 3.50073L12 13.5007" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L15.375 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L8.625 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                  <button
+                    type="submit"
+                    class="btn-small btn-small--secondary btn-small--svg-left"
+                  >
+                    <svg
+                      class="btn-svg__download btn-svg__left"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="btn-svg__download-path"
+                        d="M4 12V19H20V12"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 3.50073L12 13.5007"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L15.375 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L8.625 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                     Download
                   </button>
-                  <button type="submit" class="btn-small btn-small--focused btn-small--svg-left">
-                    <svg class="btn-svg__download btn-svg__left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="btn-svg__download-path" d="M4 12V19H20V12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 3.50073L12 13.5007" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L15.375 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="btn-svg__download-path" d="M12 13.5007L8.625 10.1257" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                  <button
+                    type="submit"
+                    class="btn-small btn-small--focused btn-small--svg-left"
+                  >
+                    <svg
+                      class="btn-svg__download btn-svg__left"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="btn-svg__download-path"
+                        d="M4 12V19H20V12"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 3.50073L12 13.5007"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L15.375 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="btn-svg__download-path"
+                        d="M12 13.5007L8.625 10.1257"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                     Download
                   </button>
                 </div>
@@ -727,17 +1402,43 @@ Value</textarea
                 <!-- TAGS -->
                 <div class="tags">
                   <div class="tags-row">
-                    <div class="tag tag--primary">Tag
-                      <svg class="btn-svg__close" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="btn-svg__close-path" fill-rule="evenodd" clip-rule="evenodd" d="M0.29289 0.29289C0.68342 -0.09763 1.31658 -0.09763 1.70711 0.29289L5 3.5858L8.2929 0.29289C8.6834 -0.09763 9.3166 -0.09763 9.7071 0.29289C10.0976 0.68342 10.0976 1.31658 9.7071 1.70711L6.4142 5L9.7071 8.2929C10.0976 8.6834 10.0976 9.3166 9.7071 9.7071C9.3166 10.0976 8.6834 10.0976 8.2929 9.7071L5 6.4142L1.70711 9.7071C1.31658 10.0976 0.68342 10.0976 0.29289 9.7071C-0.09763 9.3166 -0.09763 8.6834 0.29289 8.2929L3.5858 5L0.29289 1.70711C-0.09763 1.31658 -0.09763 0.68342 0.29289 0.29289Z" fill="#2C2C2C"/>
-                        </svg>
-                        
-                        
+                    <div class="tag tag--primary">
+                      Tag
+                      <svg
+                        class="btn-svg__close"
+                        width="10"
+                        height="10"
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="btn-svg__close-path"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M0.29289 0.29289C0.68342 -0.09763 1.31658 -0.09763 1.70711 0.29289L5 3.5858L8.2929 0.29289C8.6834 -0.09763 9.3166 -0.09763 9.7071 0.29289C10.0976 0.68342 10.0976 1.31658 9.7071 1.70711L6.4142 5L9.7071 8.2929C10.0976 8.6834 10.0976 9.3166 9.7071 9.7071C9.3166 10.0976 8.6834 10.0976 8.2929 9.7071L5 6.4142L1.70711 9.7071C1.31658 10.0976 0.68342 10.0976 0.29289 9.7071C-0.09763 9.3166 -0.09763 8.6834 0.29289 8.2929L3.5858 5L0.29289 1.70711C-0.09763 1.31658 -0.09763 0.68342 0.29289 0.29289Z"
+                          fill="#2C2C2C"
+                        />
+                      </svg>
                     </div>
-                    <div class="tag tag--secondary">Tag
-                      <svg class="btn-svg__close" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="btn-svg__close-path" fill-rule="evenodd" clip-rule="evenodd" d="M0.29289 0.29289C0.68342 -0.09763 1.31658 -0.09763 1.70711 0.29289L5 3.5858L8.2929 0.29289C8.6834 -0.09763 9.3166 -0.09763 9.7071 0.29289C10.0976 0.68342 10.0976 1.31658 9.7071 1.70711L6.4142 5L9.7071 8.2929C10.0976 8.6834 10.0976 9.3166 9.7071 9.7071C9.3166 10.0976 8.6834 10.0976 8.2929 9.7071L5 6.4142L1.70711 9.7071C1.31658 10.0976 0.68342 10.0976 0.29289 9.7071C-0.09763 9.3166 -0.09763 8.6834 0.29289 8.2929L3.5858 5L0.29289 1.70711C-0.09763 1.31658 -0.09763 0.68342 0.29289 0.29289Z" fill="#2C2C2C"/>
-                        </svg>
+                    <div class="tag tag--secondary">
+                      Tag
+                      <svg
+                        class="btn-svg__close"
+                        width="10"
+                        height="10"
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="btn-svg__close-path"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M0.29289 0.29289C0.68342 -0.09763 1.31658 -0.09763 1.70711 0.29289L5 3.5858L8.2929 0.29289C8.6834 -0.09763 9.3166 -0.09763 9.7071 0.29289C10.0976 0.68342 10.0976 1.31658 9.7071 1.70711L6.4142 5L9.7071 8.2929C10.0976 8.6834 10.0976 9.3166 9.7071 9.7071C9.3166 10.0976 8.6834 10.0976 8.2929 9.7071L5 6.4142L1.70711 9.7071C1.31658 10.0976 0.68342 10.0976 0.29289 9.7071C-0.09763 9.3166 -0.09763 8.6834 0.29289 8.2929L3.5858 5L0.29289 1.70711C-0.09763 1.31658 -0.09763 0.68342 0.29289 0.29289Z"
+                          fill="#2C2C2C"
+                        />
+                      </svg>
                     </div>
                   </div>
 
@@ -754,24 +1455,86 @@ Value</textarea
                 <div class="tabs-row">
                   <div class="tabs-icon">
                     <ul class="tabs-icon__body" id="nav-1">
-                      <li class="tabs-icon__item ">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path class="btn-svg__tab-path" fill-rule="evenodd" clip-rule="evenodd" d="M11 7C8.79086 7 7 8.79086 7 11C7 13.2091 8.79086 15 11 15C13.2091 15 15 13.2091 15 11C15 8.79086 13.2091 7 11 7ZM5 11C5 7.68629 7.68629 5 11 5C14.3137 5 17 7.68629 17 11C17 12.2958 16.5892 13.4957 15.8907 14.4765L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L14.4765 15.8907C13.4957 16.5892 12.2958 17 11 17C7.68629 17 5 14.3137 5 11Z" fill="white"/>
-                          </svg>
+                      <li class="tabs-icon__item">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="btn-svg__tab-path"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M11 7C8.79086 7 7 8.79086 7 11C7 13.2091 8.79086 15 11 15C13.2091 15 15 13.2091 15 11C15 8.79086 13.2091 7 11 7ZM5 11C5 7.68629 7.68629 5 11 5C14.3137 5 17 7.68629 17 11C17 12.2958 16.5892 13.4957 15.8907 14.4765L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L14.4765 15.8907C13.4957 16.5892 12.2958 17 11 17C7.68629 17 5 14.3137 5 11Z"
+                            fill="white"
+                          />
+                        </svg>
                       </li>
-                      <li class="tabs-icon__item  tabs-icon__item--active">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path class="btn-svg__tab-down" d="M4 12V19H20V12" stroke="#2C2C2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path class="btn-svg__tab-down" d="M12 3.50073L12 13.5007" stroke="#2C2C2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path class="btn-svg__tab-down" d="M12 13.5007L15.375 10.1257" stroke="#2C2C2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path class="btn-svg__tab-down" d="M12 13.5007L8.625 10.1257" stroke="#2C2C2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                          </svg>
+                      <li class="tabs-icon__item tabs-icon__item--active">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="btn-svg__tab-down"
+                            d="M4 12V19H20V12"
+                            stroke="#2C2C2C"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            class="btn-svg__tab-down"
+                            d="M12 3.50073L12 13.5007"
+                            stroke="#2C2C2C"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            class="btn-svg__tab-down"
+                            d="M12 13.5007L15.375 10.1257"
+                            stroke="#2C2C2C"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            class="btn-svg__tab-down"
+                            d="M12 13.5007L8.625 10.1257"
+                            stroke="#2C2C2C"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
                       </li>
                       <li class="tabs-icon__item">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path class="btn-svg__tab-path btn-svg__tab-down" d="M15 12.51H15.5V12.01V10.51H16.5V13.01C16.5 13.2869 16.2769 13.51 16 13.51H8C7.72314 13.51 7.5 13.2869 7.5 13.01V10.51H8.5V12.01V12.51H9H15Z" fill="#2C2C2C" stroke="#2C2C2C"/>
-                          <path class="btn-svg__tab-path btn-svg__tab-down" d="M2.92205 6.30863L2.90861 6.29902L5.3096 3.10657L5.3101 3.1059C5.58912 2.73363 6.0385 2.50903 6.508 2.50903H17.508C17.9791 2.50903 18.4295 2.73545 18.7101 3.11188L18.7105 3.11237L21.1053 6.31638L21.0935 6.32544L21.3866 6.72011C21.4672 6.82871 21.5 6.92251 21.5 7.01003V18.01C21.5 18.8369 20.8269 19.51 20 19.51H4C3.17314 19.51 2.5 18.8369 2.5 18.01V7.01003C2.5 6.92206 2.53338 6.82686 2.615 6.71803L2.92205 6.30863ZM6.508 3.51003H6.2584L6.10838 3.70952L4.60438 5.70952L4.0024 6.51003H5.004H19.003H20.001L19.4035 5.71067L17.9085 3.71067L17.7585 3.51003H17.508H6.508ZM3.5 18.01V18.51H4H20.002H20.5021L20.502 18.0099L20.5 8.00993L20.4999 7.51003H20H4H3.5V8.01003V18.01Z" fill="#2C2C2C" stroke="#2C2C2C"/>
-                          </svg>
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="btn-svg__tab-path btn-svg__tab-down"
+                            d="M15 12.51H15.5V12.01V10.51H16.5V13.01C16.5 13.2869 16.2769 13.51 16 13.51H8C7.72314 13.51 7.5 13.2869 7.5 13.01V10.51H8.5V12.01V12.51H9H15Z"
+                            fill="#2C2C2C"
+                            stroke="#2C2C2C"
+                          />
+                          <path
+                            class="btn-svg__tab-path btn-svg__tab-down"
+                            d="M2.92205 6.30863L2.90861 6.29902L5.3096 3.10657L5.3101 3.1059C5.58912 2.73363 6.0385 2.50903 6.508 2.50903H17.508C17.9791 2.50903 18.4295 2.73545 18.7101 3.11188L18.7105 3.11237L21.1053 6.31638L21.0935 6.32544L21.3866 6.72011C21.4672 6.82871 21.5 6.92251 21.5 7.01003V18.01C21.5 18.8369 20.8269 19.51 20 19.51H4C3.17314 19.51 2.5 18.8369 2.5 18.01V7.01003C2.5 6.92206 2.53338 6.82686 2.615 6.71803L2.92205 6.30863ZM6.508 3.51003H6.2584L6.10838 3.70952L4.60438 5.70952L4.0024 6.51003H5.004H19.003H20.001L19.4035 5.71067L17.9085 3.71067L17.7585 3.51003H17.508H6.508ZM3.5 18.01V18.51H4H20.002H20.5021L20.502 18.0099L20.5 8.00993L20.4999 7.51003H20H4H3.5V8.01003V18.01Z"
+                            fill="#2C2C2C"
+                            stroke="#2C2C2C"
+                          />
+                        </svg>
                       </li>
                     </ul>
                   </div>
@@ -814,46 +1577,24 @@ Value</textarea
 
                 <!-- FIRST TWO TABS -->
                 <div class="nav__content" id="tab-1">
-                  <div
-                    class="
-                      nav__tab nav__tab--active nav-1
-                    "
-                  >
-                    Current Tab
-                  </div>
-                  <div class="nav__tab nav__tab--dist nav-1">
-                    Current Tab
-                  </div>
+                  <div class="nav__tab nav__tab--active nav-1">Current Tab</div>
+                  <div class="nav__tab nav__tab--dist nav-1">Current Tab</div>
                 </div>
 
                 <!-- SECOND THREE TABS -->
 
                 <div class="nav__content nav__content--line" id="tab-2">
-                  <div
-                    class="
-                      nav__tab nav--active2 nav-2
-                    "
-                  >
-                    Current Tab
-                  </div>
-                  <div class="nav__tab nav__tab--dist nav-2">
-                    Second Tab
-                  </div>
+                  <div class="nav__tab nav--active2 nav-2">Current Tab</div>
+                  <div class="nav__tab nav__tab--dist nav-2">Second Tab</div>
                 </div>
 
                 <!-- THIRD THREE TABS -->
 
                 <div class="nav__content nav__content--line" id="tab-3">
-                  <div
-                    class="
-                      nav__tab nav__tab--active-3 nav-3
-                    "
-                  >
+                  <div class="nav__tab nav__tab--active-3 nav-3">
                     Current Tab
                   </div>
-                  <div class="nav__tab nav__tab--dist nav-3">
-                    Second Tab
-                  </div>
+                  <div class="nav__tab nav__tab--dist nav-3">Second Tab</div>
                   <div class="nav__tab nav__tab--dist nav-3">Third Tab</div>
                 </div>
 
@@ -862,7 +1603,9 @@ Value</textarea
 
                 <div class="crumbs__content">
                   <span class="crumbs__first">First Section</span>
-                  <svg class="icon icon-fill icon-chevron--forward crumbs__icon">
+                  <svg
+                    class="icon icon-fill icon-chevron--forward crumbs__icon"
+                  >
                     <use href="sprite.svg#chevron"></use>
                   </svg>
                   <span class="crumbs__first">Second Section</span>
@@ -872,7 +1615,9 @@ Value</textarea
                   <span class="crumbs__first crumbs__active"
                     >First Section</span
                   >
-                  <svg class="icon icon-fill icon-chevron--forward crumbs__icon">
+                  <svg
+                    class="icon icon-fill icon-chevron--forward crumbs__icon"
+                  >
                     <use href="sprite.svg#chevron"></use>
                   </svg>
                   <span class="crumbs__first">Second Section</span>
@@ -880,11 +1625,15 @@ Value</textarea
 
                 <div class="crumbs__content crumbs__tabs">
                   <span class="crumbs__first">First Section</span>
-                  <svg class="icon icon-fill icon-chevron--forward crumbs__icon">
+                  <svg
+                    class="icon icon-fill icon-chevron--forward crumbs__icon"
+                  >
                     <use href="sprite.svg#chevron"></use>
                   </svg>
                   <span class="crumbs__first">Second Section</span>
-                  <svg class="icon icon-fill icon-chevron--forward crumbs__icon">
+                  <svg
+                    class="icon icon-fill icon-chevron--forward crumbs__icon"
+                  >
                     <use href="sprite.svg#chevron"></use>
                   </svg>
                   <span class="crumbs__first">Third Section</span>
@@ -894,13 +1643,17 @@ Value</textarea
                   <span class="crumbs__first crumbs__active"
                     >First Section</span
                   >
-                  <svg class="icon icon-fill icon-chevron--forward crumbs__icon">
+                  <svg
+                    class="icon icon-fill icon-chevron--forward crumbs__icon"
+                  >
                     <use href="sprite.svg#chevron"></use>
                   </svg>
                   <span class="crumbs__first crumbs__active"
                     >Second Section</span
                   >
-                  <svg class="icon icon-fill icon-chevron--forward crumbs__icon">
+                  <svg
+                    class="icon icon-fill icon-chevron--forward crumbs__icon"
+                  >
                     <use href="sprite.svg#chevron"></use>
                   </svg>
                   <span class="crumbs__first">Third Section</span>
@@ -909,8 +1662,10 @@ Value</textarea
                 <h3 class="nav__title wizard__title">Wizzard Navigations</h3>
                 <!-- WIZARD DIGITS -->
                 <div class="wizard-digits">
-                  
-                  <span class="wizard-digits__title--done wizard-digits__subtitle ">Step 1</span>
+                  <span
+                    class="wizard-digits__title--done wizard-digits__subtitle"
+                    >Step 1</span
+                  >
                   <span class="wizard-digits__point--done"></span>
                   <div class="wizard-digits__bar">
                     <div class="wizard-digits__bar--progressing"></div>
@@ -955,26 +1710,23 @@ Value</textarea
                         <i id="icon4"></i>
                       </div>
                     </div>
-              
                   </div>
                 </div>
 
                 <!-- WIZARD VERTICAL -->
                 <div class="wizard-vertical"></div>
-
-              </div> <!-- / nav__left -->
+              </div>
+              <!-- / nav__left -->
 
               <div class="nav__right">
                 <h3 class="nav__title">Tabs & Icons</h3>
 
                 <!-- FIRST TWO TABS -->
                 <div class="nav__content" id="tabs-1">
-                  <div
-                    class="nav__tab nav__tab-1 nav__tab--active1"
-                  >
-                  <svg class="icon icon-search icon-fill">
-                    <use href="sprite.svg#search"></use>
-                  </svg>
+                  <div class="nav__tab nav__tab-1 nav__tab--active1">
+                    <svg class="icon icon-search icon-fill">
+                      <use href="sprite.svg#search"></use>
+                    </svg>
                     Current Tab
                   </div>
                   <div class="nav__tab nav__tab-1">
@@ -988,12 +1740,10 @@ Value</textarea
                 <!-- SECOND THREE TABS -->
 
                 <div class="nav__content nav__content--line" id="tabs-2">
-                  <div
-                    class="nav__tab nav__tab-2 nav__tab--active2"
-                  >
-                  <svg class="icon icon-search icon-fill">
-                    <use href="sprite.svg#search"></use>
-                  </svg>
+                  <div class="nav__tab nav__tab-2 nav__tab--active2">
+                    <svg class="icon icon-search icon-fill">
+                      <use href="sprite.svg#search"></use>
+                    </svg>
                     Current Tab
                   </div>
                   <div class="nav__tab nav__tab-2">
@@ -1007,12 +1757,10 @@ Value</textarea
                 <!-- THIRD THREE TABS -->
 
                 <div class="nav__content nav__content--line" id="tabs-3">
-                  <div
-                    class="nav__tab nav__tab-3 nav__tab--active3"
-                  >
-                  <svg class="icon icon-search icon-fill">
-                    <use href="sprite.svg#search"></use>
-                  </svg>
+                  <div class="nav__tab nav__tab-3 nav__tab--active3">
+                    <svg class="icon icon-search icon-fill">
+                      <use href="sprite.svg#search"></use>
+                    </svg>
                     Current Tab
                   </div>
                   <div class="nav__tab nav__tab-3">
@@ -1032,48 +1780,43 @@ Value</textarea
                 <!-- PAGINATION -->
                 <h3 class="nav__title page">Pagination</h3>
                 <div class="page__content">
-
                   <div class="page__btns">
-
                     <div class="page__forward">
                       <svg class="icon-fill page__icon-back">
                         <use href="sprite.svg#chevron"></use>
                       </svg>
                     </div>
-                    
 
                     <div class="page__back">
                       <svg class="icon-fill page__icon-forward">
                         <use href="sprite.svg#chevron"></use>
                       </svg>
                     </div>
-
-                    
                   </div>
 
                   <div class="page__digit-btns">
                     <div class="page__forward page--rounded">
-                    <svg class="icon-fill page__icon-back ">
-                      <use href="sprite.svg#chevron"></use>
-                    </svg>
-                  </div>
+                      <svg class="icon-fill page__icon-back">
+                        <use href="sprite.svg#chevron"></use>
+                      </svg>
+                    </div>
                     <span class="page__digit">1</span>
 
                     <div class="page__back page--rounded">
-                    <svg class="icon-fill page__icon-forward ">
-                      <use href="sprite.svg#chevron"></use>
-                    </svg>
-                  </div>
+                      <svg class="icon-fill page__icon-forward">
+                        <use href="sprite.svg#chevron"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
 
                 <!-- all the pages at once -->
                 <div class="page__box page__chevron">
                   <div>
-                    <svg class="icon-fill page__icon-back ">
+                    <svg class="icon-fill page__icon-back">
                       <use href="sprite.svg#chevron"></use>
                     </svg>
-                    </div>
+                  </div>
                   <span
                     class="page__chevron-digits page__chevron-digits--active"
                     >1</span
@@ -1083,61 +1826,51 @@ Value</textarea
                   <span class="page__chevron-digits">4</span>
                   <span class="page__chevron-digits">5</span>
                   <div>
-                    <svg class="icon-fill page__icon-forward ">
+                    <svg class="icon-fill page__icon-forward">
                       <use href="sprite.svg#chevron"></use>
                     </svg>
-                    </div>
+                  </div>
                 </div>
 
                 <!-- PAGINATION extended -->
 
                 <div class="page__extend">
                   <span
-                    class="
-                      page__extend-dist
-                      page__extend-box
-                      page__extend-text
-                    "
-                    >
+                    class="page__extend-dist page__extend-box page__extend-text"
+                  >
                     <div class="extend-icon--back">
-                      <svg class="icon-fill page__icon-back ">
+                      <svg class="icon-fill page__icon-back">
                         <use href="sprite.svg#chevron"></use>
                       </svg>
-                      </div>
+                    </div>
                     Prev</span
                   >
                   <select
                     class="
-                    page__extend-select
+                      page__extend-select
                       page__extend-dist
                       page__extend-box
                       page__extend-choose
                       page__extend-text
                       page__extend-svg
                     "
-                    >
+                  >
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
-                    </select
-                  >
+                  </select>
                   <span class="page__extend-dist page__extend-quantity"
                     >of 10</span
                   >
                   <span
-                    class="
-                      page__extend-dist
-                      page__extend-box
-                      page__extend-text
-                    "
+                    class="page__extend-dist page__extend-box page__extend-text"
                     >Next
                     <div class="extend-icon--forward">
-                      <svg class="icon-fill page__icon-forward ">
+                      <svg class="icon-fill page__icon-forward">
                         <use href="sprite.svg#chevron"></use>
                       </svg>
-                      </div>
-                    </span
-                  >
+                    </div>
+                  </span>
                 </div>
 
                 <!-- STEPS -->
@@ -1147,8 +1880,8 @@ Value</textarea
                   <li class="selected">Step 2</li>
                   <li>Step 3</li>
                 </ul>
-
-              </div> <!-- / nav__right -->
+              </div>
+              <!-- / nav__right -->
             </div>
           </div>
         </section>
@@ -1383,7 +2116,24 @@ Value</textarea
                           <span class="upload-list__name">File Name.jpg</span>
                           <span class="upload-list__time">23 mins ago</span>
                         </div>
-                        <span class="upload-list__cross"></span>
+                        <div class="btn-close--wrap">
+                          <svg
+                            class="btn-svg__close--upload"
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              class="btn-svg__close-path"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M0.29289 0.29289C0.68342 -0.09763 1.31658 -0.09763 1.70711 0.29289L5 3.5858L8.2929 0.29289C8.6834 -0.09763 9.3166 -0.09763 9.7071 0.29289C10.0976 0.68342 10.0976 1.31658 9.7071 1.70711L6.4142 5L9.7071 8.2929C10.0976 8.6834 10.0976 9.3166 9.7071 9.7071C9.3166 10.0976 8.6834 10.0976 8.2929 9.7071L5 6.4142L1.70711 9.7071C1.31658 10.0976 0.68342 10.0976 0.29289 9.7071C-0.09763 9.3166 -0.09763 8.6834 0.29289 8.2929L3.5858 5L0.29289 1.70711C-0.09763 1.31658 -0.09763 0.68342 0.29289 0.29289Z"
+                              fill="#2C2C2C"
+                            />
+                          </svg>
+                        </div>
                       </div>
                       <div class="progressing-bar">
                         <div class="progressing-bar__process"></div>
@@ -1478,7 +2228,12 @@ Value</textarea
                     <span class="upload__svg-done"></span>
                     <span class="upload__text">Upload Complete!</span>
                     <span class="upload-progress__cancel">Upload New</span>
-                    <input type="file" class="upload-progress__cancel" id="error-upload" value="Upload New" />
+                    <input
+                      type="file"
+                      class="upload-progress__cancel"
+                      id="error-upload"
+                      value="Upload New"
+                    />
                   </div>
                 </div>
               </div>
@@ -1491,9 +2246,10 @@ Value</textarea
     </div>
 
     <script src="js/nouislider.js"></script>
-    <script src='https://cdn.jsdelivr.net/npm/pikaday/pikaday.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
     <script src="js/calendar.js"></script>
     <script src="js/wizard.js"></script>
+    <script src="dist/dropmic.min.js"></script>
 
     <script src="js/script.js"></script>
   </body>

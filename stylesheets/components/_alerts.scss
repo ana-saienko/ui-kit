@@ -28,10 +28,10 @@
   }
 
   &__toast {
-    padding: 10px !important;
+    // padding: 10px;
     max-width: 312px;
     margin-bottom: 22px;
-    padding: 10px 10px 15px 13px;
+    padding: 10px 10px 10px 10px;
     box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.12);
     border-radius: 5px;
 
@@ -67,12 +67,14 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
+    height: 70px;
   }
 
   &__toast--error-white {
     display: flex;
     justify-content: space-between;
     padding: 0;
+    height: 70px;
   }
 
   &__toast-left {
@@ -105,7 +107,7 @@
 
   &__toast-sub {
     margin-bottom: 6px;
-    margin-top: 12px;
+    margin-top: 8px;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
@@ -125,7 +127,7 @@
 
   &__toast-sub--colored {
     margin-bottom: 6px;
-    margin-top: 12px;
+    margin-top: 8px;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;

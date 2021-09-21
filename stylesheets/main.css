@@ -194,7 +194,7 @@ button {
 .is-startrange .pika-button:before {
   position: absolute;
   content: "";
-  background-image: url(../../images/calendar/bgc.png);
+  background-image: url(../images/calendar/bgc.png);
   top: 0;
   right: -9px;
   width: 22px;
@@ -206,7 +206,7 @@ button {
 .is-selected .pika-button:before {
   position: absolute;
   content: "";
-  background-image: url(../../images/calendar/bgc.png);
+  background-image: url(../images/calendar/bgc.png);
   top: 0;
   right: 17px;
   width: 11px;
@@ -299,7 +299,7 @@ button {
 .pika-prev:after {
   position: absolute;
   content: "";
-  background-image: url(../../images/calendar/arr-prev.svg);
+  background-image: url(../images/calendar/arr-prev.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -313,7 +313,7 @@ button {
 .pika-next:after {
   position: absolute;
   content: "";
-  background-image: url(../../images/calendar/arr-next.svg);
+  background-image: url(../images/calendar/arr-next.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1214,6 +1214,10 @@ abbr {
 
 .btn-big:hover .btn-svg__download-path {
   stroke: #18A0FB;
+}
+
+.btn-big {
+  width: 144px;
 }
 
 .btn-big:disabled {
@@ -2157,6 +2161,7 @@ input:checked + .slider-small.slider:before {
   font-size: 13px;
   line-height: 16px;
   color: #2c2c2c;
+  cursor: pointer;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2576,7 +2581,6 @@ input:checked + .slider-small.slider:before {
   display: inline-block;
   width: 100%;
   /*   background: #00bfff; */
-  cursor: pointer;
   padding: 10px 0;
   font-weight: 500;
   font-size: 21px;
@@ -2691,6 +2695,32 @@ select::-ms-expand {
   border-left-width: 6px;
   border-right-width: 6px;
   border-top: 6px solid black;
+}
+
+.btn-option__main {
+  padding: 10px 12px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  color: #959595;
+  width: 260px;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dropmic-menu {
+  width: 260px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
 }
 
 .page__content {
@@ -3190,11 +3220,11 @@ select::-ms-expand {
   color: #FF3E1D;
 }
 
-.forms__input-focused {
+.forms__input--focused {
   border: 1px solid #18A0FB;
 }
 
-.forms__input-focused[value] {
+.forms__input--focused[value] {
   padding: 10px 12px;
   font-weight: 400;
   font-size: 13px;
@@ -3704,6 +3734,27 @@ select::-ms-expand {
   fill: #2c2c2c;
 }
 
+.btn-close--wrap {
+  background-color: #E0E0E0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 94px;
+}
+
+.btn-svg__close--upload .btn-svg__close-path {
+  fill: #fff;
+}
+
 .alerts__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3749,10 +3800,9 @@ select::-ms-expand {
 }
 
 .alerts__toast {
-  padding: 10px !important;
   max-width: 312px;
   margin-bottom: 22px;
-  padding: 10px 10px 15px 13px;
+  padding: 10px 10px 10px 10px;
   -webkit-box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
@@ -3791,6 +3841,7 @@ select::-ms-expand {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0;
+  height: 70px;
 }
 
 .alerts__toast--error-white {
@@ -3801,6 +3852,7 @@ select::-ms-expand {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0;
+  height: 70px;
 }
 
 .alerts__toast-left {
@@ -3847,7 +3899,7 @@ select::-ms-expand {
 
 .alerts__toast-sub {
   margin-bottom: 6px;
-  margin-top: 12px;
+  margin-top: 8px;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
@@ -3866,7 +3918,7 @@ select::-ms-expand {
 
 .alerts__toast-sub--colored {
   margin-bottom: 6px;
-  margin-top: 12px;
+  margin-top: 8px;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;

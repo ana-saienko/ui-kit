@@ -134,7 +134,7 @@
     }
   }
 
-  &__input-focused {
+  &__input--focused {
     border: 1px solid $dodger-blue;
 
     &[value] {
