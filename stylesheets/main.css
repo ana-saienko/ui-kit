@@ -379,11 +379,10 @@ button {
   background-color: #ffcc00;
 }
 
-button.is-disabled,
-.is-disabled .pika-button {
-  color: #000;
-  cursor: pointer;
-  border: none;
+button.is-disabled, .is-disabled .pika-button {
+  color: #ccc;
+  cursor: none;
+  border: solid 1px transparent;
 }
 
 .calendar__input {
@@ -1197,12 +1196,12 @@ abbr {
   stroke: #2c2c2c;
 }
 
-.btn-big--focused {
+.btn-big_focused {
   border: 1px solid #18A0FB;
   color: #18A0FB;
 }
 
-.btn-big--focused .btn-svg__download-path {
+.btn-big_focused .btn-svg__download-path {
   stroke: #18A0FB;
 }
 
@@ -1301,12 +1300,12 @@ abbr {
   stroke: #2c2c2c;
 }
 
-.btn-small--focused {
+.btn-small_focused {
   border: 1px solid #18A0FB;
   color: #18A0FB;
 }
 
-.btn-small--focused .btn-svg__download-path {
+.btn-small_focused .btn-svg__download-path {
   stroke: #18A0FB;
 }
 
@@ -2630,97 +2629,70 @@ input:checked + .slider-small.slider:before {
   cursor: pointer;
 }
 
-.select {
-  margin-bottom: 36px;
-}
-
 .select__title {
   margin-bottom: 7px;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 16px;
-  color: #2c2c2c;
 }
 
-.select__input {
-  width: 100%;
+.select__box {
+  /* Reset Select */
   -webkit-appearance: none;
   -moz-appearance: none;
-  -ms-appearance: none;
   appearance: none;
   outline: 0;
+  border: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border: 0 !important;
-  background: #fff;
-  background-image: none;
+  /* Personalize */
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 10px 12px;
+  font-weight: 400;
   color: #959595;
-  cursor: pointer;
   font-size: 13px;
+  line-height: 16px;
+  background-color: #fff;
+  background-image: none;
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
 }
 
-select::-ms-expand {
+/* Remove IE arrow */
+.select__box::-ms-expand {
   display: none;
 }
 
+/* Custom Select wrapper */
 .select {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 260px;
-  height: 37px;
-  background: #fff;
+  height: 36px;
   overflow: hidden;
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
 }
 
+/* Arrow */
 .select::after {
-  content: "";
+  content: "\25BC";
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 12px;
-  background: #fff;
-  cursor: pointer;
-  pointer-events: none;
+  top: 0;
+  right: 0;
+  padding: 10px 12px 10px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-left: none;
+  border-radius: 4px;
   -webkit-transition: 0.25s all ease;
   transition: 0.25s all ease;
-  width: 0;
-  height: 0;
-  border: 0 solid transparent;
-  border-left-width: 6px;
-  border-right-width: 6px;
-  border-top: 6px solid black;
+  pointer-events: none;
 }
 
-.btn-option__main {
-  padding: 10px 12px;
-  background-color: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
-  color: #959595;
-  width: 260px;
-  height: 36px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.dropmic-menu {
-  width: 260px;
-  background-color: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
 }
 
 .page__content {
@@ -3749,6 +3721,13 @@ select::-ms-expand {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 94px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.btn-close--wrap:hover {
+  background-color: #c2bfbf;
 }
 
 .btn-svg__close--upload .btn-svg__close-path {
@@ -3913,7 +3892,7 @@ select::-ms-expand {
   line-height: 16px;
   color: #959595;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .alerts__toast-sub--colored {
@@ -3990,7 +3969,7 @@ select::-ms-expand {
 }
 
 .alerts__toast-bottom--title {
-  padding-top: 10px;
+  padding-top: 5px;
   cursor: pointer;
   font-weight: 700;
   font-size: 13px;
@@ -4000,7 +3979,7 @@ select::-ms-expand {
 }
 
 .alerts__toast-bottom {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   cursor: pointer;
   font-weight: 400;
   font-size: 13px;
@@ -4019,7 +3998,7 @@ select::-ms-expand {
 
 .alerts__toast--title {
   cursor: pointer;
-  padding-top: 10px;
+  padding-top: 5px;
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;

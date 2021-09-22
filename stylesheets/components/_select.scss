@@ -1,80 +1,57 @@
-.select {
-  margin-bottom: 36px;
-  &__title {
-    margin-bottom: 7px;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 16px;
-    color: $mine-shaft;
-  }
-
-  &__input {
-    width: 100%;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    outline: 0;
-    box-shadow: none;
-    border: 0 !important;
-    background: #fff;
-    background-image: none;
-    padding: 10px 12px;
-    color: #959595;
-    cursor: pointer;
-    font-size: 13px;
-  }
+.select__title {
+  margin-bottom: 7px;
 }
+.select__box {
+  /* Reset Select */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 10px 12px;
 
-select::-ms-expand {
+  font-weight: 400;
+  color: #959595;
+  font-size: 13px;
+  line-height: 16px;
+  background-color: #fff;
+  background-image: none;
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+/* Remove IE arrow */
+.select__box::-ms-expand {
   display: none;
 }
+/* Custom Select wrapper */
 .select {
   position: relative;
   display: flex;
   width: 260px;
-  height: 37px;
-  background: #fff;
+  height: 36px;
   overflow: hidden;
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
 }
+/* Arrow */
 .select::after {
-  content: "";
+  content: "\25BC";
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 12px;
-//   padding: 10px 12px;
-  background: #fff;
-  cursor: pointer;
-  pointer-events: none;
-  transition: 0.25s all ease;
-
-  width: 0;
-  height: 0;
-  border: 0 solid transparent;
-  border-left-width: 6px;
-  border-right-width: 6px;
-  border-top: 6px solid black;
-}
-
-.btn-option__main {
-  padding: 10px 12px;
+  top: 0;
+  right: 0;
+  padding: 10px 12px 10px;
   background-color: #fff;
   border: 1px solid #e0e0e0;
+  border-left: none;
   border-radius: 4px;
-  color: #959595;
-  width: 260px;
-  height: 36px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
 }
 
-.dropmic-menu {
-	width: 260px;
-	background-color: #fff;
-	border: 1px solid #e0e0e0;
-	border-radius: 4px;
-}
+

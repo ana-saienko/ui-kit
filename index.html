@@ -120,46 +120,12 @@
 
                 <div class="forms__input-box">
                   <h5 class="select__title">Please choose:</h5>
-                  <div
-                    class="dropmic"
-                    data-dropmic="42"
-                    data-dropmic-direction="bottom-right"
-                    role="navigation"
-                  >
-                    <button class="btn-option__main" data-dropmic-btn>
-                      Choose:
-                      <svg
-                        width="12"
-                        height="6"
-                        viewBox="0 0 12 6"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5.29286 5.70686L0.853556 1.26757C0.538556 0.952568 0.761656 0.413969 1.20706 0.413969L10.7928 0.413969C11.2383 0.413969 11.4614 0.952568 11.1464 1.26757L6.70706 5.70686C6.31656 6.09739 5.68336 6.09739 5.29286 5.70686Z"
-                          fill="#2C2C2C"
-                        />
-                      </svg>
-                    </button>
-                    <div class="dropmic-menu" aria-hidden="true">
-                      <ul class="dropmic-menu__list" role="menu">
-                        <li class="dropmic-menu__listItem" role="menuitem">
-                          <div class="dropmic-menu__listContent">PDF</div>
-                        </li>
-                        <li class="dropmic-menu__listItem" role="menuitem">
-                          <div class="dropmic-menu__listContent">txt</div>
-                        </li>
-                        <li class="dropmic-menu__listItem" role="menuitem">
-                          <div class="dropmic-menu__listContent">ePub</div>
-                        </li>
-                        <li class="dropmic-menu__listItem" role="menuitem">
-                          <div class="dropmic-menu__listContent">fb2</div>
-                        </li>
-                        <li class="dropmic-menu__listItem" role="menuitem">
-                          <div class="dropmic-menu__listContent">mobi</div>
-                        </li>
-                      </ul>
-                    </div>
+                  <div class="select">
+                    <select class="select__box">
+                      <option value="1">Option</option>
+                      <option value="2">No JS</option>
+                      <option value="3">Nice!</option>
+                    </select>
                   </div>
                 </div>
 
@@ -358,46 +324,13 @@
                 </div>
 
                 <div class="forms__input-box">
-                  <div
-                    class="dropmic"
-                    data-dropmic="43"
-                    data-dropmic-direction="bottom-right"
-                    role="navigation"
-                  >
-                    <button class="btn-option__main" data-dropmic-btn>
-                      Choose:
-                      <svg
-                        width="12"
-                        height="6"
-                        viewBox="0 0 12 6"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5.29286 5.70686L0.853556 1.26757C0.538556 0.952568 0.761656 0.413969 1.20706 0.413969L10.7928 0.413969C11.2383 0.413969 11.4614 0.952568 11.1464 1.26757L6.70706 5.70686C6.31656 6.09739 5.68336 6.09739 5.29286 5.70686Z"
-                          fill="#2C2C2C"
-                        />
-                      </svg>
-                    </button>
-                    <div class="dropmic-menu" aria-hidden="true">
-                      <ul class="dropmic-menu__list" role="menu">
-                        <li class="dropmic-menu__listItem" role="menuitem">
-                          <div class="dropmic-menu__listContent">PDF</div>
-                        </li>
-                        <li class="dropmic-menu__listItem" role="menuitem">
-                          <div class="dropmic-menu__listContent">txt</div>
-                        </li>
-                        <li class="dropmic-menu__listItem" role="menuitem">
-                          <div class="dropmic-menu__listContent">ePub</div>
-                        </li>
-                        <li class="dropmic-menu__listItem" role="menuitem">
-                          <div class="dropmic-menu__listContent">fb2</div>
-                        </li>
-                        <li class="dropmic-menu__listItem" role="menuitem">
-                          <div class="dropmic-menu__listContent">mobi</div>
-                        </li>
-                      </ul>
-                    </div>
+                  <!-- https://github.com/agence-webup/dropmic -->
+                  <div class="select">
+                    <select>
+                      <option value="1">Option</option>
+                      <option value="2">No JS</option>
+                      <option value="3">Nice!</option>
+                    </select>
                   </div>
                 </div>
 
@@ -610,7 +543,7 @@ Value</textarea
                   <button type="submit" class="btn-big btn-big--secondary">
                     Download
                   </button>
-                  <button type="submit" class="btn-big btn-big--focused">
+                  <button type="submit" class="btn-big btn-big_focused">
                     Download
                   </button>
                 </div>
@@ -756,7 +689,7 @@ Value</textarea
                   </button>
                   <button
                     type="submit"
-                    class="btn-big btn-big--focused btn-big--svg-right"
+                    class="btn-big btn-big_focused btn-big--svg-right"
                   >
                     Download
                     <svg
@@ -2147,7 +2080,12 @@ Value</textarea
                           <span class="upload-list__name">File Name.jpg</span>
                           <span class="upload-list__time">23 mins ago</span>
                         </div>
-                        <span class="upload-list__seen"></span>
+                        <div class="btn-close--wrap">
+                          <svg class="btn-svg__close--upload" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.193895 4.28276L0 4L0.193895 3.71724C0.278575 3.59374 0.434623 3.3882 0.657882 3.12773C1.02669 2.69745 1.45395 2.26774 1.93617 1.86589C3.33102 0.703511 4.89885 0 6.60626 0C8.31367 0 9.8815 0.703511 11.2764 1.86589C11.7586 2.26774 12.1858 2.69745 12.5546 3.12773C12.7779 3.3882 12.9339 3.59374 13.0186 3.71724L13.2125 4L13.0186 4.28276C12.9339 4.40626 12.7779 4.6118 12.5546 4.87227C12.1858 5.30255 11.7586 5.73226 11.2764 6.13411C9.8815 7.29649 8.31367 8 6.60626 8C4.89885 8 3.33102 7.29649 1.93617 6.13411C1.45395 5.73226 1.02669 5.30255 0.657882 4.87227C0.434623 4.6118 0.278575 4.40626 0.193895 4.28276ZM1.41714 4.22148C1.75146 4.61152 2.13982 5.00211 2.57635 5.36589C3.8065 6.39101 5.16367 7 6.60626 7C8.04885 7 9.40602 6.39101 10.6362 5.36589C11.0727 5.00211 11.4611 4.61152 11.7954 4.22148C11.8647 4.14063 11.9262 4.06642 11.9797 4C11.9262 3.93358 11.8647 3.85937 11.7954 3.77852C11.4611 3.38848 11.0727 2.99789 10.6362 2.63411C9.40602 1.60899 8.04885 1 6.60626 1C5.16367 1 3.8065 1.60899 2.57635 2.63411C2.13982 2.99789 1.75146 3.38848 1.41714 3.77852C1.34784 3.85937 1.28634 3.93358 1.23286 4C1.28634 4.06642 1.34784 4.14063 1.41714 4.22148ZM6.60626 6.16667C5.28078 6.16667 4.20626 5.122 4.20626 3.83333C4.20626 2.54467 5.28078 1.5 6.60626 1.5C7.93174 1.5 9.00626 2.54467 9.00626 3.83333C9.00626 5.122 7.93174 6.16667 6.60626 6.16667Z" fill="white"/>
+                            </svg>
+                        </div>
+                        
                       </div>
                       <div class="progressing-bar">
                         <div class="progressing-bar__completed"></div>
@@ -2174,7 +2112,12 @@ Value</textarea
                           <span class="upload-list__name">File Name.jpg</span>
                           <span class="upload-list__time">23 mins ago</span>
                         </div>
-                        <span class="upload-list__cancelled"></span>
+                        <div class="btn-close--wrap">
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.21924 4.42553H10.6398V1.005" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.3806 4.42565C10.0441 3.47275 9.40062 2.65861 8.55122 2.11107C7.70183 1.56354 6.69463 1.31363 5.6878 1.40059C4.68098 1.48754 3.73154 1.90644 2.9886 2.59149C2.24566 3.27655 1.75129 4.18896 1.58312 5.18545C1.41496 6.18194 1.58253 7.20606 2.05951 8.09698C2.5365 8.98791 3.29588 9.69518 4.21842 10.1077C5.14095 10.5203 6.17438 10.6147 7.15642 10.3763C8.13846 10.1378 9.01348 9.57992 9.64408 8.79023" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
                       </div>
                       <div class="progressing-bar">
                         <div class="progressing-bar__cancel"></div>

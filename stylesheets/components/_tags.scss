@@ -46,6 +46,12 @@
   align-items: center;
   justify-content: center;
   margin-left: 94px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    background-color: #c2bfbf;
+  }
 }
 
 .btn-svg__close--upload {
