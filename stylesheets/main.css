@@ -3192,11 +3192,11 @@ input:checked + .slider-small.slider:before {
   color: #FF3E1D;
 }
 
-.forms__input--focused {
+.forms__input_focused {
   border: 1px solid #18A0FB;
 }
 
-.forms__input--focused[value] {
+.forms__input_focused[value] {
   padding: 10px 12px;
   font-weight: 400;
   font-size: 13px;
